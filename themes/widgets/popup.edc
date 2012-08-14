@@ -206,7 +206,7 @@ group { name: "elm/label/base/popup/default";
    styles
      {
         style { name: "popup_desc_style";
-           base: "font=SLP:style=Roman font_size="POPUP_DESCRIPTION_DEFAULT_TEXT_FONT_SIZE_INC" align=center color="POPUP_DEFAULT_DESCRIPTION_TEXT_COLOR_INC" text_class=slp_roman";
+           base: "font=SLP:style=Roman font_size="POPUP_DESCRIPTION_DEFAULT_TEXT_FONT_SIZE_INC" align=center color="POPUP_DEFAULT_DESCRIPTION_TEXT_COLOR_INC" text_class=slp_roman wrap=mixed ellipsis=1";
            tag:  "br" "\n";
            tag:  "ps" "ps";
            tag:  "whitecolor" "+ color=#ffffff";
@@ -220,10 +220,10 @@ group { name: "elm/label/base/popup/default";
          scale: 1;
          description { state: "default" 0.0;
             min: POPUP_DESCRIPTION_DEFAULT_TEXT_MIN_INC;
+            max: POPUP_DESCRIPTION_DEFAULT_TEXT_MIN_INC;
             text {
                style: "popup_desc_style";
-               min: 0 1;
-               max: 0 1;
+               min: 0 0;
             }
          }
       }
@@ -362,6 +362,7 @@ group { name: "elm/popup/base/default";
          scale : 1;
          description { state: "default" 0.0;
             min: POPUP_BASE_DEFAULT_CONTENT_DEFAULT_MIN_MAX_INC;
+            max: POPUP_BASE_DEFAULT_CONTENT_DEFAULT_MIN_MAX_INC;
             fixed: 1 0;
             rel1 {
                relative: 0.5 0.0;
@@ -1005,6 +1006,7 @@ group { name: "elm/popup/base/verticalbuttonstyle";
          scale : 1;
          description { state: "default" 0.0;
             min: POPUP_BASE_VERTICAL_BUTTON_CONTENT_DEFAULT_MIN_INC;
+            max: POPUP_BASE_VERTICAL_BUTTON_CONTENT_DEFAULT_MIN_INC;
             fixed: 1 0;
             rel1 {
                relative: 0.5 0.0;
@@ -1273,6 +1275,7 @@ group { name: "elm/popup/content/menustyle";
          scale : 1;
          description { state: "default" 0.0;
             min: POPUP_CONTENT_LISTSTYLE_CONTENT_DEFAULT_MIN_INC;
+            max: POPUP_CONTENT_LISTSTYLE_CONTENT_DEFAULT_MIN_INC;
             align: 0.5 0.5;
             fixed: 1 0;
             rel1 {
@@ -1376,6 +1379,7 @@ group { name: "elm/popup/content/liststyle";
          scale : 1;
          description { state: "default" 0.0;
             min: POPUP_CONTENT_LISTSTYLE_CONTENT_DEFAULT_MIN_INC;
+            max: POPUP_CONTENT_LISTSTYLE_CONTENT_DEFAULT_MIN_INC;
             align: 0.5 0.5;
             fixed: 1 0;
             rel1 {
@@ -1569,6 +1573,7 @@ group { name: "elm/popup/base/customstyle";
          scale : 1;
          description { state: "default" 0.0;
             min: POPUP_BASE_CUSTOMSTYLE_CONTENT_DEFAULT_MIN_INC;
+            max: POPUP_BASE_CUSTOMSTYLE_CONTENT_DEFAULT_MIN_INC;
             fixed: 1 0;
             rel1 {
                relative: 0.5 0.0;
@@ -2216,6 +2221,7 @@ group { name: "elm/popup/content/volumebarstyle";
          scale : 1;
          description { state: "default" 0.0;
             min: POPUP_CONTENT_VOLUMEBAR_STYLE_CONTENT_DEFAULT_MIN_INC;
+            max: POPUP_CONTENT_VOLUMEBAR_STYLE_CONTENT_DEFAULT_MIN_INC;
             align: 0.5 0.5;
             fixed: 1 0;
             rel1 {
@@ -2542,6 +2548,8 @@ group { name: "elm/popup/base/content_expand";
          type: SWALLOW;
          scale : 1;
          description { state: "default" 0.0;
+            min: POPUP_BASE_DEFAULT_CONTENT_DEFAULT_MIN_MAX_INC;
+            max: POPUP_BASE_DEFAULT_CONTENT_DEFAULT_MIN_MAX_INC;
             rel1.relative: 0.5 0.0;
             rel2.relative: 0.5 1.0;
          }
