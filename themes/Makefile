@@ -1,28 +1,33 @@
-PREFIX ?= /usr
+TARGET=tizen-hd.edj
+
+PREFIX?=/usr
 INSTALL=install -c
-themedir=$(DESTDIR)$(PREFIX)/share/elementary/themes
+EDC_DIR=$(DESTDIR)/opt/var/efl-theme-tizen-edc
+THEME_DIR=$(DESTDIR)$(PREFIX)/share/elementary/themes
+EDJE_FLAGS_VERBOSE_ =
+EDJE_FLAGS_VERBOSE_0 =
+EDJE_FLAGS_VERBOSE_1 = -v
+TMP_INC=tmp-inc.edc
+SRC=tizen.edc
 
-all: nbeat nbeat-blue nbeat-purple nbeat-green nbeat-black
-	echo $(escaped_prefix)
+all: $(TARGET)
 
-.SUFFIXES: .edc .edj
-.edc.edj:
-	cp ./inc/$(@:.edj=-inc.edc) ./inc/tmp-inc.edc
-	#edje_cc -v -id ./images/$(@:.edj=) -sd ./sounds -fd ../objects $(@:.edj=.edc) # commented -sd ./sounds
-	edje_cc -v -id ./images/$(@:.edj=) -fd ../objects $(@:.edj=.edc)
-	rm ./inc/tmp-inc.edc
-
-nbeat: nbeat.edj
-nbeat-blue: nbeat-blue.edj
-nbeat-purple: nbeat-purple.edj
-nbeat-green: nbeat-green.edj
-nbeat-black: nbeat-black.edj
+$(TARGET): clean
+	cp -f ./inc/$(@:.edj=-inc.edc) ./inc/$(TMP_INC)
+	edje_cc $(EDJE_FLAGS_$(V)) -id ./images/$(@:.edj=) -sd ./sounds -fd ../objects $(SRC) $@
 
 clean:
 	rm -f *.edj
-
-install:
-	mkdir -p $(themedir)
-	$(INSTALL) nbeat*.edj $(themedir)
+	rm -f ./inc/$(TMP_INC)
 
 distclean: clean
+
+install:
+	mkdir -p $(THEME_DIR)
+	$(INSTALL) $(TARGET) $(THEME_DIR)
+	mkdir -p $(EDC_DIR)
+	cp -r $(SRC) widgets $(EDC_DIR)
+
+uninstall:
+	rm -f $(THEME_DIR)/$(TARGET)
+	rm -f $(EDC_DIR)/$(SRC) && rm -rf $(EDC_DIR)/widgets
