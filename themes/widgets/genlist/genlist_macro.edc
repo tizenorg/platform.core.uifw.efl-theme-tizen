@@ -15,7 +15,13 @@
  * limitations under the License.
  */
 
-
+/* genlist multisense sample/tone listing */
+   sounds {
+      sample {
+         name: "button-pressed" RAW;
+         source: "button-pressed.wav";
+      }
+   }
 
 //****************************************************************************//
 // *******************************  Default size macro **********************//
