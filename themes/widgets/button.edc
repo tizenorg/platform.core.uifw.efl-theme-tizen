@@ -327,6 +327,11 @@
                  set_state(PART:"elm.text", "clicked", 0.0);
             }
          }
+         program { name: "button_double_click";
+            signal: "mouse,down,1,double";
+            source: "over2";
+            after: "button_click_anim";
+         }
          program { name: "button_unpress";
             action: SIGNAL_EMIT "elm,action,unpress" "";
          }
@@ -636,31 +641,31 @@
    group { name: "elm/button/base/style1/delete";
       inherit: "elm/button/base/style1";
       images {
-         image: "00_button_delete.png" COMP;
-         image: "00_button_delete_dim.png" COMP;
-         image: "00_button_delete_press.png" COMP;
+         image: "00_button_01_Delete.png" COMP;
+         image: "00_button_01_Delete_dim.png" COMP;
+         image: "00_button_01_Delete_press.png" COMP;
       }
       parts {
          part { name: "button_image";
             scale: 1;
             description { state: "default" 0.0;
                image {
-                  normal: "00_button_delete.png";
+                  normal: "00_button_01_Delete.png";
                   border: BUTTON_TEXT_STYLE1_BG_BORDER_INC;
                   border_scale: 1;
                }
             }
             description { state: "clicked" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_button_delete_press.png";
+               image.normal: "00_button_01_Delete_press.png";
             }
             description { state: "disabled" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_button_delete_dim.png";
+               image.normal: "00_button_01_Delete_dim.png";
             }
             description { state: "focused" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_button_delete_press.png";
+               image.normal: "00_button_01_Delete_press.png";
             }
          }
          part { name: "elm.text";
@@ -723,31 +728,31 @@
       alias: "elm/button/base/searchbar/default";
       inherit: "elm/button/base/style1";
       images {
-         image: "00_button_03.png" COMP;
-         image: "00_button_03_dim.png" COMP;
-         image: "00_button_03_press.png" COMP;
+         image: "00_button_01.png" COMP;
+         image: "00_button_01_dim.png" COMP;
+         image: "00_button_01_press.png" COMP;
       }
       parts {
          part { name: "button_image";
             scale: 1;
             description { state: "default" 0.0;
                image {
-                  normal: "00_button_03.png";
+                  normal: "00_button_01.png";
                   border: BUTTON_SEARCH_BUTTON_BG_BORDER_INC;
                   border_scale: 1;
                }
             }
             description { state: "clicked" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_button_03_press.png";
+               image.normal: "00_button_01_press.png";
             }
             description { state: "disabled" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_button_03_dim.png";
+               image.normal: "00_button_01_dim.png";
             }
             description { state: "focused" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_button_03_press.png";
+               image.normal: "00_button_01_press.png";
             }
          }
          part { name: "bg";
@@ -824,31 +829,31 @@
    group { name: "elm/button/base/search_button/send";
       inherit: "elm/button/base/style1";
       images {
-         image: "00_button_03_send.png" COMP;
-         image: "00_button_03_send_dim.png" COMP;
-         image: "00_button_03_send_press.png" COMP;
+         image: "00_button_01_send.png" COMP;
+         image: "00_button_01_send_dim.png" COMP;
+         image: "00_button_01_send_press.png" COMP;
       }
       parts {
          part { name: "button_image";
             scale: 1;
             description { state: "default" 0.0;
                image {
-                  normal: "00_button_03_send.png";
+                  normal: "00_button_01_send.png";
                   border: BUTTON_SEARCH_BUTTON_BG_BORDER_INC;
                   border_scale: 1;
                }
             }
             description { state: "clicked" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_button_03_send_press.png";
+               image.normal: "00_button_01_send_press.png";
             }
             description { state: "disabled" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_button_03_send_dim.png";
+               image.normal: "00_button_01_send_dim.png";
             }
             description { state: "focused" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_button_03_send_press.png";
+               image.normal: "00_button_01_send_press.png";
             }
          }
          part { name: "bg";
@@ -925,31 +930,31 @@
    group { name: "elm/button/base/search_button/cancel";
       inherit: "elm/button/base/style1";
       images {
-         image: "00_button_03_cancel.png" COMP;
-         image: "00_button_03_cancel_dim.png" COMP;
-         image: "00_button_03_cancel_press.png" COMP;
+         image: "00_button_01_Delete.png" COMP;
+         image: "00_button_01_Delete_dim.png" COMP;
+         image: "00_button_01_Delete_press.png" COMP;
       }
       parts {
          part { name: "button_image";
             scale: 1;
             description { state: "default" 0.0;
                image {
-                  normal: "00_button_03_cancel.png";
+                  normal: "00_button_01_Delete.png";
                   border: BUTTON_SEARCH_BUTTON_BG_BORDER_INC;
                   border_scale: 1;
                }
             }
             description { state: "clicked" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_button_03_cancel_press.png";
+               image.normal: "00_button_01_Delete_press.png";
             }
             description { state: "disabled" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_button_03_cancel_dim.png";
+               image.normal: "00_button_01_Delete_dim.png";
             }
             description { state: "focused" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_button_03_cancel_press.png";
+               image.normal: "00_button_01_Delete_press.png";
             }
          }
          part { name: "bg";
@@ -1027,9 +1032,9 @@
       alias: "elm/button/base/text_only/style2";
       alias: "elm/button/base/style2/multiline";
       images {
-         image: "00_button_03.png" COMP;
-         image: "00_button_03_press.png" COMP;
-         image: "00_button_03_dim.png" COMP;
+         image: "00_button_01.png" COMP;
+         image: "00_button_01_press.png" COMP;
+         image: "00_button_01_dim.png" COMP;
       }
       script {
          public button_state = BUTTON_STATE_ENABLED;
@@ -1318,6 +1323,11 @@
                if (!strcmp(st, "visible"))
                  set_state(PART:"elm.text", "clicked", 0.0);
             }
+         }
+         program { name: "button_double_click";
+            signal: "mouse,down,1,double";
+            source: "over2";
+            after: "button_click_anim";
          }
          program { name: "button_unpress";
             action: SIGNAL_EMIT "elm,action,unpress" "";
@@ -1736,6 +1746,11 @@
                  set_state(PART:"elm.text", "clicked", 0.0);
             }
          }
+         program { name: "button_double_click";
+            signal: "mouse,down,1,double";
+            source: "over2";
+            after: "button_click_anim";
+         }
          program { name: "button_unpress";
             action: SIGNAL_EMIT "elm,action,unpress" "";
          }
@@ -1892,9 +1907,9 @@
       inherit: "elm/button/base/sweep";
       alias: "elm/button/base/sweep/delete/multiline";
       images {
-         image: "00_button_delete_press.png" COMP;
-         image: "00_button_delete.png" COMP;
-         image: "00_button_delete_dim.png" COMP;
+         image: "00_button_01_Delete_press.png" COMP;
+         image: "00_button_01_Delete.png" COMP;
+         image: "00_button_01_Delete_dim.png" COMP;
       }
       styles{
          style { name: "btn_sweep_delete_multiline";
@@ -1910,22 +1925,22 @@
             description { state: "default" 0.0;
                min: BUTTON_SWEEP_BG_NORMAL_MIN_INC;
                image {
-                  normal: "00_button_delete.png";
+                  normal: "00_button_01_Delete.png";
                   border: BUTTON_SWEEP_BG_BORDER_INC;
                   border_scale: 1;
                }
             }
             description { state: "clicked" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_button_delete_press.png";
+               image.normal: "00_button_01_Delete_press.png";
             }
             description { state: "disabled" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_button_delete_dim.png";
+               image.normal: "00_button_01_Delete_dim.png";
             }
             description { state: "focused" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_button_delete_press.png";
+               image.normal: "00_button_01_Delete_press.png";
             }
          }
          part { name: "elm.text";
@@ -2215,6 +2230,11 @@
                  set_state(PART:"elm.text", "clicked", 0.0);
             }
          }
+         program { name: "button_double_click";
+            signal: "mouse,down,1,double";
+            source: "over2";
+            after: "button_click_anim";
+         }
          program { name: "button_unpress";
             action: SIGNAL_EMIT "elm,action,unpress" "";
          }
@@ -2415,13 +2435,13 @@
             type: RECT; \
             scale: 1; \
             description { state: "default" 0.0; \
-               color: 101 101 101 255; \
+               color: BUTTON_CIRCLE_STYLE_NORMAL_COLOR_INC; \
             } \
             description { state: "clicked" 0.0; \
-               color: 248 246 239 255; \
+               color: BUTTON_CIRCLE_STYLE_PRESSED_COLOR_INC; \
             } \
             description { state: "disabled" 0.0; \
-               color: 101 101 101 76; \
+               color: BUTTON_CIRCLE_STYLE_DISABLED_COLOR_INC; \
             } \
          } \
          part { name: "over1"; \
@@ -2433,6 +2453,7 @@
             } \
          } \
          part { name: "over2"; \
+            type: RECT; \
             repeat_events: 1; \
             description { state: "default" 0.0; \
                color: 0 0 0 0; \
@@ -2462,6 +2483,11 @@
             target: "button_image"; \
             target: "button_center_part"; \
             target: "icon_clipper"; \
+         } \
+         program { name: "button_double_click"; \
+            signal: "mouse,down,1,double"; \
+            source: "over1"; \
+            after: "button_click_anim"; \
          } \
          program { name: "button_unclick"; \
             signal: "mouse,up,1"; \
@@ -2571,9 +2597,9 @@
    group { name: "elm/button/base/"style_name; \
       inherit: "elm/button/base/info"; \
       images { \
-         image: "00_circle_delete_button.png" COMP; \
-         image: "00_circle_delete_button_press.png" COMP; \
-         image: "00_circle_delete_button_dim.png" COMP; \
+         image: "00_circle_button_delete.png" COMP; \
+         image: "00_circle_button_delete_press.png" COMP; \
+         image: "00_circle_button_delete_dim.png" COMP; \
          image: "00_button_warning.png" COMP; \
          image: "00_button_warning_press.png" COMP; \
       } \
@@ -2581,17 +2607,17 @@
          part { name: "button_image"; \
             scale: 1; \
             description { state: "default" 0.0; \
-               image.normal: "00_circle_delete_button.png"; \
+               image.normal: "00_circle_button_delete.png"; \
             } \
             description { \
                state: "clicked" 0.0; \
                inherit: "default" 0.0; \
-               image.normal: "00_circle_delete_button_press.png"; \
+               image.normal: "00_circle_button_delete_press.png"; \
             } \
             description { \
                state: "disabled" 0.0; \
                inherit: "default" 0.0; \
-               image.normal: "00_circle_delete_button_dim.png"; \
+               image.normal: "00_circle_button_delete_dim.png"; \
             } \
          } \
          part { name: "button_center_part"; \
@@ -2612,13 +2638,13 @@
             type: RECT; \
             scale: 1; \
             description { state: "default" 0.0; \
-               color: 248 246 239 255; \
+               color: BUTTON_CIRCLE_STYLE_WARNING_NORMAL_COLOR_INC; \
             } \
             description { state: "clicked" 0.0; \
-               color: 248 246 239 255; \
+               color: BUTTON_CIRCLE_STYLE_WARNING_PRESSED_COLOR_INC; \
             } \
             description { state: "disabled" 0.0; \
-               color: 248 246 239 76; \
+               color: BUTTON_CIRCLE_STYLE_WARNING_DISABLED_COLOR_INC; \
             } \
          } \
          part { name: "over1"; \
@@ -2682,13 +2708,13 @@
             type: RECT;
             scale: 1;
             description { state: "default" 0.0;
-               color: 101 101 101 255;
+               color: BUTTON_CIRCLE_STYLE_NORMAL_COLOR_INC;
             }
             description { state: "clicked" 0.0;
-               color: 248 246 239 255;
+               color: BUTTON_CIRCLE_STYLE_PRESSED_COLOR_INC;
             }
             description { state: "disabled" 0.0;
-               color: 101 101 101 76;
+               color: BUTTON_CIRCLE_STYLE_DISABLED_COLOR_INC;
             }
          }
          part { name: "over1";
@@ -2699,6 +2725,7 @@
             }
          }
          part { name: "over2";
+            type: RECT;
             repeat_events: 1;
             description { state: "default" 0.0;
                color: 0 0 0 0;
@@ -2727,6 +2754,11 @@
             action: STATE_SET "clicked" 0.0;
             target: "button_image";
             target: "icon_clipper";
+         }
+         program { name: "button_double_click";
+            signal: "mouse,down,1,double";
+            source: "over1";
+            after: "button_click_anim";
          }
          program { name: "touch_snd";
             signal: "mouse,clicked,1";
@@ -2829,13 +2861,13 @@
             scale: 1; \
             type: RECT; \
             description { state: "default" 0.0; \
-               color: 101 101 101 255; \
+               color: BUTTON_EDIT_STYLE_NORMAL_COLOR_INC; \
             } \
             description { state: "clicked" 0.0; \
-               color: 248 246 239 255; \
+               color: BUTTON_EDIT_STYLE_PRESSED_COLOR_INC; \
             } \
             description { state: "disabled" 0.0; \
-               color: 101 101 101 76; \
+               color: BUTTON_EDIT_STYLE_DISABLED_COLOR_INC; \
             } \
          } \
          part { name: "over1"; \
@@ -2848,6 +2880,7 @@
             } \
          } \
          part { name: "over2"; \
+            type: RECT; \
             repeat_events: 1; \
             description { state: "default" 0.0; \
                color: 0 0 0 0; \
@@ -2877,6 +2910,11 @@
             target: "button_image"; \
             target: "button_center_part"; \
             target: "icon_clipper"; \
+         } \
+         program { name: "button_double_click"; \
+            signal: "mouse,down,1,double"; \
+            source: "over1"; \
+            after: "button_click_anim"; \
          } \
          program { name: "button_unclick"; \
             signal: "mouse,up,1"; \
@@ -2944,9 +2982,9 @@
       alias: "elm/button/base/"style_name; \
       inherit: "elm/button/base/contacts/icon_plus"; \
       images { \
-         image: "00_circle_delete_button.png" COMP; \
-         image: "00_circle_delete_button_press.png" COMP; \
-         image: "00_circle_delete_button_dim.png" COMP; \
+         image: "00_circle_button_delete.png" COMP; \
+         image: "00_circle_button_delete_press.png" COMP; \
+         image: "00_circle_button_delete_dim.png" COMP; \
          image: "00_button_expand_minus.png" COMP; \
          image: "00_button_expand_minus_press.png" COMP; \
       } \
@@ -2954,15 +2992,15 @@
          part { name: "button_image"; \
             scale: 1; \
             description { state: "default" 0.0; \
-               image.normal: "00_circle_delete_button.png"; \
+               image.normal: "00_circle_button_delete.png"; \
             } \
             description { state: "clicked" 0.0; \
                inherit: "default" 0.0; \
-               image.normal: "00_circle_delete_button_press.png"; \
+               image.normal: "00_circle_button_delete_press.png"; \
             } \
             description { state: "disabled" 0.0; \
                inherit: "default" 0.0; \
-               image.normal: "00_circle_delete_button_dim.png"; \
+               image.normal: "00_circle_button_delete_dim.png"; \
             } \
          } \
          part { name: "button_center_part"; \
@@ -2985,13 +3023,13 @@
             scale: 1; \
             type: RECT; \
             description { state: "default" 0.0; \
-               color: 248 246 239 255; \
+               color: BUTTON_CIRCLE_STYLE_MINUS_NORMAL_COLOR_INC; \
             } \
             description { state: "clicked" 0.0; \
-               color: 248 246 239 255; \
+               color: BUTTON_CIRCLE_STYLE_MINUS_PRESSED_COLOR_INC; \
             } \
             description { state: "disabled" 0.0; \
-               color: 248 246 239 76; \
+               color: BUTTON_CIRCLE_STYLE_MINUS_DISABLED_COLOR_INC; \
             } \
          } \
          part { name: "over1"; \
@@ -3012,6 +3050,153 @@
 ///////////////////////////////////////////////////////////////////////////////////////
    BUTTON_EDIT_MINUS_STYLES("icon_minus/extended", BUTTON_EDIT_EXTENDED_MIN_WIDTH_INC, BUTTON_EDIT_EXTENDED_MIN_HEIGHT_INC)
 
+///////////////////////////////////////////////////////////////////////////////////////
+#define BUTTON_SCROLL_JUMPTO(style_name, image_normal)\
+   group { name: "elm/button/base/"style_name; \
+      images { \
+         image: "00_button_01.png" COMP; \
+         image: "00_button_01_press.png" COMP; \
+         image: "00_button_01_dim.png" COMP; \
+         image: image_normal COMP; \
+      }\
+      parts { \
+         part { name: "button_image";\
+            type: IMAGE; \
+            scale: 1; \
+            description { state: "default" 0.0; \
+               min: BUTTON_JUMP_STYLE_BG_MIN_INC; \
+               image { \
+                  normal: "00_button_01.png"; \
+                  border: BUTTON_DEFAULT_STYLE_BG_BORDER_INC; \
+                  border_scale: 1; \
+               } \
+            } \
+            description { state: "clicked" 0.0; \
+             inherit: "default" 0.0; \
+             image.normal: "00_button_01_press.png"; \
+            } \
+            description { state: "disabled" 0.0; \
+               inherit: "default" 0.0; \
+               image.normal: "00_button_01_dim.png"; \
+            } \
+         } \
+         part { name: "padding_left_top"; \
+            type: SPACER; \
+            scale: 1; \
+            description { state: "default" 0.0; \
+               align: 0.0 0.0; \
+               rel2.relative: 0.0 0.0; \
+               min: BUTTON_DEFAULT_STYLE_PADDING_MIN_INC; \
+               fixed: 1 1; \
+            } \
+         } \
+         part { name: "padding_right_bottom"; \
+            type: SPACER; \
+            scale: 1; \
+            description { state: "default" 0.0; \
+               align: 1.0 1.0; \
+               rel1.relative: 1.0 1.0; \
+               min: BUTTON_DEFAULT_STYLE_PADDING_MIN_INC; \
+               fixed: 1 1; \
+            } \
+         } \
+         part { name: "jump_image"; \
+            type: IMAGE; \
+            scale: 1; \
+            description { state: "default" 0.0; \
+               min: BUTTON_DEFAULT_STYLE_ICONONLY_ICON_MIN_INC; \
+               max: 45 45; \
+               rel1 { \
+                  relative: 1.0 0.0; \
+                  to_x: "padding_left_top"; \
+               } \
+               rel2 { \
+                  relative: 0.0 1.0; \
+                  to_x: "padding_right_bottom"; \
+               } \
+               image.normal: image_normal; \
+               aspect: 1.0 1.0; \
+               aspect_preference: VERTICAL; \
+               color: BUTTON_JUMP_ICON_NORMAL_COLOR_INC; \
+            } \
+            description { state: "clicked" 0.0; \
+               inherit: "default" 0.0; \
+               color: BUTTON_JUMP_ICON_PRESSED_COLOR_INC; \
+            } \
+            description { state: "disabled" 0.0; \
+               inherit: "default" 0.0; \
+               color: BUTTON_JUMP_ICON_DIM_COLOR_INC; \
+            } \
+         } \
+         part { name: "over1"; \
+            type: RECT; \
+            repeat_events: 1; \
+            ignore_flags: ON_HOLD; \
+            description { state: "default" 0.0; \
+               color: 0 0 0 0; \
+               rel1.relative: 0.0 0.0; \
+               rel2.relative: 1.0 1.0; \
+            } \
+         } \
+      } \
+      programs { \
+         program { name: "button_click"; \
+            signal: "mouse,down,1"; \
+            source: "over1"; \
+            action: SIGNAL_EMIT "elm,action,press" ""; \
+            after: "button_click_anim"; \
+         } \
+         program { name: "button_click_anim"; \
+            action: STATE_SET "clicked" 0.0; \
+            target: "button_image"; \
+            target: "jump_image"; \
+         } \
+         program { name: "button_double_click"; \
+            signal: "mouse,down,1,double"; \
+            source: "over1"; \
+            after: "button_click_anim"; \
+         } \
+         program { name: "button_unclick"; \
+            signal: "mouse,up,1"; \
+            source: "over1"; \
+            action: SIGNAL_EMIT "elm,action,unpress" ""; \
+            after: "button_unclick_anim"; \
+         } \
+         program { name: "button_unclick_anim"; \
+            action: STATE_SET "default" 0.0; \
+            target: "button_image"; \
+            target: "jump_image"; \
+         } \
+         program { name: "touch_snd"; \
+            signal: "mouse,clicked,1"; \
+            source: "over1"; \
+            action: PLAY_SAMPLE "touch_sound" 1.0; \
+            after: button_unclick3; \
+         } \
+         program { name: "button_unclick3"; \
+            action: SIGNAL_EMIT "elm,action,click" ""; \
+         } \
+         program { name: "disable"; \
+            signal: "elm,state,disabled"; \
+            source: "elm"; \
+            action: STATE_SET "disabled" 0.0; \
+            target: "button_image"; \
+            target: "jump_image"; \
+         } \
+         program { name: "enable"; \
+            signal: "elm,state,enabled"; \
+            source: "elm"; \
+            action: STATE_SET "default" 0.0; \
+            target: "button_image"; \
+            target: "jump_image"; \
+         } \
+      } \
+   }
+
+////////////////////////////////////////////////////////////////////////
+BUTTON_SCROLL_JUMPTO("jumpto_top", "00_icon_jump.png")
+////////////////////////////////////////////////////////////////////////
+BUTTON_SCROLL_JUMPTO("jumpto_left", "00_icon_jump_left.png")
 
 ////////////////////////////////////////////////////////////////////////
    group { name: "elm/button/base/default";
@@ -3137,7 +3322,7 @@
             mouse_events: 0;
             scale: 1;
             clip_to: "disclip";
-            effect: FAR_SHADOW BOTTOM;
+            effect: SHADOW BOTTOM;
             description { state: "default" 0.0;
                visible: 0;
                align: 0.0 0.5;
@@ -3244,6 +3429,11 @@
                if (!strcmp(st, "visible"))
                  set_state(PART:"elm.text", "clicked", 0.0);
             }
+         }
+         program { name: "button_double_click";
+            signal: "mouse,down,1,double";
+            source: "over2";
+            after: "button_click_anim";
          }
          program { name: "button_unpress";
             action: SIGNAL_EMIT "elm,action,unpress" "";
@@ -3567,13 +3757,13 @@
             type: RECT; \
             scale: 1; \
             description { state: "default" 0.0; \
-               color: 50 50 50 255; \
+               color: BUTTON_TEXT_COLORSELECTOR_NORMAL_COLOR_INC; \
             } \
             description { state: "clicked" 0.0; \
-               color: 248 246 239 255; \
+               color: BUTTON_TEXT_COLORSELECTOR_PRESSED_COLOR_INC; \
             } \
             description { state: "disabled" 0.0; \
-               color: 50 50 50 76; \
+               color: BUTTON_TEXT_COLORSELECTOR_DISABLED_COLOR_INC; \
             } \
          } \
          part { name: "over1"; \
@@ -3584,6 +3774,7 @@
             } \
          } \
          part { name: "over2"; \
+            type: RECT; \
             repeat_events: 1; \
             description { state: "default" 0.0; \
                color: 0 0 0 0; \
@@ -3613,6 +3804,11 @@
             target: "button_image"; \
             target: "button_center_part"; \
             target: ""icon_clipper""; \
+         } \
+         program { name: "button_double_click"; \
+            signal: "mouse,down,1,double"; \
+            source: "over1"; \
+            after: "button_click_anim"; \
          } \
          program { name: "button_unclick"; \
             signal: "mouse,up,1"; \
@@ -3774,20 +3970,25 @@
             }
          }
          part { name: "over1";
+            type: RECT;
             mouse_events: 0;
             description { state: "default" 0.0;
                rel2.relative: 1.0 0.5;
+               color: 0 0 0 0;
             }
          }
          part { name: "over2";
+            type: RECT;
             repeat_events: 1;
             ignore_flags: ON_HOLD;
             description { state: "default" 0.0;
                rel1.to: "button_image";
                rel2.to: "button_image";
+               color: 0 0 0 0;
             }
          }
          part { name: "over3";
+            type: RECT;
             repeat_events: 1;
             description { state: "default" 0.0;
                rel1.to: "button_image";
@@ -3820,6 +4021,11 @@
             action: STATE_SET "clicked" 0.0;
             target: "button_image";
             target: "elm.text";
+         }
+         program { name: "button_double_click";
+            signal: "mouse,down,1,double";
+            source: "over2";
+            after: "button_click_anim";
          }
          program { name: "button_unpress";
             action: SIGNAL_EMIT "elm,action,unpress" "";
@@ -3930,8 +4136,6 @@
       alias: "elm/button/base/naviframe/end_btn/default";
       images {
          image: "00_icon_Back.png" COMP;
-         image: "00_icon_Back_press.png" COMP;
-         image: "00_icon_Back_dim.png" COMP;
       }
       parts {
          part { name: "button_image";
@@ -3942,33 +4146,54 @@
                max: BUTTON_NAVIFRAME_BACK_BUTTON_BG_MIN_MAX_INC;
                visible: 0;
             }
-            description { state: "clicked" 0.0;
-               inherit: "default" 0.0;
+            description { state: "landscape" 0.0;
+               min: BUTTON_NAVIFRAME_LANDSCAPE_BACK_BUTTON_BG_MIN_MAX_INC;
+               max: BUTTON_NAVIFRAME_LANDSCAPE_BACK_BUTTON_BG_MIN_MAX_INC;
+               visible: 0;
             }
-            description { state: "disabled" 0.0;
-               inherit: "default" 0.0;
-            }
-            description { state: "focused" 0.0;
-               inherit: "default" 0.0;
+         }
+         part { name: "bottom_padding";
+            type: RECT;
+            scale: 1;
+            mouse_events: 0;
+            description { state: "default" 0.0;
+               min: BUTTON_NAVIFRAME_BACK_BUTTON_BOTTOM_PADDING_INC;
+               fixed: 0 1;
+               align: 0.0 1.0;
+               rel1 { relative: 0.0 1.0; to: "button_image"; }
+               rel2.to: "button_image";
+               visible: 0;
             }
          }
          part { name: "back_button";
             scale: 1;
             mouse_events: 0;
+            clip_to: "back_button.clipper";
             description { state: "default" 0.0;
                min: BUTTON_NAVIFRAME_BACK_BUTTON_MIN_MAX_INC;
                max: BUTTON_NAVIFRAME_BACK_BUTTON_MIN_MAX_INC;
+               fixed: 1 1;
                rel1.to: "button_image";
                rel2.to: "button_image";
                image.normal: "00_icon_Back.png";
             }
-            description { state: "clicked" 0.0;
+            description { state: "title_button" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_icon_Back_press.png";
+               align: 0.5 1.0;
+               rel1 { relative: 0.0 1.0; to: "bottom_padding"; }
+               rel2.to: "bottom_padding";
+            }
+         }
+         part { name: "back_button.clipper";
+            type: RECT;
+            description { state: "default" 0.0;
+               color: BUTTON_NAVIFRAME_TITLE_ICON_CLIPPER_DEFAULT_COLOR_INC;
+            }
+            description { state: "clicked" 0.0;
+               color: BUTTON_NAVIFRAME_TITLE_ICON_CLIPPER_PRESSED_COLOR_INC;
             }
             description { state: "disabled" 0.0;
-               inherit: "default" 0.0;
-               image.normal: "00_icon_Back_dim.png";
+               color: BUTTON_NAVIFRAME_TITLE_ICON_CLIPPER_DISABLED_COLOR_INC;
             }
          }
          part { name: "over2";
@@ -4005,9 +4230,14 @@
             after: "button_click_anim";
          }
          program { name: "button_click_anim";
-            action: STATE_SET "clicked" 0.0;
-            target: "button_image";
-            target: "back_button";
+            script {
+               set_state(PART:"back_button.clipper", "clicked", 0.0);
+            }
+         }
+         program { name: "button_double_click";
+            signal: "mouse,down,1,double";
+            source: "over2";
+            after: "button_click_anim";
          }
          program { name: "button_unclick";
             signal: "mouse,up,1";
@@ -4016,9 +4246,9 @@
             after: "button_unclick_anim";
          }
          program { name: "button_unclick_anim";
-            action: STATE_SET "default" 0.0;
-            target: "button_image";
-            target: "back_button";
+            script {
+               set_state(PART:"back_button.clipper", "default", 0.0);
+            }
          }
          program { name: "touch_snd";
             signal: "mouse,clicked,1";
@@ -4032,18 +4262,48 @@
          program { name: "disable";
             signal: "elm,state,disabled";
             source: "elm";
-            action: STATE_SET "disabled" 0.0;
-            target: "button_image";
-            target: "disabler";
-            target: "back_button";
+            script {
+               set_state(PART:"back_button.clipper", "disabled", 0.0);
+            }
          }
          program { name: "enable";
             signal: "elm,state,enabled";
             source: "elm";
+            script {
+               set_state(PART:"back_button.clipper", "default", 0.0);
+            }
+         }
+         program { name: "change_to_landscape";
+            signal: "elm,state,landscape";
+            source: "elm";
+            action: STATE_SET "landscape" 0.0;
+            target: "button_image";
+         }
+         program { name: "change_to_portrait";
+            signal: "elm,state,portrait";
+            source: "elm";
             action: STATE_SET "default" 0.0;
             target: "button_image";
-            target: "disabler";
-            target: "back_button";
+         }
+         program { name: "landscape_mode";
+            source: "elm";
+            signal: "elm,state,orient,90";
+            action: SIGNAL_EMIT "elm,state,landscape" "elm";
+         }
+         program { name: "landscape_mode2";
+            source: "elm";
+            signal: "elm,state,orient,270";
+            action: SIGNAL_EMIT "elm,state,landscape" "elm";
+         }
+         program { name: "portrait_mode";
+            source: "elm";
+            signal: "elm,state,orient,0";
+            action: SIGNAL_EMIT "elm,state,portrait" "elm";
+         }
+         program { name: "portrait_mode2";
+            source: "elm";
+            signal: "elm,state,orient,180";
+            action: SIGNAL_EMIT "elm,state,portrait" "elm";
          }
       }
    }
@@ -4256,6 +4516,11 @@
             action: STATE_SET "clicked" 0.0;
             target: "button_image";
             target: "elm.text";
+         }
+         program { name: "button_double_click";
+            signal: "mouse,down,1,double";
+            source: "over2";
+            after: "button_click_anim";
          }
          program { name: "button_unpress";
             action: SIGNAL_EMIT "elm,action,unpress" "";
@@ -4535,6 +4800,385 @@
    }
 
 ////////////////////////////////////////////////////////////////////
+   group { name: "elm/button/base/toolbar/segmentedcontrol";
+      images {
+         image: "00_toolbar_button.png" COMP;
+         image: "00_toolbar_button_press.png" COMP;
+         image: "00_toolbar_button_dim.png" COMP;
+         image: "00_button_icon_arrow.png" COMP;
+         image: "00_button_icon_arrow_press.png" COMP;
+      }
+      styles{
+         style { name: "btn_toolbar_segmentedcontrol";
+            base: "font=Tizen:style=Bold font_size="BUTTON_TOOLBAR_SEGMENTEDCONTROL_TEXT_FONT_SIZE_INC" align=center color=#ffffff ellipsis=1.0 wrap=none text_class=tizen";
+            tag: "br" "\n";
+            tag: "ps" "ps";
+            tag: "tab" "\t";
+         }
+      }
+      script {
+         public button_state = BUTTON_STATE_ENABLED;
+      }
+      parts {
+         part { name: "button_image";
+            scale: 1;
+            description { state: "default" 0.0;
+               min: BUTTON_TOOLBAR_SEGMENTEDCONTROL_BG_NORMAL_MIN_INC;
+               max: BUTTON_TOOLBAR_SEGMENTEDCONTROL_BG_NORMAL_MAX_INC;
+               fixed: 1 1;
+               rel1.to: "padding_text_left_top";
+               rel2.to: "padding_text_right_bottom";
+               image {
+                  normal: "00_toolbar_button.png";
+                  border: BUTTON_TOOLBAR_SEGMENTEDCONTROL_BG_BORDER_INC;
+                  border_scale: 1;
+               }
+            }
+            description { state: "clicked" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "00_toolbar_button_press.png";
+            }
+            description { state: "disabled" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "00_toolbar_button_dim.png";
+            }
+            description { state: "focused" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "00_toolbar_button_press.png";
+            }
+         }
+         part { name: "padding_left_top";
+            type: RECT;
+            scale: 1;
+            mouse_events: 0;
+            description { state: "default" 0.0;
+               visible: 0;
+               align: 0.0 0.0;
+               rel2.relative: 0.0 0.0;
+               min: BUTTON_TOOLBAR_SEGMENTEDCONTROL_LEFT_PADDING_MIN_INC;
+               fixed: 1 1;
+            }
+         }
+         part { name: "padding_right_bottom";
+            type: RECT;
+            scale: 1;
+            mouse_events: 0;
+            description { state: "default" 0.0;
+               align: 1.0 1.0;
+               rel1.relative: 1.0 1.0;
+               min: BUTTON_TOOLBAR_SEGMENTEDCONTROL_RIGHT_PADDING_MIN_INC;
+               fixed: 1 1;
+               visible: 0;
+            }
+         }
+         part { name: "padding_text_left_top";
+            type: RECT;
+            scale: 1;
+            mouse_events: 0;
+            description { state: "default" 0.0;
+               visible: 0;
+               min: BUTTON_TOOLBAR_SEGMENTEDCONTROL_LEFT_PADDING_MIN_INC;
+               fixed: 1 1;
+               rel1.to: "elm.text";
+               rel2 {
+                  relative: 0.0 0.0;
+                  to: "elm.text";
+               }
+               align: 1.0 0.0;
+            }
+         }
+         part { name: "padding_text_right_bottom";
+            type: RECT;
+            scale: 1;
+            mouse_events: 0;
+            description { state: "default" 0.0;
+               min: BUTTON_TOOLBAR_SEGMENTEDCONTROL_RIGHT_PADDING_MIN_INC;
+               fixed: 1 1;
+               visible: 0;
+               rel1 {
+                  relative: 1.0 1.0;
+                  to_x: "icon";
+                  to_y: "elm.text";
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  to_x: "icon";
+                  to_y: "elm.text";
+               }
+               align: 0.0 0.0;
+            }
+         }
+         part { name: "elm.text";
+            type: TEXTBLOCK;
+            clip_to: "disclip";
+            mouse_events: 0;
+            effect: FAR_SHADOW BOTTOM;
+            scale: 1;
+            description { state: "default" 0.0;
+               visible: 0;
+               fixed: 1 1;
+               min: BUTTON_TOOLBAR_SEGMENTEDCONTROL_TEXTBLOCK_MIN_INC;
+               rel1 {
+                  relative: 1.0 1.0;
+                  to: "padding_left_top";
+               }
+               rel2 {
+                  relative: 0.0 0.0;
+                  to: "padding_right_bottom";
+               }
+               color: BUTTON_NAVIFRAME_TITLE_TEXT_NORMAL_COLOR_INC;
+               color2: BUTTON_NAVIFRAME_TEXT_SHADOW_NORMAL_COLOR_INC;
+               text {
+                  min: 0 1;
+                  max: 1 1;
+                  style: "btn_toolbar_segmentedcontrol";
+               }
+            }
+            description { state: "visible" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+            description { state: "clicked" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+               color: BUTTON_NAVIFRAME_TITLE_TEXT_PRESSED_COLOR_INC;
+            }
+            description { state: "disabled" 0.0;
+               inherit: "default" 0.0;
+            }
+            description { state: "disabled_visible" 0.0;
+               inherit: "default" 0.0;
+               color: BUTTON_NAVIFRAME_TITLE_TEXT_DISABLED_COLOR_INC;
+               color2: BUTTON_NAVIFRAME_TEXT_SHADOW_NORMAL_COLOR_INC;
+               visible: 1;
+            }
+            description { state: "focused" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+               color: BUTTON_NAVIFRAME_TITLE_TEXT_FOCUSED_COLOR_INC;
+            }
+         }
+         part { name: "icon_padding";
+            scale: 1;
+            type: RECT;
+            description { state: "default" 0.0;
+               min: 6 5;
+               fixed: 1 1;
+               align: 0.0 0.5;
+               rel1 {
+                  relative: 1.0 0.0;
+                  to: "elm.text";
+               }
+               visible: 0;
+               rel2.to: "elm.text";
+            }
+         }
+         part { name: "icon";
+            scale: 1;
+            clip_to: "icon_clipper";
+            description { state: "default" 0.0;
+               min: BUTTON_TOOLBAR_SEGMENTEDCONTROL_ICON_MIN_INC;
+               max: BUTTON_TOOLBAR_SEGMENTEDCONTROL_ICON_MIN_INC;
+               fixed: 1 1;
+               align: 0.0 0.5;
+               rel1 {
+                  relative: 1.0 0.0;
+                  to_x: "icon_padding";
+                  to_y: "elm.text";
+                  offset: 0 6;
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  to_x: "icon_padding";
+                  to_y: "elm.text";
+               }
+               image.normal: "00_button_icon_arrow.png";
+            }
+            description { state: "clicked" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "00_button_icon_arrow_press.png";
+            }
+         }
+         part { name: "icon_clipper";
+            type: RECT;
+            description { state: "default" 0.0;
+               color: BUTTON_TOOLBAR_SEGMENTEDCONTROL_ICON_NORMAL_COLOR_INC;
+            }
+            description { state: "clicked" 0.0;
+               inherit: "default" 0.0;
+               color: BUTTON_TOOLBAR_SEGMENTEDCONTROL_ICON_PRESSED_COLOR_INC;
+            }
+         }
+         part { name: "disclip";
+            type: RECT;
+            description { state: "default" 0.0;
+               color: BUTTON_DISCLIP_NORMAL_COLOR_INC;
+            }
+            description { state: "disabled" 0.0;
+               inherit: "default" 0.0;
+               color: BUTTON_DISCLIP_DISABLED_COLOR_INC;
+            }
+         }
+         part { name: "over2";
+            type: RECT;
+            repeat_events: 1;
+            ignore_flags: ON_HOLD;
+            description { state: "default" 0.0;
+               rel1.to: "button_image";
+               rel2.to: "button_image";
+               color: 0 0 0 0;
+            }
+         }
+         part { name: "over3";
+            type: RECT;
+            repeat_events: 1;
+            description { state: "default" 0.0;
+               rel1.to: "button_image";
+               rel2.to: "button_image";
+               color: 0 0 0 0;
+            }
+         }
+         part { name: "disabler";
+            type: RECT;
+            description { state: "default" 0.0;
+               rel1.to: "button_image";
+               rel2.to: "button_image";
+               color: 0 0 0 0;
+               visible: 0;
+            }
+            description { state: "disabled" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
+      }
+      programs {
+         program { name: "button_click";
+            signal: "mouse,down,1";
+            source: "over2";
+            action: SIGNAL_EMIT "elm,action,press" "";
+            after: "button_click_anim";
+         }
+         program { name: "button_click_anim";
+            action: STATE_SET "clicked" 0.0;
+            target: "button_image";
+            target: "elm.text";
+            target: "icon";
+            target: "icon_clipper";
+         }
+         program { name: "button_double_click";
+            signal: "mouse,down,1,double";
+            source: "over2";
+            after: "button_click_anim";
+         }
+         program { name: "button_unpress";
+            action: SIGNAL_EMIT "elm,action,unpress" "";
+         }
+         program { name: "button_mouseout_clicked";
+            signal: "mouse,up,1";
+            source: "over3";
+            script {
+               new st[31];
+               new Float:vl;
+               get_state(PART:"elm.text", st, 30, vl);
+               if (!strcmp(st, "clicked") || !strcmp(st, "focused"))
+                 {
+                    emit("elm,action,default,text,set", "");
+                    set_state(PART:"elm.text", "visible", 0.0);
+                 }
+               if (get_int(button_state) != BUTTON_STATE_DISABLED)
+                 set_state(PART:"button_image", "default", 0.0);
+               set_state(PART:"icon", "default", 0.0);
+               set_state(PART:"icon_clipper", "default", 0.0);
+            }
+            after: button_unpress;
+         }
+         program { name: "touch_snd";
+            signal: "mouse,clicked,1";
+            source: "over2";
+            action: PLAY_SAMPLE "touch_sound" 1.0;
+            after: button_unclick3;
+         }
+         program { name: "button_unclick3";
+            action: SIGNAL_EMIT "elm,action,click" "";
+         }
+         program { name: "text_show";
+            signal: "elm,state,text,visible";
+            source: "elm";
+            script {
+               if (get_int(button_state) != BUTTON_STATE_DISABLED)
+                 set_state(PART:"elm.text", "visible", 0.0);
+               else
+                 set_state(PART:"elm.text", "disabled_visible", 0.0);
+            }
+         }
+         program { name: "text_hide";
+            signal: "elm,state,text,hidden";
+            source: "elm";
+            action: STATE_SET "default" 0.0;
+            target: "elm.text";
+         }
+         program { name: "disable";
+            signal: "elm,state,disabled";
+            source: "elm";
+            action: STATE_SET "disabled" 0.0;
+            target: "button_image";
+            target: "disclip";
+            target: "disabler";
+            after: "disable_text";
+         }
+         program { name: "disable_text";
+            script {
+               new st[31];
+               new Float:vl;
+               get_state(PART:"elm.text", st, 30, vl);
+               if (!strcmp(st, "visible"))
+                 set_state(PART:"elm.text", "disabled_visible", 0.0);
+               else
+                 set_state(PART:"elm.text", "disabled", 0.0);
+               set_int(button_state, BUTTON_STATE_DISABLED);
+            }
+         }
+         program { name: "enable";
+            signal: "elm,state,enabled";
+            source: "elm";
+            action: STATE_SET "default" 0.0;
+            target: "button_image";
+            target: "disclip";
+            target: "disabler";
+            after: "enable_text";
+         }
+         program { name: "enable_text";
+            script {
+               new st[31];
+               new Float:vl;
+               get_state(PART:"elm.text", st, 30, vl);
+               if (!strcmp(st, "disabled_visible"))
+                 set_state(PART:"elm.text", "visible", 0.0);
+               else
+                 set_state(PART:"elm.text", "default", 0.0);
+               set_int(button_state, BUTTON_STATE_ENABLED);
+            }
+         }
+         program { name: "focused";
+            //signal: "elm,action,focus";
+            //source: "elm";
+            action: STATE_SET "focused" 0.0;
+            target: "button_image";
+            target: "elm.text";
+         }
+         program { name: "unfocused";
+            //signal: "elm,action,unfocus";
+            //source: "elm";
+            action: STATE_SET "default" 0.0;
+            target: "button_image";
+            action: STATE_SET "visible" 0.0;
+            target: "elm.text";
+         }
+      }
+   }
+
+////////////////////////////////////////////////////////////////////
    group { name: "elm/button/base/naviframe/title_icon";
       parts {
          part { name: "button_image";
@@ -4545,11 +5189,10 @@
                min: BUTTON_NAVIFRAME_TITLE_ICON_BG_MIN_MAX_INC;
                max: BUTTON_NAVIFRAME_TITLE_ICON_BG_MIN_MAX_INC;
             }
-            description { state: "clicked" 0.0;
-               inherit: "default" 0.0;
-            }
-            description { state: "disabled" 0.0;
-               inherit: "default" 0.0;
+            description { state: "landscape" 0.0;
+               visible: 0;
+               min: BUTTON_NAVIFRAME_LANDSCAPE_TITLE_ICON_BG_MIN_MAX_INC;
+               max: BUTTON_NAVIFRAME_LANDSCAPE_TITLE_ICON_BG_MIN_MAX_INC;
             }
          }
          part { name: "top_padding";
@@ -4562,6 +5205,10 @@
                align: 0 0;
                rel1 { relative: 0.0 0.0; to: "button_image"; }
                rel2 { relative: 1.0 0.0; to: "button_image"; }
+            }
+            description { state: "landscape" 0.0;
+               inherit: "default" 0.0;
+               min: BUTTON_NAVIFRAME_LANDSCAPE_TITLE_ICON_TOP_PADDING_INC;
             }
          }
          part { name: "elm.swallow.content";
@@ -4651,10 +5298,15 @@
             after: "button_click_anim";
          }
          program { name: "button_click_anim";
-            action: STATE_SET "clicked" 0.0;
-            target: "button_image";
-            target: "elm.icon.clipper";
-            target: "elm.icon.proxy.clipper";
+            script {
+               set_state(PART:"elm.icon.clipper", "clicked", 0.0);
+               set_state(PART:"elm.icon.proxy.clipper", "clicked", 0.0);
+            }
+         }
+         program { name: "button_double_click";
+            signal: "mouse,down,1,double";
+            source: "over2";
+            after: "button_click_anim";
          }
          program { name: "button_unpress";
             action: SIGNAL_EMIT "elm,action,unpress" "";
@@ -4691,21 +5343,55 @@
          program { name: "disable";
             signal: "elm,state,disabled";
             source: "elm";
-            action: STATE_SET "disabled" 0.0;
-            target: "button_image";
-            target: "disabler";
-            target: "elm.icon.clipper";
-            target: "elm.icon.proxy.clipper";
+            script {
+               set_state(PART:"disabler", "disabled", 0.0);
+               set_state(PART:"elm.icon.clipper", "disabled", 0.0);
+               set_state(PART:"elm.icon.proxy.clipper", "disabled", 0.0);
+            }
          }
          program { name: "enable";
             signal: "elm,state,enabled";
             source: "elm";
+            script {
+               set_state(PART:"disabler", "default", 0.0);
+               set_state(PART:"elm.icon.clipper", "default", 0.0);
+               set_state(PART:"elm.icon.proxy.clipper", "default", 0.0);
+            }
+         }
+         program { name: "change_to_landscape";
+            signal: "elm,state,landscape";
+            source: "elm";
+            action: STATE_SET "landscape" 0.0;
+            target: "button_image";
+            target: "top_padding";
+         }
+         program { name: "change_to_portrait";
+            signal: "elm,state,portrait";
+            source: "elm";
             action: STATE_SET "default" 0.0;
             target: "button_image";
-            target: "elm.icon.clipper";
-            target: "elm.icon.proxy.clipper";
-            target: "disabler";
+            target: "top_padding";
          }
+/*         program { name: "landscape_mode";
+            source: "elm";
+            signal: "elm,state,orient,90";
+            action: SIGNAL_EMIT "elm,state,landscape" "elm";
+         }
+         program { name: "landscape_mode2";
+            source: "elm";
+            signal: "elm,state,orient,270";
+            action: SIGNAL_EMIT "elm,state,landscape" "elm";
+         }
+         program { name: "portrait_mode";
+            source: "elm";
+            signal: "elm,state,orient,0";
+            action: SIGNAL_EMIT "elm,state,portrait" "elm";
+         }
+         program { name: "portrait_mode2";
+            source: "elm";
+            signal: "elm,state,orient,180";
+            action: SIGNAL_EMIT "elm,state,portrait" "elm";
+         } */
       }
    }
 
@@ -4713,8 +5399,6 @@
    group { name: "elm/button/base/naviframe/more/default";
       images {
          image: "00_icon_more.png" COMP;
-         image: "00_icon_more_press.png" COMP;
-         image: "00_icon_more_dim.png" COMP;
       }
       parts {
          part { name: "button_image";
@@ -4725,33 +5409,54 @@
                max: BUTTON_NAVIFRAME_MORE_BG_MIN_MAX_INC;
                visible: 0;
             }
-            description { state: "clicked" 0.0;
-               inherit: "default" 0.0;
+            description { state: "landscape" 0.0;
+               min: BUTTON_NAVIFRAME_LANDSCAPE_MORE_BG_MIN_MAX_INC;
+               max: BUTTON_NAVIFRAME_LANDSCAPE_MORE_BG_MIN_MAX_INC;
+               visible: 0;
             }
-            description { state: "disabled" 0.0;
-               inherit: "default" 0.0;
-            }
-            description { state: "focused" 0.0;
-               inherit: "default" 0.0;
+         }
+         part { name: "bottom_padding";
+            type: RECT;
+            scale: 1;
+            mouse_events: 0;
+            description { state: "default" 0.0;
+               min: BUTTON_NAVIFRAME_MORE_BOTTOM_PADDING_INC;
+               fixed: 0 1;
+               align: 0.0 1.0;
+               rel1 { relative: 0.0 1.0; to: "button_image"; }
+               rel2.to: "button_image";
+               visible: 0;
             }
          }
          part { name: "more_image";
             scale: 1;
             mouse_events: 0;
+            clip_to: "more_image.clipper";
             description { state: "default" 0.0;
                min: BUTTON_NAVIFRAME_MORE_DEFAULT_IMAGE_MIN_MAX_INC;
                max: BUTTON_NAVIFRAME_MORE_DEFAULT_IMAGE_MIN_MAX_INC;
+               fixed: 1 1;
                rel1.to: "button_image";
                rel2.to: "button_image";
                image.normal: "00_icon_more.png";
             }
-            description { state: "clicked" 0.0;
+            description { state: "title_button" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_icon_more_press.png";
+               align: 0.5 1.0;
+               rel1 { relative: 0.0 1.0; to: "bottom_padding"; }
+               rel2.to: "bottom_padding";
+            }
+         }
+         part { name: "more_image.clipper";
+            type: RECT;
+            description { state: "default" 0.0;
+               color: BUTTON_NAVIFRAME_TITLE_ICON_CLIPPER_DEFAULT_COLOR_INC;
+            }
+            description { state: "clicked" 0.0;
+               color: BUTTON_NAVIFRAME_TITLE_ICON_CLIPPER_PRESSED_COLOR_INC;
             }
             description { state: "disabled" 0.0;
-               inherit: "default" 0.0;
-               image.normal: "00_icon_more_dim.png";
+               color: BUTTON_NAVIFRAME_TITLE_ICON_CLIPPER_DISABLED_COLOR_INC;
             }
          }
          part { name: "elm.text.badge.bg";
@@ -4882,9 +5587,14 @@
             after: "button_click_anim";
          }
          program { name: "button_click_anim";
-            action: STATE_SET "clicked" 0.0;
-            target: "button_image";
-            target: "more_image";
+            script {
+               set_state(PART:"more_image.clipper", "clicked", 0.0);
+            }
+         }
+         program { name: "button_double_click";
+            signal: "mouse,down,1,double";
+            source: "over2";
+            after: "button_click_anim";
          }
          program { name: "button_unclick";
             signal: "mouse,up,1";
@@ -4893,9 +5603,9 @@
             after: "button_unclick_anim";
          }
          program { name: "button_unclick_anim";
-            action: STATE_SET "default" 0.0;
-            target: "button_image";
-            target: "more_image";
+            script {
+               set_state(PART:"more_image.clipper", "default", 0.0);
+            }
          }
          program { name: "touch_snd";
             signal: "mouse,clicked,1";
@@ -4923,18 +5633,50 @@
          program { name: "disable";
             signal: "elm,state,disabled";
             source: "elm";
-            action: STATE_SET "disabled" 0.0;
-            target: "disabler";
-            target: "button_image";
-            target: "more_image";
+            script {
+               set_state(PART:"disabler", "disabled", 0.0);
+               set_state(PART:"more_image.clipper", "disabled", 0.0);
+            }
          }
          program { name: "enable";
             signal: "elm,state,enabled";
             source: "elm";
-            action: STATE_SET "default" 0.0;
-            target: "disabler";
+            script {
+               set_state(PART:"disabler", "default", 0.0);
+               set_state(PART:"more_image.clipper", "default", 0.0);
+            }
+         }
+         program { name: "change_to_landscape";
+            signal: "elm,state,landscape";
+            source: "elm";
+            action: STATE_SET "landscape" 0.0;
             target: "button_image";
-            target: "more_image";
+         }
+         program { name: "change_to_portrait";
+            signal: "elm,state,portrait";
+            source: "elm";
+            action: STATE_SET "default" 0.0;
+            target: "button_image";
+         }
+         program { name: "landscape_mode";
+            source: "elm";
+            signal: "elm,state,orient,90";
+            action: SIGNAL_EMIT "elm,state,landscape" "elm";
+         }
+         program { name: "landscape_mode2";
+            source: "elm";
+            signal: "elm,state,orient,270";
+            action: SIGNAL_EMIT "elm,state,landscape" "elm";
+         }
+         program { name: "portrait_mode";
+            source: "elm";
+            signal: "elm,state,orient,0";
+            action: SIGNAL_EMIT "elm,state,portrait" "elm";
+         }
+         program { name: "portrait_mode2";
+            source: "elm";
+            signal: "elm,state,orient,180";
+            action: SIGNAL_EMIT "elm,state,portrait" "elm";
          }
       }
    }
@@ -5233,6 +5975,11 @@
                  set_state(PART:"elm.text", "clicked", 0.0);
             }
          }
+         program { name: "button_double_click";
+            signal: "mouse,down,1,double";
+            source: "over2";
+            after: "button_click_anim";
+         }
          program { name: "button_unpress";
             action: SIGNAL_EMIT "elm,action,unpress" "";
          }
@@ -5398,9 +6145,9 @@
    group { name: "elm/button/base/expandable_number";
       alias: "elm/button/base/text_only/expandable_number";
       images {
-         image: "00_button_02.png" COMP;
-         image: "00_button_02_press.png" COMP;
-         image: "00_button_02_dim.png" COMP;
+         image: "00_button_01.png" COMP;
+         image: "00_button_01_press.png" COMP;
+         image: "00_button_01_dim.png" COMP;
          image: "00_arrow_expand.png" COMP;
       }
       script {
@@ -5413,22 +6160,22 @@
                min: BUTTON_EXPANDABLE_NUMBER_BG_NORMAL_MIN_MAX_INC;
                max: BUTTON_EXPANDABLE_NUMBER_BG_NORMAL_MIN_MAX_INC;
                image {
-                  normal: "00_button_02.png";
+                  normal: "00_button_01.png";
                   border: BUTTON_EXPANDABLE_NUMBER_BG_BORDER_INC;
                   border_scale: 1;
                }
             }
             description { state: "clicked" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_button_02_press.png";
+               image.normal: "00_button_01_press.png";
             }
             description { state: "disabled" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_button_02_dim.png";
+               image.normal: "00_button_01_dim.png";
             }
             description { state: "focused" 0.0;
                inherit: "default" 0.0;
-               image.normal: "00_button_02_press.png";
+               image.normal: "00_button_01_press.png";
             }
          }
          part { name: "padding_left_top";
@@ -5544,13 +6291,13 @@
             scale: 1;
             type: RECT;
             description { state: "default" 0.0;
-               color: 58 58 58 255;
+               color: BUTTON_NUMBER_ICON_NORMAL_COLOR_INC;
             }
             description { state: "clicked" 0.0;
-               color: 248 246 239 255;
+               color: BUTTON_NUMBER_ICON_PRESSED_COLOR_INC;
             }
             description { state: "disabled" 0.0;
-               color: 58 58 58 76;
+               color: BUTTON_NUMBER_ICON_DISABLED_COLOR_INC;
             }
          }
          part { name: "over2";
@@ -5601,6 +6348,11 @@
                if (!strcmp(st, "visible"))
                  set_state(PART:"elm.text", "clicked", 0.0);
             }
+         }
+         program { name: "button_double_click";
+            signal: "mouse,down,1,double";
+            source: "over2";
+            after: "button_click_anim";
          }
          program { name: "button_unpress";
             action: SIGNAL_EMIT "elm,action,unpress" "";
@@ -6004,6 +6756,7 @@ group { name: "elm/button/base/bubble_circle/receive";
       images {
          image: "00_messagebubble_circle_receive.png" COMP;
          image: "00_messagebubble_circle_receive_press.png" COMP;
+         image: "00_messagebubble_circle_receive_dim.png" COMP;
          image: "00_button_right.png" COMP;
          image: "00_button_right_press.png" COMP;
       }
@@ -6023,6 +6776,7 @@ group { name: "elm/button/base/bubble_circle/receive";
             description {
                state: "disabled" 0.0;
                inherit: "default" 0.0;
+               image.normal: "00_messagebubble_circle_receive_dim.png";
             }
          }
          part { name: "image";
@@ -6047,13 +6801,13 @@ group { name: "elm/button/base/bubble_circle/receive";
             type: RECT;
             scale: 1;
             description { state: "default" 0.0;
-               color: 248 246 239 255;
+               color: BUTTON_BUBBLE_CIRCLE_RECEIVE_ICON_NORMAL_COLOR_INC;
             }
             description { state: "clicked" 0.0;
-               color: 248 246 239 255;
+               color: BUTTON_BUBBLE_CIRCLE_RECEIVE_ICON_PRESSED_COLOR_INC;
             }
             description { state: "disabled" 0.0;
-               color: 248 246 239 76;
+               color: BUTTON_BUBBLE_CIRCLE_RECEIVE_ICON_DISABLED_COLOR_INC;
             }
          }
          part { name: "over1";
@@ -6064,6 +6818,7 @@ group { name: "elm/button/base/bubble_circle/receive";
             }
          }
          part { name: "over2";
+            type: RECT;
             repeat_events: 1;
             description { state: "default" 0.0;
                color: 0 0 0 0;
@@ -6093,6 +6848,11 @@ group { name: "elm/button/base/bubble_circle/receive";
             target: "button_image";
             target: "image";
             target: "icon_clipper";
+         }
+         program { name: "button_double_click";
+            signal: "mouse,down,1,double";
+            source: "over1";
+            after: "button_click_anim";
          }
          program { name: "button_unclick";
             signal: "mouse,up,1";
@@ -6140,6 +6900,7 @@ group { name: "elm/button/base/bubble_circle/sent";
       images {
          image: "00_messagebubble_circle_sent.png" COMP;
          image: "00_messagebubble_circle_sent_press.png" COMP;
+         image: "00_messagebubble_circle_sent_dim.png" COMP;
          image: "00_button_right.png" COMP;
          image: "00_button_right_press.png" COMP;
       }
@@ -6159,6 +6920,7 @@ group { name: "elm/button/base/bubble_circle/sent";
             description {
                state: "disabled" 0.0;
                inherit: "default" 0.0;
+               image.normal: "00_messagebubble_circle_sent_dim.png";
             }
          }
          part { name: "image";
@@ -6183,13 +6945,13 @@ group { name: "elm/button/base/bubble_circle/sent";
             type: RECT;
             scale: 1;
             description { state: "default" 0.0;
-               color: 101 101 101 255;
+               color: BUTTON_BUBBLE_CIRCLE_SENT_ICON_NORMAL_COLOR_INC;
             }
             description { state: "clicked" 0.0;
-               color: 248 246 239 255;
+               color: BUTTON_BUBBLE_CIRCLE_SENT_ICON_PRESSED_COLOR_INC;
             }
             description { state: "disabled" 0.0;
-               color: 101 101 101 76;
+               color: BUTTON_BUBBLE_CIRCLE_SENT_ICON_DISABLED_COLOR_INC;
             }
          }
          part { name: "over1";
@@ -6200,6 +6962,7 @@ group { name: "elm/button/base/bubble_circle/sent";
             }
          }
          part { name: "over2";
+            type: RECT;
             repeat_events: 1;
             description { state: "default" 0.0;
                color: 0 0 0 0;
@@ -6229,6 +6992,11 @@ group { name: "elm/button/base/bubble_circle/sent";
             target: "button_image";
             target: "image";
             target: "icon_clipper";
+         }
+         program { name: "button_double_click";
+            signal: "mouse,down,1,double";
+            source: "over1";
+            after: "button_click_anim";
          }
          program { name: "button_unclick";
             signal: "mouse,up,1";
@@ -6269,6 +7037,153 @@ group { name: "elm/button/base/bubble_circle/sent";
          }
       }
    }
+
+//////////////////////////////////////////////////////////////////////////////////////
+   group { name: "elm/button/base/editfield_clear";
+      images {
+         image: "00_EditField_clear" COMP;
+      }
+      parts {
+         part { name: "button_image";
+            type: RECT;
+            scale: 1;
+            description { state: "default" 0.0;
+               visible: 0;
+            }
+            description { state: "clicked" 0.0;
+               inherit: "default" 0.0;
+            }
+            description { state: "disabled" 0.0;
+               inherit: "default" 0.0;
+            }
+            description { state: "focused" 0.0;
+               inherit: "default" 0.0;
+            }
+         }
+         part { name: "clear_button";
+            scale: 1;
+            mouse_events: 0;
+            clip_to: "clear_button.clipper";
+            description { state: "default" 0.0;
+               min: BUTTON_EDITFIELD_CLEAR_BUTTON_MIN_MAX_INC;
+               max: BUTTON_EDITFIELD_CLEAR_BUTTON_MIN_MAX_INC;
+               fixed: 1 1;
+               align: 0.0 0.5;
+               image.normal: "00_EditField_clear.png";
+            }
+         }
+         part { name: "clear_button.clipper";
+            type: RECT;
+            description { state: "default" 0.0;
+               color: BUTTON_EDITFIELD_CLEAR_BUTTON_CLIPPER_DEFAULT_COLOR_INC;
+            }
+            description { state: "clicked" 0.0;
+               color: BUTTON_EDITFIELD_CLEAR_BUTTON_CLIPPER_PRESSED_COLOR_INC;
+            }
+            description { state: "disabled" 0.0;
+               color: BUTTON_EDITFIELD_CLEAR_BUTTON_CLIPPER_DISABLED_COLOR_INC;
+            }
+         }
+         part { name: "over2";
+            type: RECT;
+            ignore_flags: ON_HOLD;
+            description { state: "default" 0.0;
+               color: 0 0 0 0;
+            }
+         }
+         part { name: "over3";
+            type: RECT;
+            repeat_events: 1;
+            description { state: "default" 0.0;
+               color: 0 0 0 0;
+            }
+         }
+         part { name: "disabler";
+            type: RECT;
+            description { state: "default" 0.0;
+               color: 0 0 0 0;
+               visible: 0;
+            }
+            description { state: "disabled" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
+      }
+      programs {
+         program { name: "button_click";
+            signal: "mouse,down,1";
+            source: "over2";
+            action: SIGNAL_EMIT "elm,action,press" "";
+            after: "button_click_anim";
+         }
+         program { name: "button_click_anim";
+            action: STATE_SET "clicked" 0.0;
+            target: "button_image";
+            target: "clear_button.clipper";
+         }
+         program { name: "button_double_click";
+            signal: "mouse,down,1,double";
+            source: "over1";
+            after: "button_click_anim";
+         }
+         program { name: "button_unclick";
+            signal: "mouse,up,1";
+            source: "over3";
+            action: SIGNAL_EMIT "elm,action,unpress" "";
+            after: "button_unclick_anim";
+         }
+         program { name: "button_unclick_anim";
+            action: STATE_SET "default" 0.0;
+            target: "button_image";
+            target: "clear_button.clipper";
+         }
+         program { name: "touch_snd";
+            signal: "mouse,clicked,1";
+            source: "over2";
+            action: PLAY_SAMPLE "touch_sound" 1.0;
+            after: button_unclick3;
+         }
+         program { name: "button_unclick3";
+            action: SIGNAL_EMIT "elm,action,click" "";
+         }
+         program { name: "disable";
+            signal: "elm,state,disabled";
+            source: "elm";
+            action: STATE_SET "disabled" 0.0;
+            target: "button_image";
+            target: "disabler";
+            target: "clear_button.clipper";
+         }
+         program { name: "enable";
+            signal: "elm,state,enabled";
+            source: "elm";
+            action: STATE_SET "default" 0.0;
+            target: "button_image";
+            target: "disabler";
+            target: "clear_button.clipper";
+         }
+      }
+   }
+
+   group { name: "elm/button/base/search_clear";
+      inherit: "elm/button/base/editfield_clear";
+      parts {
+         part { name: "clear_button";
+            scale: 1;
+            mouse_events: 0;
+            clip_to: "clear_button.clipper";
+            description { state: "default" 0.0;
+               min: BUTTON_SEARCH_CLEAR_BUTTON_MIN_MAX_INC;
+               max: BUTTON_SEARCH_CLEAR_BUTTON_MIN_MAX_INC;
+               fixed: 1 1;
+               align: 0.0 0.5;
+               image.normal: "00_EditField_clear.png";
+            }
+         }
+      }
+   }
+
 
 ///////////////////////////////////////////////////////////////////////////////////////
 #if 0

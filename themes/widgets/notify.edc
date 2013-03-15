@@ -57,23 +57,27 @@ group { name: "elm/notify/top/default";
          type: RECT;
          mouse_events: 0;
          repeat_events: 1;
+         /*
          description { state: "default" 0.0;
             color: 0 0 0 0;
             rel1.relative: 0.0 -1.0;
             rel2.relative: 1.0 0.0;
          }
-         description { state: "visible" 0.0;
-            inherit: "default" 0.0;
+         */
+         description { state: "default" 0.0;
+            //inherit: "default" 0.0;
             color: 0 0 0 64;
             rel1.relative: 0.0 0.0;
             rel2.relative: 1.0 1.0;
          }
       }
       part { name: "pop";
+         type: RECT;
          mouse_events: 1;
          description { state: "default" 0.0;
             rel1.to: "elm.swallow.content";
             rel2.to: "elm.swallow.content";
+            color: 0 0 0 0;
          }
       }
       part { name: "elm.swallow.content";
@@ -84,6 +88,7 @@ group { name: "elm/notify/top/default";
          }
       }
    }
+   /*
    programs {
       program { name: "show_3";
          signal: "show";
@@ -97,6 +102,7 @@ group { name: "elm/notify/top/default";
          target: "base";
       }
    }
+   */
 }
 
 group { name: "elm/notify/center/default";
@@ -113,10 +119,12 @@ group { name: "elm/notify/center/default";
          }
       }
       part { name: "pop";
+         type: RECT;
          mouse_events: 1;
          description { state: "default" 0.0;
             rel1.to: "elm.swallow.content";
             rel2.to: "elm.swallow.content";
+            color: 0 0 0 0;
          }
       }
       part { name: "elm.swallow.content";
@@ -143,16 +151,18 @@ group { name: "elm/notify/bottom/default";
          }
          description { state: "visible" 0.0;
             inherit: "default" 0.0;
-            color: 0 0 0 64;
+            color: 0 0 0 0;
             rel1.relative: 0.0 0.0;
             rel2.relative: 1.0 1.0;
          }
       }
       part { name: "pop";
+         type: RECT;
          mouse_events: 1;
          description { state: "default" 0.0;
             rel1.to: "elm.swallow.content";
             rel2.to: "elm.swallow.content";
+            color: 0 0 0 0;
          }
       }
       part { name: "elm.swallow.content";
@@ -198,10 +208,12 @@ group { name: "elm/notify/left/default";
          }
       }
       part { name: "pop";
+         type: RECT;
          mouse_events: 1;
          description { state: "default" 0.0;
             rel1.to: "elm.swallow.content";
             rel2.to: "elm.swallow.content";
+            color: 0 0 0 0;
          }
       }
       part { name: "elm.swallow.content";
@@ -247,10 +259,12 @@ group { name: "elm/notify/right/default";
          }
       }
       part { name: "pop";
+         type: RECT;
          mouse_events: 1;
          description { state: "default" 0.0;
             rel1.to: "elm.swallow.content";
             rel2.to: "elm.swallow.content";
+            color: 0 0 0 0;
          }
       }
       part { name: "elm.swallow.content";
@@ -296,10 +310,12 @@ group { name: "elm/notify/top_left/default";
          }
       }
       part { name: "pop";
+         type: RECT;
          mouse_events: 1;
          description { state: "default" 0.0;
             rel1.to: "elm.swallow.content";
             rel2.to: "elm.swallow.content";
+            color: 0 0 0 0;
          }
       }
       part { name: "elm.swallow.content";
@@ -345,10 +361,12 @@ group { name: "elm/notify/top_right/default";
          }
       }
       part { name: "pop";
+         type: RECT;
          mouse_events: 1;
          description { state: "default" 0.0;
             rel1.to: "elm.swallow.content";
             rel2.to: "elm.swallow.content";
+            color: 0 0 0 0;
          }
       }
       part { name: "elm.swallow.content";
@@ -394,10 +412,12 @@ group { name: "elm/notify/bottom_left/default";
          }
       }
       part { name: "pop";
+         type: RECT;
          mouse_events: 1;
          description { state: "default" 0.0;
             rel1.to: "elm.swallow.content";
             rel2.to: "elm.swallow.content";
+            color: 0 0 0 0;
          }
       }
       part { name: "elm.swallow.content";
@@ -443,10 +463,12 @@ group { name: "elm/notify/bottom_right/default";
          }
       }
       part { name: "pop";
+         type: RECT;
          mouse_events: 1;
          description { state: "default" 0.0;
             rel1.to: "elm.swallow.content";
             rel2.to: "elm.swallow.content";
+            color: 0 0 0 0;
          }
       }
       part { name: "elm.swallow.content";

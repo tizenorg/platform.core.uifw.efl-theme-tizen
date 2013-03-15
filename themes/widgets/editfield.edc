@@ -498,6 +498,7 @@ group { name: "elm/editfield/base/default";
       }
       part {
          name: "eraser";
+         type: RECT;
          mouse_events: 1;
          ignore_flags: ON_HOLD;
          description {
@@ -1084,6 +1085,7 @@ group { name: "elm/editfield/base/searchbar";
       }
       part {
          name: "eraser";
+         type: RECT;
          mouse_events: 1;
          ignore_flags: ON_HOLD;
          description {
@@ -1701,6 +1703,7 @@ group { name: "elm/editfield/base/font_color_black";
       }
       part {
          name: "eraser";
+         type: RECT;
          mouse_events: 1;
          ignore_flags: ON_HOLD;
          description {
@@ -2286,6 +2289,7 @@ group { name: "elm/editfield/base/searchbar/font_color_black";
       }
       part {
          name: "eraser";
+         type: RECT;
          mouse_events: 1;
          ignore_flags: ON_HOLD;
          description {

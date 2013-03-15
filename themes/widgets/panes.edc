@@ -259,15 +259,18 @@
             }
             description { state: "disabled" 0.0;
                inherit: "default" 0.0;
+               visible: 0;
             }
          }
          part { name: "over2";
+            type: RECT;
             mouse_events: 1;
             repeat_events: 1;
             ignore_flags: ON_HOLD;
             description { state: "default" 0.0;
                rel1.to: "elm.bar";
                rel2.to: "elm.bar";
+               color: 0 0 0 0;
             }
             description { state: "disabled" 0.0;
                inherit:  "default" 0.0;
@@ -275,11 +278,13 @@
             }
          }
          part { name: "over3";
+            type: RECT;
             mouse_events: 1;
             repeat_events: 1;
             description { state: "default" 0.0;
                rel1.to: "elm.bar";
                rel2.to: "elm.bar";
+               color: 0 0 0 0;
             }
             description { state: "clicked" 0.0;
                inherit:  "default" 0.0;
@@ -329,7 +334,7 @@
       programs {
          program {
             name: "drag_effect_start";
-            signal: "elm,panes,left,hide";
+            signal: "left,hide,effect";
             source: "";
             script {
                new Float:x, Float:y;
@@ -354,6 +359,11 @@
             action: STATE_SET "default" 0.0;
             target: "elm.swallow.left";
             target: "whole_left";
+            after: "effect_finished";
+         }
+         program {
+            name: "effect_finished";
+            action: SIGNAL_EMIT "left,hide,effect,finished" "";
          }
          program {
             name:   "panes_pair";
@@ -447,6 +457,7 @@
             source: "elm";
             action: STATE_SET "disabled" 0.0;
             target: "bar_disabled";
+            target: "bar_handler";
             after: "after_fixed";
          }
          program {
@@ -465,6 +476,7 @@
             source: "elm";
             action: STATE_SET "default" 0.0;
             target: "bar_disabled";
+            target: "bar_handler";
             after: "after_unfixed";
          }
          program {
@@ -712,15 +724,18 @@
             }
             description { state: "disabled" 0.0;
                inherit: "default" 0.0;
+               visible: 0;
             }
          }
          part { name: "over2";
+            type: RECT;
             mouse_events: 1;
             repeat_events: 1;
             ignore_flags: ON_HOLD;
             description { state: "default" 0.0;
                rel1.to: "elm.bar";
                rel2.to: "elm.bar";
+               color: 0 0 0 0;
             }
             description { state: "disabled" 0.0;
                inherit:  "default" 0.0;
@@ -728,11 +743,13 @@
             }
          }
          part { name: "over3";
+            type: RECT;
             mouse_events: 1;
             repeat_events: 1;
             description { state: "default" 0.0;
                rel1.to: "elm.bar";
                rel2.to: "elm.bar";
+               color: 0 0 0 0;
             }
             description { state: "clicked" 0.0;
                inherit:  "default" 0.0;
@@ -845,6 +862,7 @@
             source: "elm";
             action: STATE_SET "disabled" 0.0;
             target: "bar_disabled";
+            target: "bar_handler";
             after: "after_fixed";
          }
          program {
@@ -863,6 +881,7 @@
             source: "elm";
             action: STATE_SET "default" 0.0;
             target: "bar_disabled";
+            target: "bar_handler";
             after: "after_unfixed";
          }
          program {
