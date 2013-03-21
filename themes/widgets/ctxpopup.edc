@@ -2173,7 +2173,7 @@
 				mouse_events: 1;
 				repeat_events: 1;
 				dragable {
-					x: 0 0 0;
+					x: 1 1 0;
 					y: 1 1 0;
 				}
 				description {
@@ -2303,7 +2303,7 @@
 				script {
 					new Float:dx, Float:dy;
 					get_drag(PART:"over2", dx, dy);
-					if (abs(dy) > 20)
+					if ((abs(dx) > 20) || (abs(dy) > 20))
 						{
 							set_drag(PART:"over2", 0.0, 0.0);
 							set_state(PART:"elm.text", "compress", 0.0);
@@ -2490,7 +2490,7 @@
 				repeat_events: 1;
 				dragable {
 					x: 1 1 0;
-					y: 0 0 0;
+					y: 1 1 0;
 				}
 				description {
 					state: "default" 0.0;
@@ -2612,7 +2612,7 @@
 				script {
 					new Float:dx, Float:dy;
 					get_drag(PART:"over2", dx, dy);
-					if (abs(dx) > 20)
+					if ((abs(dx) > 20) || (abs(dy) > 20))
 						{
 							set_drag(PART:"over2", 0.0, 0.0);
 							set_state(PART:"elm.text", "compress", 0.0);
@@ -2762,7 +2762,7 @@
 				repeat_events: 1;
 				dragable {
 					x: 1 1 0;
-					y: 0 0 0;
+					y: 1 1 0;
 				}
 				description {
 					state: "default" 0.0;
@@ -2850,7 +2850,7 @@
 				script {
 					new Float:dx, Float:dy;
 					get_drag(PART:"over2", dx, dy);
-					if (abs(dx) > 20)
+					if ((abs(dx) > 20) || (abs(dy) > 20))
 						{
 							set_drag(PART:"over2", 0.0, 0.0);
 							set_state(PART:"bg", "default", 0.0);
@@ -3096,7 +3096,7 @@
 				mouse_events: 1;
 				repeat_events: 1;
 				dragable {
-					x: 0 0 0;
+					x: 1 1 0;
 					y: 1 1 0;
 				}
 				description {
@@ -3226,7 +3226,7 @@
 				script {
 					new Float:dx, Float:dy;
 					get_drag(PART:"over2", dx, dy);
-					if (abs(dy) > 20)
+					if ((abs(dx) > 20) || (abs(dy) > 20))
 						{
 							set_drag(PART:"over2", 0.0, 0.0);
 							set_state(PART:"elm.text", "compress", 0.0);
@@ -3634,7 +3634,7 @@
 				mouse_events: 1;
 				repeat_events: 1;
 				dragable {
-					x: 0 0 0;
+					x: 1 1 0;
 					y: 1 1 0;
 				}
 				description {
@@ -3757,7 +3757,7 @@
 				script {
 					new Float:dx, Float:dy;
 					get_drag(PART:"over2", dx, dy);
-					if (abs(dy) > 20)
+					if ((abs(dx) > 20) || (abs(dy) > 20))
 						{
 							set_drag(PART:"over2", 0.0, 0.0);
 							set_state(PART:"elm.text", "compress", 0.0);
@@ -5244,7 +5244,7 @@ group {
 				mouse_events: 1;
 				repeat_events: 1;
 				dragable {
-					x: 0 0 0;
+					x: 1 1 0;
 					y: 1 1 0;
 				}
 				description {
@@ -5367,7 +5367,7 @@ group {
 				script {
 					new Float:dx, Float:dy;
 					get_drag(PART:"over2", dx, dy);
-					if (abs(dy) > 20)
+					if ((abs(dx) > 20) || (abs(dy) > 20))
 						{
 							set_drag(PART:"over2", 0.0, 0.0);
 							set_state(PART:"elm.text", "compress", 0.0);
