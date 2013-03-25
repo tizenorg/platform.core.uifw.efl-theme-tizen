@@ -128,6 +128,9 @@
 
       parts {
          GENLIST_PART_BG_NORMAL_OFF
+         GENLIST_PART_BOTTOM_LINE_OFF
+         GENLIST_PART_PADDING_LEFT_SIZE(0)
+         GENLIST_PART_PADDING_RIGHT_SIZE(0)
       }
    }
 
@@ -200,6 +203,9 @@
 
       parts {
          GENLIST_PART_BG_NORMAL_OFF
+         GENLIST_PART_BOTTOM_LINE_OFF
+         GENLIST_PART_PADDING_LEFT_SIZE(0)
+         GENLIST_PART_PADDING_RIGHT_SIZE(0)
       }
    }
 
