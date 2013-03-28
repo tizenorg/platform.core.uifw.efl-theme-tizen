@@ -3419,7 +3419,7 @@ BUTTON_SCROLL_JUMPTO("jumpto_left", "00_icon_jump_left.png")
       programs {
          program { name: "button_click";
             signal: "mouse,down,1";
-            source: "over2";
+            source: "over3";
             action: SIGNAL_EMIT "elm,action,press" "";
             after: "button_click_anim";
          }
@@ -3439,7 +3439,7 @@ BUTTON_SCROLL_JUMPTO("jumpto_left", "00_icon_jump_left.png")
          }
          program { name: "button_double_click";
             signal: "mouse,down,1,double";
-            source: "over2";
+            source: "over3";
             after: "button_click_anim";
          }
          program { name: "button_unpress";
