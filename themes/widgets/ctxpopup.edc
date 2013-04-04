@@ -47,7 +47,7 @@
 				scale: 1;
 				description {
 					state: "default" 0.0;
-					min: 0 60;
+					min: 0 CTXPOPUP_MOVE_PAD_INC;
 					visible: 0;
 					fixed: 0 1;
 					align: 0.5 0.0;
@@ -70,7 +70,7 @@
 				scale: 0;
 				description {
 					state: "default" 0.0;
-					min: 0 60;
+					min: 0 CTXPOPUP_MOVE_PAD_INC;
 					visible: 0;
 					fixed: 0 1;
 					align: 0.5 1.0;
@@ -93,7 +93,7 @@
 				scale: 1;
 				description {
 					state: "default" 0.0;
-					min: 60 0;
+					min: CTXPOPUP_MOVE_PAD_INC 0;
 					visible: 0;
 					fixed: 1 0;
 					align: 0.0 0.5;
@@ -116,7 +116,7 @@
 				scale: 1;
 				description {
 					state: "default" 0.0;
-					min: 60 0;
+					min: CTXPOPUP_MOVE_PAD_INC 0;
 					visible: 0;
 					fixed: 1 0;
 					align: 1 0.5;
@@ -171,7 +171,7 @@
 				type: RECT;
 				description {
 					state: "default" 0.0;
-					color: 255 255 255 127;
+					color: 255 255 255 0;
 					rel1 {to: "swallow"; relative: -0.2 -0.2; }
 					rel2 {to: "swallow"; relative: 1.2 1.2;}
 				}
@@ -242,28 +242,28 @@
 			program {
 				name:   "showupend";
 				action: STATE_SET "visible" 0.0;
-				transition:SIN_FAC 0.33 0.6;
+				transition: SIN_FAC 0.33 1.1;
 				target: "top_padding";
 				target: "layout_clip";
 			}
 			program {
 				name:   "showdownend";
 				action: STATE_SET "visible" 0.0;
-				transition:SIN_FAC 0.33 0.6;
+				transition: SIN_FAC 0.33 1.1;
 				target: "bottom_padding";
 				target: "layout_clip";
 			}
 			program {
 				name:   "showleftend";
 				action: STATE_SET "visible" 0.0;
-				transition:SIN_FAC 0.33 0.6;
+				transition: SIN_FAC 0.33 1.1;
 				target: "left_padding";
 				target: "layout_clip";
 			}
 			program {
 				name:   "showrightend";
 				action: STATE_SET "visible" 0.0;
-				transition:SIN_FAC 0.33 0.6;
+				transition: SIN_FAC 0.33 1.1;
 				target: "right_padding";
 				target: "layout_clip";
 			}
@@ -274,7 +274,7 @@
 				action: STATE_SET "show_up" 0.0;
 				target: "swallow";
 				target: "top_padding";
-				transition: SIN_FAC 0.33 0.6;
+				transition: SIN_FAC 0.33 1.1;
 				after: "hidefinished";
 			}
 			program {
@@ -284,7 +284,7 @@
 				action: STATE_SET "show_down" 0.0;
 				target: "swallow";
 				target: "bottom_padding";
-				transition: SIN_FAC 0.33 0.6;
+				transition: SIN_FAC 0.33 1.1;
 				after: "hidefinished";
 			}
 			program {
@@ -294,7 +294,7 @@
 				action: STATE_SET "show_left" 0.0;
 				target: "swallow";
 				target: "left_padding";
-				transition: SIN_FAC 0.33 0.6;
+				transition: SIN_FAC 0.33 1.1;
 				after: "hidefinished";
 			}
 			program {
@@ -304,7 +304,7 @@
 				action: STATE_SET "show_right" 0.0;
 				target: "swallow";
 				target: "right_padding";
-				transition: SIN_FAC 0.33 0.6;
+				transition: SIN_FAC 0.33 1.1;
 				after: "hidefinished";
 			}
 			program {
@@ -313,7 +313,7 @@
 				source: "elm";
 				action: STATE_SET "default" 0.0;
 				target: "layout_clip";
-				transition: SIN_FAC 0.33 0.6;
+				transition: SIN_FAC 0.33 1.1;
 				after: "hidefinished";
 			}
 			program {
@@ -322,7 +322,7 @@
 				source: "elm";
 				action: STATE_SET "default" 0.0;
 				target: "layout_clip";
-				transition: SIN_FAC 0.33 0.6;
+				transition: SIN_FAC 0.33 1.1;
 				after: "hidefinished";
 			}
 			program {
@@ -331,7 +331,7 @@
 				source: "elm";
 				action: STATE_SET "default" 0.0;
 				target: "layout_clip";
-				transition: SIN_FAC 0.33 0.6;
+				transition: SIN_FAC 0.33 1.1;
 				after: "hidefinished";
 			}
 			program {
@@ -340,7 +340,7 @@
 				source: "elm";
 				action: STATE_SET "default" 0.0;
 				target: "layout_clip";
-				transition: SIN_FAC 0.33 0.6;
+				transition: SIN_FAC 0.33 1.1;
 				after: "hidefinished";
 			}
 			program {
@@ -673,7 +673,7 @@
 				scale: 1;
 				description {
 					state: "default" 0.0;
-					min: 0 CTXPOPUP_MORE_MOVE_INC;
+					min: 0 CTXPOPUP_MOVE_PAD_INC;
 					visible: 0;
 					fixed: 0 1;
 					align: 0.5 0.0;
@@ -696,7 +696,7 @@
 				scale: 0;
 				description {
 					state: "default" 0.0;
-					min: 0 CTXPOPUP_MORE_MOVE_INC;
+					min: 0 CTXPOPUP_MOVE_PAD_INC;
 					visible: 0;
 					fixed: 0 1;
 					align: 0.5 1.0;
@@ -719,7 +719,7 @@
 				scale: 1;
 				description {
 					state: "default" 0.0;
-					min: CTXPOPUP_MORE_MOVE_INC 0;
+					min: CTXPOPUP_MOVE_PAD_INC 0;
 					visible: 0;
 					fixed: 1 0;
 					align: 0.0 0.5;
@@ -742,7 +742,7 @@
 				scale: 1;
 				description {
 					state: "default" 0.0;
-					min: CTXPOPUP_MORE_MOVE_INC 0;
+					min: CTXPOPUP_MOVE_PAD_INC 0;
 					visible: 0;
 					fixed: 1 0;
 					align: 1 0.5;
@@ -873,28 +873,28 @@
 			program {
 				name:   "showupend";
 				action: STATE_SET "visible" 0.0;
-				transition:SIN_FAC 0.33 1.1;
+				transition: SIN_FAC 0.33 1.1;
 				target: "top_padding";
 				target: "layout_clip";
 			}
 			program {
 				name:   "showdownend";
 				action: STATE_SET "visible" 0.0;
-				transition:SIN_FAC 0.33 1.1;
+				transition: SIN_FAC 0.33 1.1;
 				target: "bottom_padding";
 				target: "layout_clip";
 			}
 			program {
 				name:   "showleftend";
 				action: STATE_SET "visible" 0.0;
-				transition:SIN_FAC 0.33 1.1;
+				transition: SIN_FAC 0.33 1.1;
 				target: "left_padding";
 				target: "layout_clip";
 			}
 			program {
 				name:   "showrightend";
 				action: STATE_SET "visible" 0.0;
-				transition:SIN_FAC 0.33 1.1;
+				transition: SIN_FAC 0.33 1.1;
 				target: "right_padding";
 				target: "layout_clip";
 			}
