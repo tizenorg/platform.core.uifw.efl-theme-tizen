@@ -226,6 +226,11 @@
             source: "over1"; \
             action: SIGNAL_EMIT "elm,action,radio,toggle" ""; \
          } \
+         program { name: "touch_sound"; \
+            signal: "mouse,clicked,1"; \
+            source: "over2"; \
+            action: PLAY_SAMPLE "touch_sound" 1.0; \
+         } \
          program { name: "bg_normal"; \
             signal: "mouse,up,1"; \
             source: "over2"; \
