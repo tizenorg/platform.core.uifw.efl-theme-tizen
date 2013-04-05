@@ -38,11 +38,10 @@
 #define RADIO_STYLE_DEFAULT(style_name, min_width, min_height) \
    group { name: "elm/radio/base/"style_name; \
       images { \
-         image: "00_button_radio_select.png" COMP; \
          image: "00_button_radio_dim.png" COMP; \
-         image: "00_button_radio.png" COMP; \
-         image: "00_button_radio_press.png" COMP; \
-         image: "00_button_radio_select_dim.png" COMP; \
+         image: "00_button_radio_Activated.png" COMP; \
+         image: "00_button_radio_bg.png" COMP; \
+         image: "00_button_radio_dim_bg.png" COMP; \
       } \
       parts { \
          part { name: "back_bg"; \
@@ -65,15 +64,11 @@
                fixed: 1 1; \
                rel1.to: "back_bg"; \
                rel2.to: "back_bg"; \
-               image.normal: "00_button_radio.png"; \
+               image.normal: "00_button_radio_bg.png"; \
             } \
             description { state: "disabled" 0.0; \
                inherit: "default" 0.0; \
-               image.normal: "00_button_radio_dim.png"; \
-            } \
-            description { state: "pressed" 0.0; \
-               inherit: "default" 0.0; \
-               image.normal: "00_button_radio_press.png"; \
+               image.normal: "00_button_radio_dim_bg.png"; \
             } \
          } \
          part { name: "radio"; \
@@ -84,7 +79,7 @@
                rel1.to: "bg"; \
                rel2.to: "bg"; \
                max: 0 0; \
-               image.normal: "00_button_radio_select.png"; \
+               image.normal: "00_button_radio_Activated.png"; \
                visible: 0; \
             } \
             description { state: "visible" 0.0; \
@@ -97,7 +92,7 @@
             } \
             description { state: "disabled_visible" 0.0; \
                inherit: "visible" 0.0; \
-               image.normal: "00_button_radio_select_dim.png"; \
+               image.normal: "00_button_radio_dim.png"; \
             } \
          } \
          part { name: "opacity_clip"; \
