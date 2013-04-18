@@ -7265,7 +7265,6 @@ group { name: "elm/button/base/bubble_circle/sent";
       }
    }
 
-
    group { name: "elm/button/base/search_clear";
       inherit: "elm/button/base/editfield_clear";
       parts {
