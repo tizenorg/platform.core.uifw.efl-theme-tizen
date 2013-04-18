@@ -244,7 +244,7 @@
             scale: 1;
             clip_to: "title_clip";
             description { state: "default" 0.0;
-               text { font: "Tizen:style=Medium";
+               text { font: "Tizen:style=Bold";
                   size: NAVIFRAME_TITLE_FONT_SIZE_INC;
                   size_range: NAVIFRAME_TITLE_FONT_MIN_SIZE_INC NAVIFRAME_TITLE_FONT_SIZE_INC;
                   fit: 1 0;
@@ -262,7 +262,7 @@
             }
             description { state: "subtitle_is_set" 0.0;
                inherit: "default" 0.0;
-               text { font: "Tizen:style=Medium";
+               text { font: "Tizen:style=Bold";
                   size: NAVIFRAME_TITLE_SMALL_FONT_SIZE_INC;
                   min: 0 0;
                   max: 1 0;
@@ -272,7 +272,7 @@
             }
             description { state: "default_landscape" 0.0;
                inherit: "default" 0.0;
-               text { font: "Tizen:style=Medium";
+               text { font: "Tizen:style=Bold";
                   size: NAVIFRAME_LANDSCAPE_TITLE_FONT_SIZE_INC;
                   size_range: NAVIFRAME_TITLE_FONT_MIN_SIZE_INC NAVIFRAME_LANDSCAPE_TITLE_FONT_SIZE_INC;
                   fit: 1 0;
@@ -284,7 +284,7 @@
             }
             description { state: "subtitle_is_set_landscape" 0.0;
                inherit: "default" 0.0;
-               text { font: "Tizen:style=Medium";
+               text { font: "Tizen:style=Bold";
                   size: NAVIFRAME_LANDSCAPE_TITLE_SMALL_FONT_SIZE_INC;
                   min: 0 0;
                   max: 1 0;
@@ -322,7 +322,7 @@
             scale: 1;
             clip_to: "title_clip";
             description { state: "default" 0.0;
-               text { font: "Tizen:style=Medium";
+               text { font: "Tizen:style=Bold";
                   size: NAVIFRAME_SUBTITLE_FONT_SIZE_INC;
                   min: 0 0;
                   max: 1 0;
@@ -337,7 +337,7 @@
             }
             description { state: "landscape" 0.0;
                inherit: "default" 0.0;
-               text { font: "Tizen:style=Medium";
+               text { font: "Tizen:style=Bold";
                   size: NAVIFRAME_LANDSCAPE_SUBTITLE_FONT_SIZE_INC;
                   min: 0 0;
                   max: 1 0;
@@ -1354,7 +1354,7 @@
             clip_to: "title_clip";
             description { state: "default" 0.0;
                visible: 1;
-               text { font: "Tizen:style=Medium";
+               text { font: "Tizen:style=Bold";
                   size: NAVIFRAME_TITLE_TAB_FONT_SIZE_INC;
                   min: 0 0;
                   max: 1 0;
@@ -1375,7 +1375,7 @@
             }
             description { state: "landscape" 0.0;
                inherit: "default" 0.0;
-               text { font: "Tizen:style=Medium";
+               text { font: "Tizen:style=Bold";
                   size: NAVIFRAME_LANDSCAPE_TITLE_TAB_FONT_SIZE_INC;
                   min: 0 0;
                   max: 1 0;
@@ -3350,7 +3350,7 @@
             scale: 1;
             clip_to: "title_clip";
             description { state: "default" 0.0;
-               text { font: "Tizen:style=Medium";
+               text { font: "Tizen:style=Bold";
                   size: NAVIFRAME_DUAL_TITLE_FONT_SIZE_INC;
                   min: 0 0;
                   max: 1 0;
@@ -3370,7 +3370,7 @@
             }
             description { state: "default_landscape" 0.0;
                inherit: "default" 0.0;
-               text { font: "Tizen:style=Medium";
+               text { font: "Tizen:style=Bold";
                   size: NAVIFRAME_LANDSCAPE_TITLE_FONT_SIZE_INC;
                   min: 0 0;
                   max: 1 0;
@@ -3427,7 +3427,7 @@
             scale: 1;
             clip_to: "title_clip";
             description { state: "default" 0.0;
-               text { font: "Tizen:style=Medium";
+               text { font: "Tizen:style=Bold";
                   size: NAVIFRAME_DUAL_TITLE_FONT_SIZE_INC;
                   min: 0 0;
                   max: 1 0;
@@ -3447,7 +3447,7 @@
             }
             description { state: "default_landscape" 0.0;
                inherit: "default" 0.0;
-               text { font: "Tizen:style=Medium";
+               text { font: "Tizen:style=Bold";
                   size: NAVIFRAME_LANDSCAPE_TITLE_FONT_SIZE_INC;
                   min: 0 0;
                   max: 1 0;
