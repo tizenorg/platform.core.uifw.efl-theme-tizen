@@ -605,7 +605,7 @@ group{
 group{
    name: "elm/colorselector/arrow/default";
    images{
-      image:"00_color_picker_focus.png" COMP;
+      image:"00_color_picker_handler.png" COMP;
    }
    parts{
       part{
@@ -615,7 +615,7 @@ group{
          mouse_events: 1;
          description{
             state: "default" 0.0;
-            image.normal: "00_color_picker_focus.png";
+            image.normal: "00_color_picker_handler.png";
          }
       }
    }
