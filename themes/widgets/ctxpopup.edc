@@ -276,7 +276,7 @@
 				target: "swallow";
 				target: "top_padding";
 				transition: SIN_FAC 0.33 1.1;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hidedown";
@@ -286,7 +286,7 @@
 				target: "swallow";
 				target: "bottom_padding";
 				transition: SIN_FAC 0.33 1.1;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hideleft";
@@ -296,7 +296,7 @@
 				target: "swallow";
 				target: "left_padding";
 				transition: SIN_FAC 0.33 1.1;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hideright";
@@ -306,7 +306,7 @@
 				target: "swallow";
 				target: "right_padding";
 				transition: SIN_FAC 0.33 1.1;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hideup_clip";
@@ -315,7 +315,7 @@
 				action: STATE_SET "default" 0.0;
 				target: "layout_clip";
 				transition: SIN_FAC 0.33 1.1;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hidedown_clip";
@@ -324,7 +324,7 @@
 				action: STATE_SET "default" 0.0;
 				target: "layout_clip";
 				transition: SIN_FAC 0.33 1.1;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hideleft_clip";
@@ -333,7 +333,7 @@
 				action: STATE_SET "default" 0.0;
 				target: "layout_clip";
 				transition: SIN_FAC 0.33 1.1;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hideright_clip";
@@ -342,6 +342,16 @@
 				action: STATE_SET "default" 0.0;
 				target: "layout_clip";
 				transition: SIN_FAC 0.33 1.1;
+				after: "be_default";
+			}
+			program {
+				name: "be_default";
+				action: STATE_SET "default" 0.0;
+				target: "swallow";
+				target: "top_padding";
+				target: "bottom_padding";
+				target: "left_padding";
+				target: "right_padding";
 				after: "hidefinished";
 			}
 			program {
@@ -350,6 +360,12 @@
 			}
 		}
 	}
+///////////////////////////////////////////////////////////////////////////////
+    group {
+        name: "elm/ctxpopup/layout/landscape/default";
+        inherit: "elm/ctxpopup/layout/default";
+        max: (CTXPOPUP_WIDTH_MAX_INC+CTXPOPUP_SHADOW_LEFT_PADDING+CTXPOPUP_SHADOW_RIGHT_PADDING) ((CTXPOPUP_ITEM_HEIGHT_MIN_INC*5)+CTXPOPUP_SHADOW_TOP_PADDING+CTXPOPUP_SHADOW_BOTTOM_PADDING+(CTXPOPUP_SEPARATOR_PXLINE_SIZE_INC*8)-CTXPOPUP_CONTENT_PADDING);
+    }
 ///////////////////////////////////////////////////////////////////////////////
 	group {
 		name: "elm/ctxpopup/layout/datetime/default";
@@ -589,7 +605,7 @@
 				target: "swallow";
 				target: "top_padding";
 				transition: LINEAR 0.25;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hidedown";
@@ -599,7 +615,7 @@
 				target: "swallow";
 				target: "bottom_padding";
 				transition: LINEAR 0.25;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hideleft";
@@ -609,7 +625,7 @@
 				target: "swallow";
 				target: "left_padding";
 				transition: LINEAR 0.25;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hideright";
@@ -619,7 +635,7 @@
 				target: "swallow";
 				target: "right_padding";
 				transition: LINEAR 0.25;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hideup_clip";
@@ -628,7 +644,7 @@
 				action: STATE_SET "default" 0.0;
 				target: "layout_clip";
 				transition: LINEAR 0.25;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hidedown_clip";
@@ -637,7 +653,7 @@
 				action: STATE_SET "default" 0.0;
 				target: "layout_clip";
 				transition: LINEAR 0.25;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hideleft_clip";
@@ -646,7 +662,7 @@
 				action: STATE_SET "default" 0.0;
 				target: "layout_clip";
 				transition: LINEAR 0.25;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hideright_clip";
@@ -655,6 +671,16 @@
 				action: STATE_SET "default" 0.0;
 				target: "layout_clip";
 				transition: LINEAR 0.25;
+				after: "be_default";
+			}
+			program {
+				name: "be_default";
+				action: STATE_SET "default" 0.0;
+				target: "swallow";
+				target: "top_padding";
+				target: "bottom_padding";
+				target: "left_padding";
+				target: "right_padding";
 				after: "hidefinished";
 			}
 			program {
@@ -907,7 +933,7 @@
 				target: "swallow";
 				target: "top_padding";
 				transition: SIN_FAC 0.33 1.1;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hidedown";
@@ -917,7 +943,7 @@
 				target: "swallow";
 				target: "bottom_padding";
 				transition: SIN_FAC 0.33 1.1;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hideleft";
@@ -927,7 +953,7 @@
 				target: "swallow";
 				target: "left_padding";
 				transition: SIN_FAC 0.33 1.1;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hideright";
@@ -937,7 +963,7 @@
 				target: "swallow";
 				target: "right_padding";
 				transition: SIN_FAC 0.33 1.1;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hideup_clip";
@@ -946,7 +972,7 @@
 				action: STATE_SET "default" 0.0;
 				target: "layout_clip";
 				transition: SIN_FAC 0.33 1.1;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hidedown_clip";
@@ -955,7 +981,7 @@
 				action: STATE_SET "default" 0.0;
 				target: "layout_clip";
 				transition: SIN_FAC 0.33 1.1;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hideleft_clip";
@@ -964,7 +990,7 @@
 				action: STATE_SET "default" 0.0;
 				target: "layout_clip";
 				transition: SIN_FAC 0.33 1.1;
-				after: "hidefinished";
+				after: "be_default";
 			}
 			program {
 				name:   "hideright_clip";
@@ -973,6 +999,16 @@
 				action: STATE_SET "default" 0.0;
 				target: "layout_clip";
 				transition: SIN_FAC 0.33 1.1;
+				after: "be_default";
+			}
+			program {
+				name: "be_default";
+				action: STATE_SET "default" 0.0;
+				target: "swallow";
+				target: "top_padding";
+				target: "bottom_padding";
+				target: "left_padding";
+				target: "right_padding";
 				after: "hidefinished";
 			}
 			program {
@@ -981,6 +1017,12 @@
 			}
 		}
 	}
+///////////////////////////////////////////////////////////////////////////////
+    group {
+        name: "elm/ctxpopup/layout/landscape/more/default";
+        inherit: "elm/ctxpopup/layout/landscape/default";
+        max: CTXPOPUP_MORE_WIDTH_INC ((CTXPOPUP_ITEM_HEIGHT_MIN_INC*5)+CTXPOPUP_SHADOW_TOP_PADDING+CTXPOPUP_SHADOW_BOTTOM_PADDING+(CTXPOPUP_SEPARATOR_PXLINE_SIZE_INC*8)-CTXPOPUP_CONTENT_PADDING);
+    }
 ///////////////////////////////////////////////////////////////////////////////
 	group {
 		name: "elm/scroller/base/ctxpopup";
@@ -1416,6 +1458,8 @@
 				description {
 					state: "visible" 0.0;
 					color: 0 0 0 0;
+					min: 1280 1280;
+					align: 0.0 0.0;
 					visible: 1;
 				}
 			}
@@ -2111,14 +2155,6 @@ group {
 					}
 				}
 				description {
-					state: "compress" 0.0;
-					inherit: "default" 0.0;
-					max: -1 -1;
-					text {
-						min: 0 1;
-					}
-				}
-				description {
 					state: "clicked" 0.0;
 					inherit: "default" 0.0;
 					color: CTXPOPUP_LIST_MAIN_TEXT_PRESS_COLOR_INC;
@@ -2130,15 +2166,15 @@ group {
 					color: CTXPOPUP_LIST_MAIN_TEXT_DIM_COLOR_INC;
 				}
 				description {
-					state: "compress_disabled" 0.0;
-					inherit: "compress" 0.0;
-					color: CTXPOPUP_LIST_MAIN_TEXT_DIM_COLOR_INC;
-				}
-				description {
 					state: "ellipsis" 0.0;
 					inherit: "default" 0.0;
 					min: CTXPOPUP_TEXT_MAX_INC CTXPOPUP_ITEM_HEIGHT_MIN_INC;
 					text.min: 0 1;
+				}
+				description {
+					state: "ellipsis_disabled" 0.0;
+					inherit: "ellipsis" 0.0;
+					color: CTXPOPUP_LIST_MAIN_TEXT_DIM_COLOR_INC;
 				}
 			}
 			part {
@@ -2222,8 +2258,8 @@ group {
 					new st[31];
 					new Float:vl;
 					get_state(PART:"elm.text", st, 30, vl);
-					if ((!strcmp(st, "compress")) || (!strcmp(st, "compress_disabled")))
-						set_state(PART:"elm.text", "compress_disabled", 0.0);
+					if ((!strcmp(st, "ellipsis")) || (!strcmp(st, "ellipsis_disabled")))
+						set_state(PART:"elm.text", "ellipsis_disabled", 0.0);
 					else
 						set_state(PART:"elm.text", "disabled", 0.0);
 
@@ -2238,8 +2274,8 @@ group {
 					new st[31];
 					new Float:vl;
 					get_state(PART:"elm.text", st, 30, vl);
-					if ((!strcmp(st, "compress")) || (!strcmp(st, "compress_disabled")))
-						set_state(PART:"elm.text", "compress", 0.0);
+					if ((!strcmp(st, "ellipsis")) || (!strcmp(st, "ellipsis_disabled")))
+						set_state(PART:"elm.text", "ellipsis", 0.0);
 					else
 						set_state(PART:"elm.text", "default", 0.0);
 
@@ -2253,20 +2289,6 @@ group {
 				script {
 					set_state(PART:"separator1", "default", 0.0);
 					set_state(PART:"separator2", "default", 0.0);
-				}
-			}
-			program {
-				name: "compress";
-				signal: "elm,state,compress";
-				source: "elm";
-				script {
-					new st[31];
-					new Float:vl;
-					get_state(PART:"disclip", st, 30, vl);
-					if (!strcmp(st, "disabled"))
-						set_state(PART:"elm.text", "compress_disabled", 0.0);
-					else
-						set_state(PART:"elm.text", "compress", 0.0);
 				}
 			}
 			program {
@@ -2304,7 +2326,6 @@ group {
 					if ((abs(dx) > 20) || (abs(dy) > 20))
 						{
 							set_drag(PART:"over2", 0.0, 0.0);
-							set_state(PART:"elm.text", "compress", 0.0);
 							set_state(PART:"bg", "default", 0.0);
 						}
 					set_drag(PART:"over2", 0.0, 0.0);
@@ -2316,7 +2337,6 @@ group {
 				source: "over2";
 				script {
 					set_drag(PART:"over2", 0.0, 0.0);
-					set_state(PART:"elm.text", "compress", 0.0);
 					set_state(PART:"bg", "default", 0.0);
 				}
 			}
@@ -2445,14 +2465,6 @@ group {
 					}
 				}
 				description {
-					state: "compress" 0.0;
-					inherit: "default" 0.0;
-					max: -1 -1;
-					text {
-						min: 0 1;
-					}
-				}
-				description {
 					state: "clicked" 0.0;
 					inherit: "default" 0.0;
 					color: CTXPOPUP_MAIN_TEXT_PRESS_COLOR_INC;
@@ -2460,11 +2472,6 @@ group {
 				description {
 					state: "disabled" 0.0;
 					inherit: "default" 0.0;
-					color: CTXPOPUP_MAIN_TEXT_DIM_COLOR_INC;
-				}
-				description {
-					state: "compress_disabled" 0.0;
-					inherit: "compress" 0.0;
 					color: CTXPOPUP_MAIN_TEXT_DIM_COLOR_INC;
 				}
 			}
@@ -2543,8 +2550,8 @@ group {
 					new st[31];
 					new Float:vl;
 					get_state(PART:"elm.text", st, 30, vl);
-					if ((!strcmp(st, "compress")) || (!strcmp(st, "compress_disabled")))
-						set_state(PART:"elm.text", "compress_disabled", 0.0);
+					if ((!strcmp(st, "ellipsis")) || (!strcmp(st, "ellipsis_disabled")))
+						set_state(PART:"elm.text", "ellipsis_disabled", 0.0);
 					else
 						set_state(PART:"elm.text", "disabled", 0.0);
 
@@ -2559,8 +2566,8 @@ group {
 					new st[31];
 					new Float:vl;
 					get_state(PART:"elm.text", st, 30, vl);
-					if ((!strcmp(st, "compress")) || (!strcmp(st, "compress_disabled")))
-						set_state(PART:"elm.text", "compress", 0.0);
+					if ((!strcmp(st, "ellipsis")) || (!strcmp(st, "ellipsis_disabled")))
+						set_state(PART:"elm.text", "ellipsis", 0.0);
 					else
 						set_state(PART:"elm.text", "default", 0.0);
 
@@ -2574,20 +2581,6 @@ group {
 				script {
 					set_state(PART:"separator1", "default", 0.0);
 					set_state(PART:"separator2", "default", 0.0);
-				}
-			}
-			program {
-				name: "compress";
-				signal: "elm,state,compress";
-				source: "elm";
-				script {
-					new st[31];
-					new Float:vl;
-					get_state(PART:"disclip", st, 30, vl);
-					if (!strcmp(st, "disabled"))
-						set_state(PART:"elm.text", "compress_disabled", 0.0);
-					else
-						set_state(PART:"elm.text", "compress", 0.0);
 				}
 			}
 			program {
@@ -2625,7 +2618,6 @@ group {
 					if ((abs(dx) > 20) || (abs(dy) > 20))
 						{
 							set_drag(PART:"over2", 0.0, 0.0);
-							set_state(PART:"elm.text", "compress", 0.0);
 							set_state(PART:"bg", "default", 0.0);
 						}
 					set_drag(PART:"over2", 0.0, 0.0);
@@ -2637,7 +2629,6 @@ group {
 				source: "over2";
 				script {
 					set_drag(PART:"over2", 0.0, 0.0);
-					set_state(PART:"elm.text", "compress", 0.0);
 					set_state(PART:"bg", "default", 0.0);
 				}
 			}
@@ -3069,14 +3060,6 @@ group {
 					}
 				}
 				description {
-					state: "compress" 0.0;
-					inherit: "default" 0.0;
-					max: -1 -1;
-					text {
-						min: 0 1;
-					}
-				}
-				description {
 					state: "clicked" 0.0;
 					inherit: "default" 0.0;
 					color: CTXPOPUP_LIST_MAIN_TEXT_PRESS_COLOR_INC;
@@ -3085,11 +3068,6 @@ group {
 				description {
 					state: "disabled" 0.0;
 					inherit: "default" 0.0;
-					color: CTXPOPUP_LIST_MAIN_TEXT_DIM_COLOR_INC;
-				}
-				description {
-					state: "compress_disabled" 0.0;
-					inherit: "compress" 0.0;
 					color: CTXPOPUP_LIST_MAIN_TEXT_DIM_COLOR_INC;
 				}
 				description {
@@ -3180,8 +3158,8 @@ group {
 					new st[31];
 					new Float:vl;
 					get_state(PART:"elm.text", st, 30, vl);
-					if ((!strcmp(st, "compress")) || (!strcmp(st, "compress_disabled")))
-						set_state(PART:"elm.text", "compress_disabled", 0.0);
+					if ((!strcmp(st, "ellipsis")) || (!strcmp(st, "ellipsis_disabled")))
+						set_state(PART:"elm.text", "ellipsis_disabled", 0.0);
 					else
 						set_state(PART:"elm.text", "disabled", 0.0);
 
@@ -3196,8 +3174,8 @@ group {
 					new st[31];
 					new Float:vl;
 					get_state(PART:"elm.text", st, 30, vl);
-					if ((!strcmp(st, "compress")) || (!strcmp(st, "compress_disabled")))
-						set_state(PART:"elm.text", "compress", 0.0);
+					if ((!strcmp(st, "ellipsis")) || (!strcmp(st, "ellipsis_disabled")))
+						set_state(PART:"elm.text", "ellipsis", 0.0);
 					else
 						set_state(PART:"elm.text", "default", 0.0);
 
@@ -3211,20 +3189,6 @@ group {
 				script {
 					set_state(PART:"separator1", "default", 0.0);
 					set_state(PART:"separator2", "default", 0.0);
-				}
-			}
-			program {
-				name: "compress";
-				signal: "elm,state,compress";
-				source: "elm";
-				script {
-					new st[31];
-					new Float:vl;
-					get_state(PART:"disclip", st, 30, vl);
-					if (!strcmp(st, "disabled"))
-						set_state(PART:"elm.text", "compress_disabled", 0.0);
-					else
-						set_state(PART:"elm.text", "compress", 0.0);
 				}
 			}
 			program {
@@ -3262,7 +3226,6 @@ group {
 					if ((abs(dx) > 20) || (abs(dy) > 20))
 						{
 							set_drag(PART:"over2", 0.0, 0.0);
-							set_state(PART:"elm.text", "compress", 0.0);
 							set_state(PART:"bg", "default", 0.0);
 						}
 					set_drag(PART:"over2", 0.0, 0.0);
@@ -3274,7 +3237,6 @@ group {
 				source: "over2";
 				script {
 					set_drag(PART:"over2", 0.0, 0.0);
-					set_state(PART:"elm.text", "compress", 0.0);
 					set_state(PART:"bg", "default", 0.0);
 				}
 			}
@@ -3760,14 +3722,6 @@ group {
 					}
 				}
 				description {
-					state: "compress" 0.0;
-					inherit: "default" 0.0;
-					max: -1 -1;
-					text {
-						min: 0 1;
-					}
-				}
-				description {
 					state: "clicked" 0.0;
 					inherit: "default" 0.0;
 					color: CTXPOPUP_LIST_MAIN_TEXT_PRESS_COLOR_INC;
@@ -3775,11 +3729,6 @@ group {
 				description {
 					state: "disabled" 0.0;
 					inherit: "default" 0.0;
-					color: CTXPOPUP_LIST_MAIN_TEXT_DIM_COLOR_INC;
-				}
-				description {
-					state: "compress_disabled" 0.0;
-					inherit: "compress" 0.0;
 					color: CTXPOPUP_LIST_MAIN_TEXT_DIM_COLOR_INC;
 				}
 			}
@@ -3857,8 +3806,8 @@ group {
 					new st[31];
 					new Float:vl;
 					get_state(PART:"elm.text", st, 30, vl);
-					if ((!strcmp(st, "compress")) || (!strcmp(st, "compress_disabled")))
-						set_state(PART:"elm.text", "compress_disabled", 0.0);
+					if ((!strcmp(st, "ellipsis")) || (!strcmp(st, "ellipsis_disabled")))
+						set_state(PART:"elm.text", "ellipsis_disabled", 0.0);
 					else
 						set_state(PART:"elm.text", "disabled", 0.0);
 
@@ -3873,8 +3822,8 @@ group {
 					new st[31];
 					new Float:vl;
 					get_state(PART:"elm.text", st, 30, vl);
-					if ((!strcmp(st, "compress")) || (!strcmp(st, "compress_disabled")))
-						set_state(PART:"elm.text", "compress", 0.0);
+					if ((!strcmp(st, "ellipsis")) || (!strcmp(st, "ellipsis_disabled")))
+						set_state(PART:"elm.text", "ellipsis", 0.0);
 					else
 						set_state(PART:"elm.text", "default", 0.0);
 
@@ -3888,20 +3837,6 @@ group {
 				script {
 					set_state(PART:"separator1", "default", 0.0);
 					set_state(PART:"separator2", "default", 0.0);
-				}
-			}
-			program {
-				name: "compress";
-				signal: "elm,state,compress";
-				source: "elm";
-				script {
-					new st[31];
-					new Float:vl;
-					get_state(PART:"disclip", st, 30, vl);
-					if (!strcmp(st, "disabled"))
-						set_state(PART:"elm.text", "compress_disabled", 0.0);
-					else
-						set_state(PART:"elm.text", "compress", 0.0);
 				}
 			}
 			program {
@@ -3939,7 +3874,6 @@ group {
 					if ((abs(dx) > 20) || (abs(dy) > 20))
 						{
 							set_drag(PART:"over2", 0.0, 0.0);
-							set_state(PART:"elm.text", "compress", 0.0);
 							set_state(PART:"bg", "default", 0.0);
 						}
 					set_drag(PART:"over2", 0.0, 0.0);
@@ -3951,7 +3885,6 @@ group {
 				source: "over2";
 				script {
 					set_drag(PART:"over2", 0.0, 0.0);
-					set_state(PART:"elm.text", "compress", 0.0);
 					set_state(PART:"bg", "default", 0.0);
 				}
 			}
@@ -5388,14 +5321,6 @@ group {
 					}
 				}
 				description {
-					state: "compress" 0.0;
-					inherit: "default" 0.0;
-					max: -1 -1;
-					text {
-						min: 0 1;
-					}
-				}
-				description {
 					state: "clicked" 0.0;
 					inherit: "default" 0.0;
 					color: CTXPOPUP_LIST_MAIN_TEXT_PRESS_COLOR_INC;
@@ -5403,11 +5328,6 @@ group {
 				description {
 					state: "disabled" 0.0;
 					inherit: "default" 0.0;
-					color: CTXPOPUP_LIST_MAIN_TEXT_DIM_COLOR_INC;
-				}
-				description {
-					state: "compress_disabled" 0.0;
-					inherit: "compress" 0.0;
 					color: CTXPOPUP_LIST_MAIN_TEXT_DIM_COLOR_INC;
 				}
 			}
@@ -5485,8 +5405,8 @@ group {
 					new st[31];
 					new Float:vl;
 					get_state(PART:"elm.text", st, 30, vl);
-					if ((!strcmp(st, "compress")) || (!strcmp(st, "compress_disabled")))
-						set_state(PART:"elm.text", "compress_disabled", 0.0);
+					if ((!strcmp(st, "ellipsis")) || (!strcmp(st, "ellipsis_disabled")))
+						set_state(PART:"elm.text", "ellipsis_disabled", 0.0);
 					else
 						set_state(PART:"elm.text", "disabled", 0.0);
 
@@ -5501,8 +5421,8 @@ group {
 					new st[31];
 					new Float:vl;
 					get_state(PART:"elm.text", st, 30, vl);
-					if ((!strcmp(st, "compress")) || (!strcmp(st, "compress_disabled")))
-						set_state(PART:"elm.text", "compress", 0.0);
+					if ((!strcmp(st, "ellipsis")) || (!strcmp(st, "ellipsis_disabled")))
+						set_state(PART:"elm.text", "ellipsis", 0.0);
 					else
 						set_state(PART:"elm.text", "default", 0.0);
 
@@ -5516,20 +5436,6 @@ group {
 				script {
 					set_state(PART:"separator1", "default", 0.0);
 					set_state(PART:"separator2", "default", 0.0);
-				}
-			}
-			program {
-				name: "compress";
-				signal: "elm,state,compress";
-				source: "elm";
-				script {
-					new st[31];
-					new Float:vl;
-					get_state(PART:"disclip", st, 30, vl);
-					if (!strcmp(st, "disabled"))
-						set_state(PART:"elm.text", "compress_disabled", 0.0);
-					else
-						set_state(PART:"elm.text", "compress", 0.0);
 				}
 			}
 			program {
@@ -5567,7 +5473,6 @@ group {
 					if ((abs(dx) > 20) || (abs(dy) > 20))
 						{
 							set_drag(PART:"over2", 0.0, 0.0);
-							set_state(PART:"elm.text", "compress", 0.0);
 							set_state(PART:"bg", "default", 0.0);
 						}
 					set_drag(PART:"over2", 0.0, 0.0);
@@ -5579,7 +5484,6 @@ group {
 				source: "over2";
 				script {
 					set_drag(PART:"over2", 0.0, 0.0);
-					set_state(PART:"elm.text", "compress", 0.0);
 					set_state(PART:"bg", "default", 0.0);
 				}
 			}
