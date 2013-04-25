@@ -2039,6 +2039,7 @@ group {
 					text {
 						font: "Tizen:style=Roman";
 						size: CTXPOPUP_LIST_MAIN_TEXT_SIZE_INC;
+						size_range: CTXPOPUP_LIST_MAIN_TEXT_SIZE_INC CTXPOPUP_LIST_MAIN_TEXT_MAX_SIZE_INC;
 						align: 0 0.5;
 						min: 1 1;
 						text_class: "list_item";
@@ -2349,6 +2350,7 @@ group {
 					text {
 						font: "Tizen:style=Roman";
 						size: CTXPOPUP_MAIN_TEXT_SIZE_INC;
+						size_range: CTXPOPUP_LIST_MAIN_TEXT_SIZE_INC CTXPOPUP_LIST_MAIN_TEXT_MAX_SIZE_INC;
 						align: 0.5 0.5;
 						min: 1 1;
 						text_class: "list_item";
@@ -2946,6 +2948,7 @@ group {
 					text {
 						font: "Tizen:style=Roman";
 						size: CTXPOPUP_LIST_MAIN_TEXT_SIZE_INC;
+						size_range: CTXPOPUP_LIST_MAIN_TEXT_SIZE_INC CTXPOPUP_LIST_MAIN_TEXT_MAX_SIZE_INC;
 						align: 0.0 0.5;
 						min: 1 1;
 						text_class: "list_item";
@@ -3615,6 +3618,7 @@ group {
 					text {
 						font: "Tizen:style=Roman";
 						size: CTXPOPUP_MORE_ITEM_TEXT_SIZE_INC;
+						size_range: CTXPOPUP_LIST_MAIN_TEXT_SIZE_INC CTXPOPUP_LIST_MAIN_TEXT_MAX_SIZE_INC;
 						align: 0.0 0.5;
 						min: 1 1;
 						text_class: "list_item";
@@ -4315,6 +4319,7 @@ group {
 					text {
 						font: "Tizen:style=Roman";
 						size: CTXPOPUP_LIST_MAIN_TEXT_SIZE_INC;
+						size_range: CTXPOPUP_LIST_MAIN_TEXT_SIZE_INC CTXPOPUP_LIST_MAIN_TEXT_MAX_SIZE_INC;
 						align: 0.5 0.5;
 						min: 1 1;
 						text_class: "list_item";
