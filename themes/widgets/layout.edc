@@ -488,7 +488,7 @@
 
 group { name: "elm/layout/editfield/default";
    images {
-      image: "00_EditField_clear.png" COMP;
+      image: "00_edit_field_clear.png" COMP;
    }
    parts {
       part {
@@ -641,7 +641,7 @@ group { name: "elm/layout/editfield/default";
                relative: 0.0 0.5;
                to_x : "right2";
             }
-            image.normal: "00_EditField_clear.png";
+            image.normal: "00_edit_field_clear.png";
          }
          description {
             state: "elm.eraser.show" 0.0;
@@ -747,7 +747,7 @@ group { name: "elm/layout/editfield/default";
 
 group { name: "elm/layout/editfield/title";
    images {
-      image: "00_EditField_clear.png" COMP;
+      image: "00_edit_field_clear.png" COMP;
    }
    parts {
       part {
@@ -990,7 +990,7 @@ group { name: "elm/layout/editfield/title";
                to_x : "right2";
                to_y : "eraser_base";
             }
-            image.normal: "00_EditField_clear.png";
+            image.normal: "00_edit_field_clear.png";
          }
          description {
             state: "elm.eraser.show" 0.0;
@@ -1098,7 +1098,7 @@ group { name: "elm/layout/editfield/title";
 
 group { name: "elm/layout/searchbar/default";
    images {
-      image: "00_EditField_clear.png" COMP;
+      image: "00_edit_field_clear.png" COMP;
       image: "00_search_edit_field_bg.png" COMP;
       image: "00_search_icon.png" COMP;
    }
@@ -1515,7 +1515,7 @@ group { name: "elm/layout/searchbar/default";
                relative: 0.0 0.5;
                to_x : "right2";
             }
-            image.normal: "00_EditField_clear.png";
+            image.normal: "00_edit_field_clear.png";
          }
          description { state: "elm.eraser.show" 0.0;
             inherit: "default" 0.0;
@@ -1650,7 +1650,7 @@ group { name: "elm/layout/searchbar/default";
 
 group { name: "elm/layout/searchbar/cancel_button";
    images {
-      image: "00_EditField_clear.png" COMP;
+      image: "00_edit_field_clear.png" COMP;
       image: "00_search_edit_field_bg.png" COMP;
       image: "00_search_edit_field_bg_focus.png" COMP;
       image: "00_search_icon.png" COMP;
@@ -2166,7 +2166,7 @@ group { name: "elm/layout/searchbar/cancel_button";
                relative: 0.0 0.5;
                to_x : "right2";
             }
-            image.normal: "00_EditField_clear.png";
+            image.normal: "00_edit_field_clear.png";
          }
          description { state: "elm.eraser.show" 0.0;
             inherit: "default" 0.0;
@@ -2347,7 +2347,7 @@ group {
       }
    }
    images {
-      image: "00_Nocontents_picture.png" COMP;
+      image: "00_nocontents_picture.png" COMP;
    }
    parts {
       part { name: "bg";
@@ -2375,7 +2375,7 @@ group {
                to: "bg";
             }
             image {
-               normal: "00_Nocontents_picture.png";
+               normal: "00_nocontents_picture.png";
             }
             color: NOCONTENT_IMAGE_COLOR_INC;
             aspect: 1.0 1.0;
@@ -2445,13 +2445,13 @@ group {
    alias: "elm/nocontents/base/multimedia";
    inherit: "elm/layout/nocontents/full";
    images {
-      image: "00_Nocontents_multimedia.png" COMP;
+      image: "00_nocontents_multimedia.png" COMP;
    }
    parts {
       part { name: "nocontents.image";
          description { state: "default" 0.0;
             image {
-               normal: "00_Nocontents_multimedia.png";
+               normal: "00_nocontents_multimedia.png";
             }
          }
       }
@@ -2463,13 +2463,13 @@ group {
    alias: "elm/nocontents/base/text";
    inherit: "elm/layout/nocontents/full";
    images {
-      image: "00_Nocontents_text.png" COMP;
+      image: "00_nocontents_text.png" COMP;
    }
    parts {
       part { name: "nocontents.image";
          description { state: "default" 0.0;
             image {
-               normal: "00_Nocontents_text.png";
+               normal: "00_nocontents_text.png";
             }
          }
       }
@@ -2481,13 +2481,13 @@ group {
    alias: "elm/nocontents/base/unnamed";
    inherit: "elm/layout/nocontents/full";
    images {
-      image: "00_Nocontents_unnamed.png" COMP;
+      image: "00_nocontents_unnamed.png" COMP;
    }
    parts {
       part { name: "nocontents.image";
          description { state: "default" 0.0;
             image {
-               normal: "00_Nocontents_unnamed.png";
+               normal: "00_nocontents_unnamed.png";
             }
          }
       }
@@ -2499,13 +2499,13 @@ group {
    alias: "elm/nocontents/base/devices";
    inherit: "elm/layout/nocontents/full";
    images {
-      image: "00_Nocontents_devices.png" COMP;
+      image: "00_nocontents_devices.png" COMP;
    }
    parts {
       part { name: "nocontents.image";
          description { state: "default" 0.0;
             image {
-               normal: "00_Nocontents_devices.png";
+               normal: "00_nocontents_devices.png";
             }
          }
       }

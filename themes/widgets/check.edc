@@ -30,8 +30,8 @@
       images { \
          image: "00_check_bg.png" COMP; \
          image: "00_check_dim_bg.png" COMP; \
-         image: "00_check_Activated_dim.png" COMP; \
-         image: "00_check_Activated.png" COMP; \
+         image: "00_check_activated_dim.png" COMP; \
+         image: "00_check_activated.png" COMP; \
          image: "00_check_press_bg.png" COMP; \
          image: "00_check_press.png" COMP; \
       } \
@@ -83,7 +83,7 @@
                rel1.to: "bg"; \
                rel2.to: "bg"; \
                visible: 0; \
-               image.normal: "00_check_Activated.png"; \
+               image.normal: "00_check_activated.png"; \
                color: 255 255 255 0; \
             } \
             description { state: "visible" 0.0; \
@@ -94,7 +94,7 @@
             description { state: "disabled_visible" 0.0; \
                inherit: "default" 0.0; \
                visible: 1; \
-               image.normal: "00_check_Activated_dim.png"; \
+               image.normal: "00_check_activated_dim.png"; \
                color: 255 255 255 255; \
             } \
             description { state: "pressed" 0.0; \
@@ -422,8 +422,8 @@ CHECK_STYLE_DEFAULT("default/extended", CHECK_STYLE_DEFAULT_EXTENDED_BG_IMAGE_MI
       images { \
          image: "00_check_bg.png" COMP; \
          image: "00_check_dim_bg.png" COMP; \
-         image: "00_check_Activated_dim.png" COMP; \
-         image: "00_check_Activated.png" COMP; \
+         image: "00_check_activated_dim.png" COMP; \
+         image: "00_check_activated.png" COMP; \
       } \
       script { \
          public check_state = CHECK_STATE_DEFAULT; \
@@ -473,7 +473,7 @@ CHECK_STYLE_DEFAULT("default/extended", CHECK_STYLE_DEFAULT_EXTENDED_BG_IMAGE_MI
                rel1.to: "bg"; \
                rel2.to: "bg"; \
                visible: 0; \
-               image.normal: "00_check_Activated.png"; \
+               image.normal: "00_check_activated.png"; \
                color: 255 255 255 0; \
             } \
             description { state: "visible" 0.0; \
@@ -484,7 +484,7 @@ CHECK_STYLE_DEFAULT("default/extended", CHECK_STYLE_DEFAULT_EXTENDED_BG_IMAGE_MI
             description { state: "disabled_visible" 0.0; \
                inherit: "default" 0.0; \
                visible: 1; \
-               image.normal: "00_check_Activated_dim.png"; \
+               image.normal: "00_check_activated_dim.png"; \
                color: 255 255 255 255; \
             } \
             description { state: "pressed" 0.0; \
@@ -788,8 +788,8 @@ CHECK_STYLE_DEFAULT_GENLIST_EDITMODE("default/genlist", CHECK_STYLE_DEFAULT_DEFA
       images { \
          image: "00_check_bg.png" COMP; \
          image: "00_check_dim_bg.png" COMP; \
-         image: "00_check_Activated_dim.png" COMP; \
-         image: "00_check_Activated.png" COMP; \
+         image: "00_check_activated_dim.png" COMP; \
+         image: "00_check_activated.png" COMP; \
       } \
       script { \
          public check_state = CHECK_STATE_DEFAULT; \
@@ -828,7 +828,7 @@ CHECK_STYLE_DEFAULT_GENLIST_EDITMODE("default/genlist", CHECK_STYLE_DEFAULT_DEFA
                rel1.to: "bg"; \
                rel2.to: "bg"; \
                visible: 0; \
-               image.normal: "00_check_Activated.png"; \
+               image.normal: "00_check_activated.png"; \
             } \
             description { state: "visible" 0.0; \
                inherit: "default" 0.0; \
@@ -837,7 +837,7 @@ CHECK_STYLE_DEFAULT_GENLIST_EDITMODE("default/genlist", CHECK_STYLE_DEFAULT_DEFA
             description { state: "disabled_visible" 0.0; \
                inherit: "default" 0.0; \
                visible: 1; \
-               image.normal: "00_check_Activated_dim.png"; \
+               image.normal: "00_check_activated_dim.png"; \
             } \
          } \
          part { name: "elm.swallow.content"; \
@@ -1949,8 +1949,8 @@ CHECK_STYLE_FAVORITE("favorite/extended", "00_icon_favorite_on_72x72.png", "00_i
    group { name: "elm/check/base/grid";
       images.image: "00_check_bg.png" COMP;
       images.image: "00_check_dim_bg.png" COMP;
-      images.image: "00_check_Activated_dim.png" COMP;
-      images.image: "00_check_Activated.png" COMP;
+      images.image: "00_check_activated_dim.png" COMP;
+      images.image: "00_check_activated.png" COMP;
       script {
          public check_state = CHECK_STATE_DEFAULT;
          public check_visible = CHECK_HIDE;
@@ -2015,7 +2015,7 @@ CHECK_STYLE_FAVORITE("favorite/extended", "00_icon_favorite_on_72x72.png", "00_i
                visible: 0;
                rel1.to: "bg2";
                rel2.to: "bg2";
-               image.normal: "00_check_Activated.png";
+               image.normal: "00_check_activated.png";
                color: 255 255 255 0;
             }
             description { state: "visible" 0.0;
@@ -2029,7 +2029,7 @@ CHECK_STYLE_FAVORITE("favorite/extended", "00_icon_favorite_on_72x72.png", "00_i
             description { state: "disabled_visible" 0.0;
                inherit: "default" 0.0;
                visible: 1;
-               image.normal: "00_check_Activated_dim.png";
+               image.normal: "00_check_activated_dim.png";
             }
          }
          part { name: "sequence_clip";
