@@ -58,8 +58,6 @@
       programs {
          GENLIST_PROGRAM_SELECT_ARROW
          GENLIST_PROGRAM_EXPAND_ROOT( target: "arrow"; )
-         GENLIST_PROGRAM_SOUND("elm.text.1")
-         GENLIST_PROGRAM_SOUND("elm.text.2")
       }
    }
 
@@ -101,8 +99,6 @@
       programs {
          GENLIST_PROGRAM_SELECT_ARROW
          GENLIST_PROGRAM_EXPAND_ROOT( target: "arrow"; )
-         GENLIST_PROGRAM_SOUND("elm.text.1")
-         GENLIST_PROGRAM_SOUND("elm.text.2")
       }
    }
 
@@ -143,8 +139,6 @@
       programs {
          GENLIST_PROGRAM_SELECT_ARROW
          GENLIST_PROGRAM_EXPAND_ROOT( target: "arrow"; )
-         GENLIST_PROGRAM_SOUND("elm.text.1")
-         GENLIST_PROGRAM_SOUND("elm.text.2")
       }
    }
 
@@ -194,8 +188,6 @@
       programs {
          GENLIST_PROGRAM_SELECT_ARROW
          GENLIST_PROGRAM_EXPAND_ROOT( target: "arrow"; )
-         GENLIST_PROGRAM_SOUND("elm.text.1")
-         GENLIST_PROGRAM_SOUND("elm.text.2")
       }
    }
 
@@ -250,9 +242,6 @@
       programs {
          GENLIST_PROGRAM_SELECT_ARROW
          GENLIST_PROGRAM_EXPAND_ROOT( target: "arrow"; )
-         GENLIST_PROGRAM_SOUND("elm.text.1")
-         GENLIST_PROGRAM_SOUND("elm.text.2")
-         GENLIST_PROGRAM_SOUND("elm.text.3")
       }
    }
 
@@ -293,7 +282,6 @@
       programs {
          GENLIST_PROGRAM_SELECT_ARROW
          GENLIST_PROGRAM_EXPAND_ROOT( target: "arrow"; )
-         GENLIST_PROGRAM_SOUND("elm.text")
       }
    }
 #if 0
@@ -328,7 +316,6 @@
       programs {
          GENLIST_PROGRAM_DISABLED
          GENLIST_PROGRAM_SELECT_BOTTOMLINE( target: "elm.text"; )
-         GENLIST_PROGRAM_SOUND("elm.text")
       }
    }
 
@@ -363,7 +350,6 @@
       programs {
          GENLIST_PROGRAM_DISABLED
          GENLIST_PROGRAM_SELECT_BOTTOMLINE( target: "elm.text"; )
-         GENLIST_PROGRAM_SOUND("elm.text")
       }
    }
 
@@ -569,7 +555,6 @@
             action: STATE_SET "default" 0.0;
             target: "disclip";
          }
-         GENLIST_PROGRAM_SOUND("elm.text")
       }
    }
 
