@@ -57,6 +57,7 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.swallow.icon"; target: "elm.swallow.end"; )
+      GENLIST_PROGRAM_SOUND("elm.text")
    }
 
 // -------------------------------------------------------------------
@@ -312,6 +313,7 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; )
+      GENLIST_PROGRAM_SOUND("elm.text")
    }
 // 2.2.1.1 (textblock)
    group { GENLIST_NAME("1text.tb/default")
@@ -334,6 +336,7 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; )
+      GENLIST_PROGRAM_SOUND("elm.text")
    }
 
 // 2.2.1.2
@@ -361,6 +364,8 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.1.3
@@ -405,6 +410,7 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon"; )
+      GENLIST_PROGRAM_SOUND("elm.text")
    }
 
 // 2.2.1.5
@@ -494,6 +500,7 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon.1"; target: "elm.icon.2"; )
+      GENLIST_PROGRAM_SOUND("elm.text")
    }
 
 // 2.2.1.9 (textblock)
@@ -529,6 +536,7 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon.1"; target: "elm.icon.2"; )
+      GENLIST_PROGRAM_SOUND("elm.text")
    }
 
 // 2.2.1.10
@@ -571,6 +579,7 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon"; )
+      GENLIST_PROGRAM_SOUND("elm.text")
    }
 
 // 2.2.1.10.1 (circle)
@@ -613,6 +622,7 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon"; )
+      GENLIST_PROGRAM_SOUND("elm.text")
    }
 
 // 2.2.1.11
@@ -638,6 +648,8 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.icon"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.1.12
@@ -678,6 +690,7 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon.1"; target: "elm.icon.2"; )
+      GENLIST_PROGRAM_SOUND("elm.text")
    }
 
 // 2.2.1.13 (textblock)
@@ -704,6 +717,7 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon.1"; target: "elm.icon.2"; )
+      GENLIST_PROGRAM_SOUND("elm.text")
    }
 
 // 2.2.1.14
@@ -799,6 +813,7 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon.1"; target: "elm.icon.2"; )
+      GENLIST_PROGRAM_SOUND("elm.text")
    }
 
 // 2.2.1.19
@@ -829,6 +844,7 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon.1"; target: "elm.icon.2"; target: "elm.icon.3"; )
+      GENLIST_PROGRAM_SOUND("elm.text")
    }
 
 // 2.2.1.21
@@ -878,6 +894,7 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon.1"; target: "elm.icon.2"; target: "elm.icon.3"; )
+      GENLIST_PROGRAM_SOUND("elm.text")
    }
 
 // 2.2.1.26
@@ -908,6 +925,8 @@
       GENLIST_PROGRAMS_NORMAL(
          target: "elm.text.1"; target: "elm.text.2";
          target: "elm.divider1"; target: "elm.divider2"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.1.26 (textblock)
@@ -936,6 +955,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.divider1"; target: "elm.divider2"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.1.27
@@ -963,6 +984,8 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.divider1"; target: "elm.divider2"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.1.28
@@ -1020,6 +1043,8 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.1 (textblock)
@@ -1047,6 +1072,8 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.2
@@ -1074,6 +1101,8 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.3
@@ -1103,6 +1132,9 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
+      GENLIST_PROGRAM_SOUND("elm.text.3")
    }
 
 // 2.2.2.3 (textblock)
@@ -1133,6 +1165,9 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
+      GENLIST_PROGRAM_SOUND("elm.text.3")
    }
 
 // 2.2.2.4
@@ -1162,6 +1197,8 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.icon"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.4 (textblock)
@@ -1191,6 +1228,8 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.icon"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 
@@ -1231,6 +1270,8 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.icon"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.6
@@ -1273,6 +1314,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; target: "elm.icon.3"; target: "elm.icon.4"; target: "elm.icon.5";)
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.7
@@ -1311,6 +1354,9 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3";
          target: "elm.icon"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
+      GENLIST_PROGRAM_SOUND("elm.text.3")
    }
 
 // 2.2.2.7 (textblock)
@@ -1350,6 +1396,9 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3";
          target: "elm.icon"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
+      GENLIST_PROGRAM_SOUND("elm.text.3")
    }
 
 // 2.2.2.8
@@ -1388,6 +1437,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.9
@@ -1447,6 +1498,8 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.icon"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.11
@@ -1505,6 +1558,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.13
@@ -1535,6 +1590,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.14
@@ -1564,6 +1621,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.14.1 (circle)
@@ -1613,6 +1672,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.15
@@ -1644,6 +1705,9 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3";
          target: "elm.icon"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
+      GENLIST_PROGRAM_SOUND("elm.text.3")
    }
 
 // 2.2.2.16
@@ -1702,6 +1766,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; target: "elm.icon.3"; target: "elm.icon.4"; target: "elm.icon.5"; target: "elm.icon.6"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.17 (textblock)
@@ -1746,6 +1812,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; target: "elm.icon.3"; target: "elm.icon.4"; target: "elm.icon.5"; target: "elm.icon.6"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.18
@@ -1778,6 +1846,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 
@@ -1811,6 +1881,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2";)
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.19
@@ -1844,6 +1916,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2";)
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.19 (textblock)
@@ -1878,6 +1952,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2";)
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.20
@@ -1910,6 +1986,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.20 (textblock)
@@ -1942,6 +2020,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2";)
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.21
@@ -1986,6 +2066,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.swallow.progress";)
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.22
@@ -2050,6 +2132,9 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; target: "elm.swallow.progress"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
+      GENLIST_PROGRAM_SOUND("elm.text.3")
    }
 
 // 2.2.2.23
@@ -2082,6 +2167,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon"; target: "elm.divider1"; target: "elm.divider2"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.30
@@ -2129,6 +2216,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; target: "elm.icon.3"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.31
@@ -2236,6 +2325,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2";)
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.35
@@ -2269,6 +2360,8 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 
@@ -2312,6 +2405,10 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3"; target: "elm.text.4";
          target: "elm.icon.1"; target: "elm.bubble"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
+      GENLIST_PROGRAM_SOUND("elm.text.3")
+      GENLIST_PROGRAM_SOUND("elm.text.4")
    }
 
 // 2.2.2.38 textblock
@@ -2358,6 +2455,10 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3"; target: "elm.text.4";
          target: "elm.icon.1"; target: "elm.bubble"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
+      GENLIST_PROGRAM_SOUND("elm.text.3")
+      GENLIST_PROGRAM_SOUND("elm.text.4")
    }
 
 // 2.2.2.39
@@ -2396,6 +2497,10 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3"; target: "elm.text.4";
          target: "elm.icon.1";)
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
+      GENLIST_PROGRAM_SOUND("elm.text.3")
+      GENLIST_PROGRAM_SOUND("elm.text.4")
    }
 // 2.2.2.39 (TEXTBLOCK)
    group { GENLIST_NAME("4text.1icon.2.tb/default")
@@ -2433,6 +2538,10 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3"; target: "elm.text.4";
          target: "elm.icon.1";)
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
+      GENLIST_PROGRAM_SOUND("elm.text.3")
+      GENLIST_PROGRAM_SOUND("elm.text.4")
    }
 
 // 2.2.2.40
@@ -2470,6 +2579,11 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3"; target: "elm.text.4";
          target: "elm.bubble"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
+      GENLIST_PROGRAM_SOUND("elm.text.3")
+      GENLIST_PROGRAM_SOUND("elm.text.4")
+
    }
 
 // 2.2.2.41
@@ -2519,6 +2633,9 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3";
          target: "elm.icon.1";)
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
+      GENLIST_PROGRAM_SOUND("elm.text.3")
    }
 
 // 2.2.2.42
@@ -2554,6 +2671,9 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3";
          target: "elm.icon.1";)
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
+      GENLIST_PROGRAM_SOUND("elm.text.3")
    }
 
 
@@ -2595,6 +2715,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; target: "elm.icon.3"; target: "elm.icon.4";)
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.44
@@ -2640,6 +2762,10 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3"; target: "elm.text.4";
          target: "elm.swallow.colorbar"; target: "elm.icon.1"; target: "elm.bubble"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
+      GENLIST_PROGRAM_SOUND("elm.text.3")
+      GENLIST_PROGRAM_SOUND("elm.text.4")
    }
 
 // 2.2.2.45
@@ -2671,6 +2797,9 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3";
          target: "elm.icon"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
+      GENLIST_PROGRAM_SOUND("elm.text.3")
    }
 
 // 2.2.2.46
@@ -2703,6 +2832,8 @@
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2";)
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.2.47
@@ -2763,6 +2894,7 @@
          target: "elm.divider1"; target:"elm.divider2";
          target: "center_line"; target:"center_line2";
       )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
    }
 
 // 2.2.4.2
@@ -2806,6 +2938,7 @@
          target: "elm.text";
          target: "elm.divider1"; target:"elm.divider2";
       )
+      GENLIST_PROGRAM_SOUND("elm.text")
    }
 
 // 2.2.4.3
@@ -2842,6 +2975,8 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.2.4.4
@@ -2895,6 +3030,8 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.4.4.5
@@ -2931,6 +3068,8 @@
          GENLIST_PART_FOCUS
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 /************************************************************/
@@ -3027,6 +3166,7 @@
       */
       GENLIST_DIALOGUE_INHERIT_BODY(;)
       GENLIST_PROGRAMS_DIALOGUE( target: "elm.text"; )
+      GENLIST_PROGRAM_SOUND("elm.text")
    }
 
 // 2.4.1.2
@@ -3218,6 +3358,7 @@
          GENLIST_PART_FOCUS_DIALOGUE
       }
       GENLIST_PROGRAMS_DIALOGUE( target: "elm.text"; target: "elm.icon"; )
+      GENLIST_PROGRAM_SOUND("elm.text")
    }
 
 // 2.4.1.10
@@ -3708,6 +3849,7 @@
       }
       programs {
          GENLIST_PROGRAM_DISABLED( target: "elm.text"; )
+         GENLIST_PROGRAM_SOUND("elm.text")
       }
    }
 
@@ -3811,6 +3953,8 @@
       }
       GENLIST_PROGRAMS_DIALOGUE( target: "elm.text.1";
          target: "elm.text.2"; target: "elm.icon"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.4.2.18
@@ -3866,6 +4010,8 @@
          GENLIST_PART_FOCUS_DIALOGUE
       }
       GENLIST_PROGRAMS_DIALOGUE( target: "elm.text.1"; target: "elm.text.2"; target: "elm.icon"; )
+      GENLIST_PROGRAM_SOUND("elm.text.1")
+      GENLIST_PROGRAM_SOUND("elm.text.2")
    }
 
 // 2.4.2.20
@@ -3962,6 +4108,7 @@
       }
       GENLIST_PROGRAM_DISABLED( target: "elm.text"; )
       GENLIST_PROGRAM_FOCUS
+      GENLIST_PROGRAM_SOUND("elm.text")
    }
 
 // 2.4.4.3
