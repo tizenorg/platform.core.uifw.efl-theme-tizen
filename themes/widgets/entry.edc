@@ -5048,9 +5048,6 @@ group { name: "elm/scroller/entry/default";
             return 0;
          }
       }
-      images {
-         image: "bt_sm_base2.png" COMP;
-      }
       parts {
          part { name: "bg";
             type: RECT;
@@ -5191,6 +5188,7 @@ group { name: "elm/scroller/entry/default";
             }
          }
          part { name: "elm.dragable.vbar";
+            type: RECT;
             clip_to: "sb_vbar_clip";
             mouse_events: 0;
             dragable {
@@ -5210,11 +5208,6 @@ group { name: "elm/scroller/entry/default";
                rel2 {
                   relative: 0.5  0.5;
                   to: "sb_vbar";
-               }
-               image {
-                  normal: "bt_sm_base2.png";
-                  border: 6 6 6 6;
-                  middle: SOLID;
                }
             }
          }
@@ -5260,6 +5253,7 @@ group { name: "elm/scroller/entry/default";
             }
          }
          part { name: "elm.dragable.hbar";
+            type: RECT;
             clip_to: "sb_hbar_clip";
             mouse_events: 0;
             dragable {
@@ -5278,11 +5272,6 @@ group { name: "elm/scroller/entry/default";
                rel2 {
                   relative: 0.5  0.5;
                   to: "sb_hbar";
-               }
-               image {
-                  normal: "bt_sm_base2.png";
-                  border: 4 4 4 4;
-                  middle: SOLID;
                }
             }
          }
