@@ -581,6 +581,22 @@
                max: NAVIFRAME_LANDSCAPE_TITLE_FUNC_BTN_SIZE_INC;
             }
          }
+         part { name: "title_more_btn";
+            type: SWALLOW;
+            scale: 1;
+            clip_to: "title_clip";
+            description { state: "default" 0.0;
+               max: NAVIFRAME_TITLE_FUNC_BTN_SIZE_INC;
+               fixed: 1 1;
+               align: 1.0 0.5;
+               rel1 { relative: 0.0 0.0; to: "title_left_btn"; }
+               rel2 { relative: 0.0 1.0; to: "title_left_btn"; }
+            }
+            description { state: "landscape" 0.0;
+               inherit: "default" 0.0;
+               max: NAVIFRAME_LANDSCAPE_TITLE_FUNC_BTN_SIZE_INC;
+            }
+         }
          part { name: "toolbar_bg";
             scale: 1;
             description { state: "default" 0.0;
@@ -1106,6 +1122,7 @@
                   set_state(PART:"elm.text.subtitle", "landscape", 0.0);
                   set_state(PART:"title_left_btn", "landscape", 0.0);
                   set_state(PART:"title_right_btn", "landscape", 0.0);
+                  set_state(PART:"title_more_btn", "landscape", 0.0);
                   set_state(PART:"toolbar_more_btn", "landscape", 0.0);
                   set_state(PART:"elm.swallow.prev_btn", "landscape", 0.0);
                   set_state(PART:"toolbar_button_padding", "landscape", 0.0);
@@ -1146,6 +1163,7 @@
                   set_state(PART:"elm.text.subtitle", "default", 0.0);
                   set_state(PART:"title_left_btn", "default", 0.0);
                   set_state(PART:"title_right_btn", "default", 0.0);
+                  set_state(PART:"title_more_btn", "default", 0.0);
                   set_state(PART:"toolbar_more_btn", "default", 0.0);
                   set_state(PART:"elm.swallow.prev_btn", "default", 0.0);
                   set_state(PART:"toolbar_button_padding", "default", 0.0);
