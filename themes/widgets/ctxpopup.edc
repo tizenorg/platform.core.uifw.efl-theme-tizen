@@ -1016,7 +1016,7 @@
     group {
         name: "elm/ctxpopup/layout/landscape/more/default";
         inherit: "elm/ctxpopup/layout/landscape/default";
-        max: CTXPOPUP_MORE_WIDTH_INC ((CTXPOPUP_ITEM_HEIGHT_MIN_INC*5)+CTXPOPUP_SHADOW_TOP_PADDING+CTXPOPUP_SHADOW_BOTTOM_PADDING+(CTXPOPUP_SEPARATOR_PXLINE_SIZE_INC*8)-CTXPOPUP_CONTENT_PADDING);
+        max: CTXPOPUP_MORE_WIDTH_MAX_INC ((CTXPOPUP_ITEM_HEIGHT_MIN_INC*5)+CTXPOPUP_SHADOW_TOP_PADDING+CTXPOPUP_SHADOW_BOTTOM_PADDING+(CTXPOPUP_SEPARATOR_PXLINE_SIZE_INC*8)-CTXPOPUP_CONTENT_PADDING);
     }
 ///////////////////////////////////////////////////////////////////////////////
 	group {
@@ -1047,8 +1047,8 @@
 			}
 		}
 		images {
-			image: "00_popup_scroll.png" COMP;
-			image: "00_scroll_bar_h.png" COMP;
+			image: "00_popup_scroll_v.png" COMP;
+			image: "00_popup_scroll_h.png" COMP;
 		}
 		parts {
 			part {
@@ -1236,8 +1236,8 @@
 					rel1 {relative: 0.5  0.5; to: "sb_hbar";}
 					rel2 {relative: 0.5  0.5; to: "sb_hbar";}
 					image {
-						normal: "00_scroll_bar_h.png";
-						border: 12 14 0 0;
+						normal: "00_popup_scroll_h.png";
+						border: 8 8 0 0;
 						border_scale: 1;
 					}
 				}
@@ -2439,14 +2439,7 @@ group {
 				signal: "elm,state,disabled";
 				source: "elm";
 				script {
-					new st[31];
-					new Float:vl;
-					get_state(PART:"elm.text", st, 30, vl);
-					if ((!strcmp(st, "ellipsis")) || (!strcmp(st, "ellipsis_disabled")))
-						set_state(PART:"elm.text", "ellipsis_disabled", 0.0);
-					else
-						set_state(PART:"elm.text", "disabled", 0.0);
-
+					set_state(PART:"elm.text", "disabled", 0.0);
 					set_state(PART:"disclip", "disabled", 0.0);
 				}
 			}
@@ -2455,14 +2448,7 @@ group {
 				signal: "elm,state,enabled";
 				source: "elm";
 				script {
-					new st[31];
-					new Float:vl;
-					get_state(PART:"elm.text", st, 30, vl);
-					if ((!strcmp(st, "ellipsis")) || (!strcmp(st, "ellipsis_disabled")))
-						set_state(PART:"elm.text", "ellipsis", 0.0);
-					else
-						set_state(PART:"elm.text", "default", 0.0);
-
+					set_state(PART:"elm.text", "default", 0.0);
 					set_state(PART:"disclip", "default", 0.0);
 				}
 			}
