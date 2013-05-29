@@ -2049,7 +2049,7 @@ group {
 					state: "clicked" 0.0;
 					inherit: "default" 0.0;
 					color: CTXPOPUP_LIST_MAIN_TEXT_PRESS_COLOR_INC;
-					text.min: 0 0;
+					text.min: 0 1;
 				}
 				description {
 					state: "disabled" 0.0;
@@ -2944,7 +2944,7 @@ group {
 					state: "clicked" 0.0;
 					inherit: "default" 0.0;
 					color: CTXPOPUP_LIST_MAIN_TEXT_PRESS_COLOR_INC;
-					text.min: 0 0;
+					text.min: 0 1;
 				}
 				description {
 					state: "disabled" 0.0;
@@ -3624,6 +3624,7 @@ group {
 					state: "clicked" 0.0;
 					inherit: "default" 0.0;
 					color: CTXPOPUP_LIST_MAIN_TEXT_PRESS_COLOR_INC;
+					text.min: 0 1;
 				}
 				description {
 					state: "disabled" 0.0;
