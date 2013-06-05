@@ -54,7 +54,7 @@
             )
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.swallow.icon"; target: "elm.swallow.end"; )
       GENLIST_PROGRAM_SOUND("elm.text")
@@ -88,7 +88,7 @@
             )
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_ENTRY( target: "elm.icon.entry"; )
    }
@@ -133,7 +133,7 @@
             )
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_ENTRY( target: "elm.text"; target: "elm.icon.entry"; )
    }
@@ -173,13 +173,13 @@
             )
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAM_DEFAULT( target: "elm.icon"; )
       GENLIST_PROGRAM_DISABLED( target: "elm.icon"; )
       GENLIST_PROGRAM_SELECT( target: "elm.icon"; )
       GENLIST_PROGRAM_FLIP
-      GENLIST_PROGRAM_FOCUS
+      GENLIST_PROGRAM_FOCUS_NORMAL
    }
 
    group { GENLIST_NAME("1icon/with_no_line/default")
@@ -246,7 +246,7 @@
             "elm.padding.top", "elm.padding.bottom",
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; )
       GENLIST_PROGRAM_SOUND("elm.text")
@@ -269,7 +269,7 @@
             "elm.padding.top", "elm.padding.bottom",
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; )
       GENLIST_PROGRAM_SOUND("elm.text")
@@ -297,7 +297,7 @@
             "elm.padding.top", "elm.padding.bottom"
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; )
       GENLIST_PROGRAM_SOUND("elm.text.1")
@@ -343,7 +343,7 @@
          GENLIST_PART_ICON_BTN_01_RTB("elm.icon",
             "elm.padding.right", "elm.padding.top", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon"; )
       GENLIST_PROGRAM_SOUND("elm.text")
@@ -382,6 +382,7 @@
 
       parts {
          GENLIST_PART_ICON_THUMBNAIL1_R("elm.icon", "elm.padding.right")
+         GENLIST_PART_FOCUS_NORMAL
       }
    }
 
@@ -433,7 +434,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon1.left", "elm.icon.1")
          GENLIST_PART_ICON_THUMBNAIL1_R("elm.icon.1", "elm.padding.right")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon.1"; target: "elm.icon.2"; )
       GENLIST_PROGRAM_SOUND("elm.text")
@@ -469,7 +470,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon1.left", "elm.icon.1")
          GENLIST_PART_ICON_THUMBNAIL1_R("elm.icon.1", "elm.padding.right")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon.1"; target: "elm.icon.2"; )
       GENLIST_PROGRAM_SOUND("elm.text")
@@ -512,7 +513,7 @@
          GENLIST_PART_LISTITEM_LR("elm.text", GENLIST_HEIGHT_1LINE,
             "elm.padding.icon.right", "elm.padding.right", )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon"; )
       GENLIST_PROGRAM_SOUND("elm.text")
@@ -555,7 +556,7 @@
          GENLIST_PART_PADDING_L("elm.padding.icon.right", "elm.icon")
          GENLIST_PART_LISTITEM_LR_TB("elm.text", GENLIST_HEIGHT_1LINE, "elm.padding.icon.right", "elm.padding.right",)
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon"; )
       GENLIST_PROGRAM_SOUND("elm.text")
@@ -581,7 +582,7 @@
          GENLIST_PART_LISTITEM_LR("elm.text.1", GENLIST_HEIGHT_1LINE, "elm.padding.icon.right", "elm.text.2",)
          GENLIST_PART_SUBITEM_R("elm.text.2", GENLIST_HEIGHT_1LINE, "elm.padding.right")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.icon"; )
       GENLIST_PROGRAM_SOUND("elm.text.1")
@@ -623,7 +624,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon2.left", "elm.icon.2")
          GENLIST_PART_ICON_BTN_01_RTB("elm.icon.2", "elm.padding.right", "elm.padding.top", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon.1"; target: "elm.icon.2"; )
       GENLIST_PROGRAM_SOUND("elm.text")
@@ -650,7 +651,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon2.left", "elm.icon.2")
          GENLIST_PART_ICON_BTN_01_RTB("elm.icon.2", "elm.padding.right", "elm.padding.top", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon.1"; target: "elm.icon.2"; )
       GENLIST_PROGRAM_SOUND("elm.text")
@@ -746,7 +747,7 @@
          GENLIST_PART_PADDING_L("elm.padding.icon2.right", "elm.icon.2")
          GENLIST_PART_LISTITEM_LR("elm.text", GENLIST_HEIGHT_1LINE, "elm.padding.icon2.right", "elm.padding.right",)
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon.1"; target: "elm.icon.2"; )
       GENLIST_PROGRAM_SOUND("elm.text")
@@ -777,7 +778,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon3.left", "elm.icon.3")
          GENLIST_PART_ICON_BTN_02_RTB("elm.icon.3", "elm.padding.right", "elm.padding.top", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon.1"; target: "elm.icon.2"; target: "elm.icon.3"; )
       GENLIST_PROGRAM_SOUND("elm.text")
@@ -827,7 +828,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon3.left", "elm.icon.3")
          GENLIST_PART_ICON_BTN_02_RTB("elm.icon.3", "elm.padding.right", "elm.padding.top", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text"; target: "elm.icon.1"; target: "elm.icon.2"; target: "elm.icon.3"; )
       GENLIST_PROGRAM_SOUND("elm.text")
@@ -856,7 +857,7 @@
          GENLIST_PART_SUBITEM_R_FIXED("elm.text.2", 200, GENLIST_HEIGHT_1LINE,
             "elm.padding.right")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL(
          target: "elm.text.1"; target: "elm.text.2";
@@ -887,7 +888,7 @@
          GENLIST_PART_SUBITEM_R_FIXED_TB("elm.text.2", 206, GENLIST_HEIGHT_1LINE,
             "elm.padding.right")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.divider1"; target: "elm.divider2"; )
@@ -917,7 +918,7 @@
          GENLIST_PART_SUBITEM_LR("elm.text.1", GENLIST_HEIGHT_1LINE,
             "elm.divider.right", "elm.padding.right", )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.divider1"; target: "elm.divider2"; )
       GENLIST_PROGRAM_SOUND("elm.text.1")
@@ -976,7 +977,7 @@
          GENLIST_PART_SUBITEM_LRB("elm.text.2", GENLIST_HEIGHT_2LINE_SUB,
             "elm.padding.left", "elm.padding.right", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; )
       GENLIST_PROGRAM_SOUND("elm.text.1")
@@ -1005,7 +1006,7 @@
             "elm.padding.left", "elm.padding.right", "elm.padding.bottom"
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; )
       GENLIST_PROGRAM_SOUND("elm.text.1")
@@ -1034,7 +1035,7 @@
             "elm.text.2", "elm.padding.bottom",
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; )
       GENLIST_PROGRAM_SOUND("elm.text.1")
@@ -1065,7 +1066,7 @@
          GENLIST_PART_SUBITEM_LRB("elm.text.2", GENLIST_HEIGHT_2LINE_SUB,
             "elm.padding.left", "elm.padding.right", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3"; )
       GENLIST_PROGRAM_SOUND("elm.text.1")
@@ -1098,7 +1099,7 @@
             "elm.padding.left", "elm.padding.right", "elm.padding.bottom"
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3"; )
       GENLIST_PROGRAM_SOUND("elm.text.1")
@@ -1130,7 +1131,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon.left", "elm.icon")
          GENLIST_PART_ICON_BTN_01_RTB("elm.icon", "elm.padding.right", "elm.padding.top", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.icon"; )
       GENLIST_PROGRAM_SOUND("elm.text.1")
@@ -1161,7 +1162,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon.left", "elm.icon")
          GENLIST_PART_ICON_BTN_01_RTB("elm.icon", "elm.padding.right", "elm.padding.top", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.icon"; )
       GENLIST_PROGRAM_SOUND("elm.text.1")
@@ -1203,7 +1204,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon.left", "elm.icon")
          GENLIST_PART_ICON_BTN_02_RTB("elm.icon", "elm.padding.right", "elm.padding.top", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.icon"; )
       GENLIST_PROGRAM_SOUND("elm.text.1")
@@ -1246,7 +1247,7 @@
          GENLIST_PART_ICON_STAR_RTB("elm.icon.1",
             "elm.padding.right", "elm.padding.top", "elm.text.2")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; target: "elm.icon.3"; target: "elm.icon.4"; target: "elm.icon.5";)
@@ -1286,7 +1287,7 @@
          GENLIST_PART_SUBITEM_RB("elm.text.3", GENLIST_HEIGHT_2LINE_SUB,
             "elm.padding.right", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3";
          target: "elm.icon"; )
@@ -1328,7 +1329,7 @@
          GENLIST_PART_SUBITEM_RTB_TB("elm.text.3", GENLIST_HEIGHT_2LINE_SUB,
             "elm.padding.right", "elm.text.1", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3";
          target: "elm.icon"; )
@@ -1369,7 +1370,7 @@
             fixed: 1 1;
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; )
@@ -1431,7 +1432,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon.left", "elm.icon")
          GENLIST_PART_ICON_BTN_ONOFF_R("elm.icon", "elm.padding.right")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.icon"; )
       GENLIST_PROGRAM_SOUND("elm.text.1")
@@ -1490,7 +1491,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon1.left", "elm.icon.1")
          GENLIST_PART_ICON_BIG_R("elm.icon.1", "elm.padding.right")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; )
@@ -1522,7 +1523,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon.left", "elm.icon")
          GENLIST_PART_ICON_BIG_R("elm.icon", "elm.padding.right")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon"; )
@@ -1553,7 +1554,7 @@
          GENLIST_PART_SUBITEM_LRB("elm.text.2", GENLIST_HEIGHT_2LINE_SUB,
             "elm.padding.icon.right", "elm.padding.right", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon"; )
@@ -1604,7 +1605,7 @@
          GENLIST_PART_SUBITEM_LRB_TB("elm.text.2", GENLIST_HEIGHT_2LINE_SUB,
             "elm.padding.icon.right", "elm.padding.right", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon"; )
@@ -1637,7 +1638,7 @@
          GENLIST_PART_SUBITEM_LRB("elm.text.2", GENLIST_HEIGHT_2LINE_SUB,
             "elm.padding.icon.right", "elm.padding.right", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3";
          target: "elm.icon"; )
@@ -1698,7 +1699,7 @@
          GENLIST_PART_ICON_STAR_RTB("elm.icon.1",
             "elm.padding.right", "elm.padding.top", "elm.text.2")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; target: "elm.icon.3"; target: "elm.icon.4"; target: "elm.icon.5"; target: "elm.icon.6"; )
@@ -1744,7 +1745,7 @@
          GENLIST_PART_ICON_STAR_RTB("elm.icon.1",
             "elm.padding.right", "elm.padding.top", "elm.text.2")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; target: "elm.icon.3"; target: "elm.icon.4"; target: "elm.icon.5"; target: "elm.icon.6"; )
@@ -1778,7 +1779,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon2.left", "elm.icon.2")
          GENLIST_PART_ICON_BTN_02_RTB("elm.icon.2", "elm.padding.right", "elm.padding.top", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; )
@@ -1813,7 +1814,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon2.left", "elm.icon.2")
          GENLIST_PART_ICON_BTN_02_RTB("elm.icon.2", "elm.padding.right", "elm.padding.top", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2";)
@@ -1848,7 +1849,7 @@
          GENLIST_PART_ICON_SMALL_RTB("elm.icon.2",
             "elm.padding.right", "elm.text.1", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2";)
@@ -1883,7 +1884,7 @@
          GENLIST_PART_ICON_SMALL_RTB("elm.icon.2",
             "elm.padding.right", "elm.text.1", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
 
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
@@ -1918,7 +1919,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon2.left", "elm.icon.2")
          GENLIST_PART_ICON_BTN_01_RTB("elm.icon.2", "elm.padding.right", "elm.padding.top", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; )
@@ -1952,7 +1953,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon2.left", "elm.icon.2")
          GENLIST_PART_ICON_BTN_01_RTB("elm.icon.2", "elm.padding.right", "elm.padding.top", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2";)
@@ -1998,7 +1999,7 @@
             fixed: 1 1;)
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.swallow.progress";)
@@ -2064,7 +2065,7 @@
             max: 156 GENLIST_BTN_01_HEIGHT;)
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; target: "elm.swallow.progress"; )
@@ -2099,7 +2100,7 @@
          GENLIST_PART_PADDING_R_SIZE("elm.padding.icon.left", "elm.icon", 26)
          GENLIST_PART_ICON_BTN_ONOFF_R("elm.icon", "elm.padding.right")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon"; target: "elm.divider1"; target: "elm.divider2"; )
@@ -2148,7 +2149,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon1.left", "elm.icon.1")
          GENLIST_PART_ICON_THUMBNAIL1_R("elm.icon.1", "elm.padding.right")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; target: "elm.icon.3"; )
@@ -2161,6 +2162,7 @@
       inherit: "elm/genlist/item/2text.1icon.2/default";
       parts {
          GENLIST_PART_ICON_THUMBNAIL1_R("elm.icon", "elm.padding.right")
+         GENLIST_PART_FOCUS_NORMAL
       }
    }
 
@@ -2189,6 +2191,7 @@
       inherit: "elm/genlist/item/2text.1icon.2.tb/default";
       parts {
          GENLIST_PART_ICON_THUMBNAIL1_R("elm.icon", "elm.padding.right")
+         GENLIST_PART_FOCUS_NORMAL
       }
    }
 
@@ -2257,7 +2260,7 @@
          GENLIST_PART_SUBITEM_LRB("elm.text.2", GENLIST_HEIGHT_2LINE_SUB,
             "elm.padding.icon2.right", "elm.padding.right", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2";)
@@ -2293,7 +2296,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon3.left", "elm.icon.3")
          GENLIST_PART_ICON_BTN_02_RTB("elm.icon.3", "elm.padding.right", "elm.padding.top", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; )
       GENLIST_PROGRAM_SOUND("elm.text.1")
@@ -2337,7 +2340,7 @@
          GENLIST_PART_SUBITEM_RTB("elm.text.2", GENLIST_HEIGHT_2LINE_SUB,
             "elm.padding.right", "elm.text.1", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3"; target: "elm.text.4";
          target: "elm.icon.1"; target: "elm.bubble"; )
@@ -2387,7 +2390,7 @@
             "elm.padding.right", "elm.text.1", "elm.padding.bottom"
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3"; target: "elm.text.4";
          target: "elm.icon.1"; target: "elm.bubble"; )
@@ -2429,7 +2432,7 @@
          GENLIST_PART_SUBITEM_RTB("elm.text.2", GENLIST_HEIGHT_2LINE_SUB,
             "elm.padding.right", "elm.text.1", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3"; target: "elm.text.4";
          target: "elm.icon.1";)
@@ -2477,7 +2480,7 @@
             "elm.padding.right", "elm.text.1", "elm.padding.bottom"
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3"; target: "elm.text.4";
          target: "elm.icon.1";)
@@ -2518,7 +2521,7 @@
          GENLIST_PART_SUBITEM_RTB("elm.text.2", GENLIST_HEIGHT_2LINE_SUB,
             "elm.padding.right", "elm.text.1", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3"; target: "elm.text.4";
          target: "elm.bubble"; )
@@ -2572,7 +2575,7 @@
          GENLIST_PART_SUBITEM_RTB("elm.text.2", GENLIST_HEIGHT_2LINE_SUB,
             "elm.padding.right", "elm.text.1", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3";
          target: "elm.icon.1";)
@@ -2610,7 +2613,7 @@
          GENLIST_PART_SUBITEM_RTB_TB("elm.text.2", GENLIST_HEIGHT_2LINE_SUB,
             "elm.padding.right", "elm.text.1", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3";
          target: "elm.icon.1";)
@@ -2654,7 +2657,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon1.left", "elm.icon.1")
          GENLIST_PART_ICON_BIG_R("elm.icon.1", "elm.padding.right")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2"; target: "elm.icon.3"; target: "elm.icon.4";)
@@ -2701,7 +2704,7 @@
             "elm.padding.right", "elm.text.1", "elm.padding.bottom"
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3"; target: "elm.text.4";
          target: "elm.swallow.colorbar"; target: "elm.icon.1"; target: "elm.bubble"; )
@@ -2736,7 +2739,7 @@
          GENLIST_PART_SUBITEM_RTB("elm.text.3", GENLIST_HEIGHT_2LINE_SUB,
             "elm.padding.right", "elm.text.1", "elm.padding.bottom")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; target: "elm.text.3";
          target: "elm.icon"; )
@@ -2771,7 +2774,7 @@
          GENLIST_PART_PADDING_R("elm.padding.icon2.left", "elm.icon.2")
          GENLIST_PART_ICON_THUMBNAIL1_R("elm.icon.2", "elm.padding.right")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2";
          target: "elm.icon.1"; target: "elm.icon.2";)
@@ -2831,7 +2834,7 @@
          )
          GENLIST_PART_CENTER_LINE_LT("elm.divider2", "elm.text.1")
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.title"; target: "elm.text.1"; target: "elm.text.2";
          target: "elm.divider1"; target:"elm.divider2";
@@ -2875,7 +2878,7 @@
             GENLIST_DESCRIPTION_LISTITEM_OTHERS_TB_WRAP
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.title";
          target: "elm.text";
@@ -2915,7 +2918,7 @@
             GENLIST_DESCRIPTION_SUBITEM_DEFAULT_OTHERS_TB_WRAP
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; )
       GENLIST_PROGRAM_SOUND("elm.text.1")
@@ -2970,7 +2973,7 @@
             GENLIST_DESCRIPTION_SUBITEM_DEFAULT_OTHERS_TB_WRAP
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; )
       GENLIST_PROGRAM_SOUND("elm.text.1")
@@ -3008,7 +3011,7 @@
             GENLIST_DESCRIPTION_SUBITEM_DEFAULT_OTHERS_TB_WRAP
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAMS_NORMAL( target: "elm.text.1"; target: "elm.text.2"; )
       GENLIST_PROGRAM_SOUND("elm.text.1")
@@ -4012,7 +4015,6 @@
                min: 0 GENLIST_HEIGHT_GROUPTITLE;
             )
          )
-
          GENLIST_PART_ICON("elm.icon",
             GENLIST_DESCRIPTION_RTB("elm.padding.right",
                "elm.padding.top", "elm.padding.bottom",
@@ -4021,8 +4023,10 @@
             )
          )
          GENLIST_PART_FLIP
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAM_DISABLED( target: "elm.text"; target: "elm.icon"; )
+      GENLIST_PROGRAM_FOCUS_NORMAL
    }
 
 // 2.4.4.2 Help Text
@@ -4049,7 +4053,7 @@
             min: 0 38;
          )
          GENLIST_PART_FLIP
-         GENLIST_PART_FOCUS
+         GENLIST_PART_FOCUS_NORMAL
       }
       GENLIST_PROGRAM_DISABLED( target: "elm.text"; )
       GENLIST_PROGRAM_FOCUS
