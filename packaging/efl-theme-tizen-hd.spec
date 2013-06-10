@@ -6,7 +6,7 @@ Group:         TO_BE/FILLED_IN
 License:       APLv2
 Source0:       %{name}-%{version}.tar.gz
 BuildRequires: edje, edje-bin, embryo, embryo-bin
-
+%define _unpackaged_files_terminate_build 0
 
 %description
 Tizen HD theme for EFL
@@ -15,10 +15,14 @@ Tizen HD theme for EFL
 %package -n efl-theme-tizen-devel
 Summary: Development package
 
-
 %description -n efl-theme-tizen-devel
 Development package
 
+%package -n efl-theme-tizen-HD-light
+Summary: Development package
+
+%description -n efl-theme-tizen-HD-light
+Development package
 
 %prep
 %setup -q 
@@ -40,12 +44,16 @@ cp %{_builddir}/%{buildsubdir}/LICENSE %{buildroot}/usr/share/license/%{name}
 
 %files
 %defattr(-,root,root,-)
-%{_datadir}/elementary/themes/tizen-hd.edj
+%{_datadir}/elementary/themes/tizen-HD-dark.edj
 %manifest %{name}.manifest
 /usr/share/license/%{name}
 
+%files -n efl-theme-tizen-HD-light
+%defattr(-,root,root,-)
+%{_datadir}/elementary/themes/tizen-HD-light.edj
+%manifest %{name}.manifest
+/usr/share/license/%{name}
 
 %files -n efl-theme-tizen-devel
 %defattr(-,root,root,-)
 /opt/var/efl-theme-tizen-edc/*
-
