@@ -1724,7 +1724,7 @@ group { name: "elm/entry/base-noedit/default";
 	    description { state: "default" 0.0;
 	       text {
 		  style: "entry_single_textblock_style";
-		  repch: "*";
+		  repch: "•";
 		  min: 1 1;
                   max: 0 1;
 	       }
@@ -1872,7 +1872,7 @@ group { name: "elm/entry/base-password/popup";
          description { state: "default" 0.0;
             text {
                style: "entry_single_textblock_popup_style";
-               repch: "*";
+               repch: "•";
                min: 1 1;
                max: 0 1;
             }
@@ -5150,7 +5150,7 @@ group { name: "elm/entry/base-password/font_color_black";
          description { state: "default" 0.0;
             text {
                style: "font_color_black_single_textblock_style";
-               repch: "*";
+               repch: "•";
                min: 1 1;
                max: 0 1;
             }
