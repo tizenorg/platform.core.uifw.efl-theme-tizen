@@ -156,6 +156,7 @@
       description { state: "default" 0.0; \
          min: 10 0; \
          max: 10 0; \
+         fixed: 1 0; \
          align: 0.0 0.5; \
          rel1 { \
             to_x: "focus_bg"; \
@@ -179,6 +180,7 @@
          min: 10 0; \
          max: 10 0; \
          align: 1.0 0.5; \
+         fixed: 1 0; \
          rel1 { \
             to_x: "focus_bg"; \
             relative: 1.0 0.0; \
@@ -246,6 +248,7 @@
       description { state: "default" 0.0; \
          min: 10 0; \
          max: 10 0; \
+         fixed: 1 0; \
          align: 0.0 0.5; \
          rel1 { \
             to_x: "focus_bg"; \
@@ -269,6 +272,7 @@
          min: 10 0; \
          max: 10 0; \
          align: 1.0 0.5; \
+         fixed: 1 0; \
          rel1 { \
             to_x: "focus_bg"; \
             relative: 1.0 0.0; \
@@ -5640,6 +5644,7 @@ group { name: "elm/scroller/entry/default";
                min: 10 0;
                max: 10 0;
                align: 0.0 0.5;
+               fixed: 1 0;
                rel1 {
                   to: "focus_bg";
                   relative: 0.0 0.0;
@@ -5657,6 +5662,7 @@ group { name: "elm/scroller/entry/default";
                min: 10 0;
                max: 10 0;
                align: 1.0 0.5;
+               fixed: 1 0;
                rel1 {
                   to: "focus_bg";
                   relative: 1.0 0.0;
@@ -6286,6 +6292,7 @@ group { name: "elm/scroller/entry/editfield";
             description { state: "default" 0.0;
                min: 10 0;
                max: 10 0;
+               fixed: 1 0;
                align: 0.0 0.5;
                rel1 {
                   to: "focus_bg";
@@ -6304,6 +6311,7 @@ group { name: "elm/scroller/entry/editfield";
                min: 10 0;
                max: 10 0;
                align: 1.0 0.5;
+               fixed: 1 0;
                rel1 {
                   to: "focus_bg";
                   relative: 1.0 0.0;
@@ -6401,6 +6409,7 @@ group { name: "elm/scroller/entry/editfield/searchbar/default";
             description { state: "default" 0.0;
                min: 10 0;
                max: 10 0;
+               fixed: 1 0;
                align: 0.0 0.5;
                rel1 {
                   to: "focus_bg";
@@ -6419,6 +6428,7 @@ group { name: "elm/scroller/entry/editfield/searchbar/default";
                min: 10 0;
                max: 10 0;
                align: 1.0 0.5;
+               fixed: 1 0;
                rel1 {
                   to: "focus_bg";
                   relative: 1.0 0.0;
