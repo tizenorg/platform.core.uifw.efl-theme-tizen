@@ -2094,7 +2094,7 @@
                rel1.to : "button_image";
                rel2.to : "button_image";
                image {
-                  normal: "00_button_01_focus.png";
+                  normal: "00_popup_button_focus.png";
                   border: BUTTON_POPUP_BG_BORDER_INC;
                   border_scale: 1;
                }
@@ -3025,6 +3025,7 @@
          image: "00_circle_button_dim.png" COMP; \
          image: image_normal COMP; \
          image: image_press COMP; \
+         image: 00_circle_button_focus.png COMP;\
       } \
       parts { \
          part { name: "button_image"; \
@@ -5432,6 +5433,10 @@ BUTTON_SCROLL_JUMPTO("jumpto_left", "00_icon_jump_left.png")
          image: "00_toolbar_button_dim.png" COMP;
          image: "00_button_icon_arrow.png" COMP;
          image: "00_button_icon_arrow_press.png" COMP;
+         image: "00_toolbar_button_focus.png" COMP;
+      }
+      data {
+         item: "focus_highlight" "on";
       }
       data {
          item: "focus_highlight" "on";
@@ -5847,6 +5852,24 @@ BUTTON_SCROLL_JUMPTO("jumpto_left", "00_icon_jump_left.png")
                max: BUTTON_NAVIFRAME_LANDSCAPE_TITLE_ICON_BG_MIN_MAX_INC;
             }
          }
+         part { name: "focus_image";
+            scale: 1;
+            mouse_events: 0;
+            repeat_events: 1;
+            description { state: "default" 0.0;
+               visible: 0;
+               rel1.to : "button_image";
+               rel2.to : "button_image";
+               image {
+                  normal: "00_icon_focus.png";
+                  border_scale: 1;
+               }
+            }
+            description { state: "focused" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
          part { name: "elm.swallow.content";
             type: SWALLOW;
             scale: 1;
@@ -5996,6 +6019,18 @@ BUTTON_SCROLL_JUMPTO("jumpto_left", "00_icon_jump_left.png")
             source: "elm";
             signal: "elm,state,orient,180";
             action: SIGNAL_EMIT "elm,state,portrait" "elm";
+         }
+         program { name: "action_focus";
+            signal: "elm,action,focus_highlight,show";
+            source: "elm";
+            action: STATE_SET "focused" 0.0;
+            target: "focus_image";
+         }
+         program { name: "action_unfocus";
+            signal: "elm,action,focus_highlight,hide";
+            source: "elm";
+            action: STATE_SET "default" 0.0;
+            target: "focus_image";
          }
       }
    }
