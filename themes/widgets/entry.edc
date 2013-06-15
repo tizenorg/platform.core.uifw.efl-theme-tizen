@@ -461,7 +461,7 @@ group { name: "elm/entry/base/default";
          tag:  "preedit_sub4" "+ backing=on backing_color="ENTRY_PREEDIT_SUB4_COLOR_INC" underline=on underline_color="ENTRY_PREEDIT_UNDERLINE_COLOR_INC;
       }
       style { name: "entry_textblock_disabled_style";
-         base: "font=Tizen:style=Roman font_size="ENTRY_TEXT_SIZE_INC" color=#00000080 left_margin=1 right_margin=2 wrap=mixed text_class=entry";
+         base: "font=Tizen:style=Roman font_size="ENTRY_TEXT_SIZE_INC" color="ENTRY_DISABLED_TEXT_COLOR_INC" left_margin=1 right_margin=2 wrap=mixed text_class=entry";
          tag:  "br" "\n";
          tag:  "ps" "ps";
          tag:  "tab" "\t";
@@ -615,7 +615,7 @@ group { name: "elm/entry/base-charwrap/default";
          tag:  "preedit_sub4" "+ backing=on backing_color="ENTRY_PREEDIT_SUB4_COLOR_INC" underline=on underline_color="ENTRY_PREEDIT_UNDERLINE_COLOR_INC;
       }
       style { name: "entry_textblock_char_wrap_disabled_style";
-         base: "font=Tizen:style=Roman font_size="ENTRY_TEXT_SIZE_INC" color=#00000080 wrap=char left_margin=1 right_margin=2 text_class=entry";
+         base: "font=Tizen:style=Roman font_size="ENTRY_TEXT_SIZE_INC" color="ENTRY_DISABLED_TEXT_COLOR_INC" wrap=char left_margin=1 right_margin=2 text_class=entry";
          tag:  "br" "\n";
          tag:  "ps" "ps";
          tag:  "tab" "\t";
@@ -882,7 +882,7 @@ group { name: "elm/entry/base/editfield";
          tag:  "preedit_sub4" "+ backing=on backing_color="ENTRY_PREEDIT_SUB4_COLOR_INC" underline=on underline_color="ENTRY_PREEDIT_UNDERLINE_COLOR_INC;
       }
       style { name: "editfield_textblock_disabled_style";
-         base: "font=Tizen:style=Roman font_size="ENTRY_TEXT_SIZE_INC" color=#00000080 wrap=mixed left_margin=1 right_margin=2";
+         base: "font=Tizen:style=Roman font_size="ENTRY_TEXT_SIZE_INC" color="ENTRY_DISABLED_TEXT_COLOR_INC" wrap=mixed left_margin=1 right_margin=2";
          tag:  "br" "\n";
          tag:  "ps" "ps";
          tag:  "tab" "\t";
@@ -1041,7 +1041,7 @@ group { name: "elm/entry/base-charwrap/editfield";
          tag:  "preedit_sub4" "+ backing=on backing_color="ENTRY_PREEDIT_SUB4_COLOR_INC" underline=on underline_color="ENTRY_PREEDIT_UNDERLINE_COLOR_INC;
       }
       style { name: "editfield_textblock_char_wrap_disabled_style";
-         base: "font=Tizen:style=Roman font_size="ENTRY_TEXT_SIZE_INC" color=#00000080 wrap=char left_margin=1 right_margin=2";
+         base: "font=Tizen:style=Roman font_size="ENTRY_TEXT_SIZE_INC" color="ENTRY_DISABLED_TEXT_COLOR_INC" wrap=char left_margin=1 right_margin=2";
          tag:  "br" "\n";
          tag:  "ps" "ps";
          tag:  "tab" "\t";
@@ -1199,7 +1199,7 @@ group { name: "elm/entry/base-single/editfield";
          tag:  "preedit_sub4" "+ backing=on backing_color="ENTRY_PREEDIT_SUB4_COLOR_INC" underline=on underline_color="ENTRY_PREEDIT_UNDERLINE_COLOR_INC;
       }
       style { name: "editfield_single_textblock_disabled_style";
-         base: "font=Tizen:style=Roman font_size="ENTRY_TEXT_SIZE_INC" color=#00000080 wrap=none left_margin=1 right_margin=3 text_class=entry";
+         base: "font=Tizen:style=Roman font_size="ENTRY_TEXT_SIZE_INC" color="ENTRY_DISABLED_TEXT_COLOR_INC" wrap=none left_margin=1 right_margin=3 text_class=entry";
          tag:  "br" "\n";
          tag:  "ps" "ps";
          tag:  "tab" "\t";
@@ -1354,7 +1354,7 @@ group { name: "elm/entry/base-single/editfield/searchbar/default";
          tag:  "preedit_sub4" "+ backing=on backing_color="ENTRY_PREEDIT_SUB4_COLOR_INC" underline=on underline_color="ENTRY_PREEDIT_UNDERLINE_COLOR_INC;
       }
       style { name: "editfield_searchbar_single_textblock_disabled_style";
-         base: "font=Tizen:style=Roman font_size="ENTRY_EDITFIELD_SEARCHBAR_TEXT_SIZE_INC" color=#00000080 wrap=none left_margin=1 right_margin=3 text_class=entry";
+         base: "font=Tizen:style=Roman font_size="ENTRY_EDITFIELD_SEARCHBAR_TEXT_SIZE_INC" color="ENTRY_DISABLED_TEXT_COLOR_INC" wrap=none left_margin=1 right_margin=3 text_class=entry";
          tag:  "br" "\n";
          tag:  "ps" "ps";
          tag:  "tab" "\t";
@@ -1499,7 +1499,7 @@ group { name: "elm/entry/base-single/default";
          tag:  "preedit_sub4" "+ backing=on backing_color="ENTRY_PREEDIT_SUB4_COLOR_INC" underline=on underline_color="ENTRY_PREEDIT_UNDERLINE_COLOR_INC;
       }
       style { name: "entry_single_textblock_disabled_style";
-         base: "font=Tizen:style=Roman font_size="ENTRY_TEXT_SIZE_INC" color=#00000080 wrap=none left_margin=1 right_margin=3 text_class=entry";
+         base: "font=Tizen:style=Roman font_size="ENTRY_TEXT_SIZE_INC" color="ENTRY_DISABLED_TEXT_COLOR_INC" wrap=none left_margin=1 right_margin=3 text_class=entry";
          tag:  "br" "\n";
          tag:  "ps" "ps";
          tag:  "tab" "\t";
@@ -2152,7 +2152,7 @@ group { name: "elm/entry/base-password/popup";
          tag:  "preedit_sub4" "+ backing=on backing_color="ENTRY_PREEDIT_SUB4_COLOR_INC" underline=on underline_color="ENTRY_PREEDIT_UNDERLINE_COLOR_INC;
       }
       style { name: "entry_single_textblock_disabled_popup_style";
-         base: "font=Tizen:style=Roman font_size="ENTRY_TEXT_SIZE_INC" color=#00000080 align=center wrap=mixed ellipsis=1.0 text_class=entry";
+         base: "font=Tizen:style=Roman font_size="ENTRY_TEXT_SIZE_INC" color="ENTRY_DISABLED_TEXT_COLOR_INC" align=center wrap=mixed ellipsis=1.0 text_class=entry";
          tag:  "br" "\n";
          tag:  "ps" "ps";
          tag:  "tab" "\t";
