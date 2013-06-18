@@ -1254,7 +1254,7 @@ group { name: "elm/toolbar/item/tabbar";
             }
             image {
                normal: "00_badge_bg.png";
-               border: 27 26 0 0;
+               border: 26 26 0 0;
                border_scale: 1;
             }
          }
