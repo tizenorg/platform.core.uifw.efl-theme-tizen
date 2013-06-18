@@ -383,7 +383,12 @@
          image : "00_list_group_bg_top_focus.png" COMP; \
          image : "00_list_group_bg_center_focus.png" COMP; \
          image : "00_list_group_bg_bottom_focus.png" COMP; \
+         image : "00_expandable_bg.png" COMP; \
+         image : "00_expandable_bg_top.png" COMP; \
+         image : "00_expandable_bg_center.png" COMP; \
+         image : "00_expandable_bg_bottom.png" COMP; \
       }
+
 
 #define GENLIST_NAME(NAME) \
       name: "elm/genlist/item/"NAME; \
@@ -799,12 +804,12 @@
    )
 
 #define GENLIST_PART_BG_DIALOGUE \
-   GENLIST_PART_RECT("bg_dialogue_clip", \
+   GENLIST_PART_RECT("2depth", \
       description { state: "default" 0.0; \
-         color: 255 255 255 255; \
+         visible: 0;\
       } \
       description { state: "2depth" 0.0; \
-         color: 255 255 255 255; \
+         visible: 0; \
       } \
    ) \
    GENLIST_PART_SPACER("bg_dialogue_left", \
@@ -832,7 +837,6 @@
    ) \
    GENLIST_PART_IMAGE("bg_dialogue", \
       insert_after: "base"; \
-      clip_to: "bg_dialogue_clip"; \
       GENLIST_DESCRIPTION_LR("bg_dialogue_left", "bg_dialogue_right", \
          image { \
             normal: "00_list_group_bg.png"; \
@@ -892,6 +896,38 @@
          inherit: "default" 0.0; \
          image { \
             normal: "00_list_group_bg_bottom_press.png"; \
+            border: 17 17 8 8; \
+            border_scale: 1; \
+         } \
+      } \
+      description { state: "2depth" 0.0; \
+         inherit: "default" 0.0; \
+         image { \
+            normal: "00_expandable_bg.png"; \
+            border: 17 17 8 8; \
+            border_scale: 1; \
+         } \
+      } \
+      description { state: "2depth_top" 0.0; \
+         inherit: "default" 0.0; \
+         image { \
+            normal: "00_expandable_bg_top.png"; \
+            border: 17 17 8 8; \
+            border_scale: 1; \
+         } \
+      } \
+      description { state: "2depth_center" 0.0; \
+         inherit: "default" 0.0; \
+         image { \
+            normal: "00_expandable_bg_center.png"; \
+            border: 17 17 8 8; \
+            border_scale: 1; \
+         } \
+      } \
+      description { state: "2depth_bottom" 0.0; \
+         inherit: "default" 0.0; \
+         image { \
+            normal: "00_expandable_bg_bottom.png"; \
             border: 17 17 8 8; \
             border_scale: 1; \
          } \
@@ -1816,13 +1852,13 @@
             new st[31]; \
             new Float:vl; \
             get_state(PART:"bg_dialogue", st, 30, vl); \
-            if (!strcmp(st, "top") || !strcmp(st, "top_selected")) \
+            if (!strcmp(st, "top") || !strcmp(st, "top_selected") || !strcmp(st, "2depth_top")) \
                set_state(PART:"focus_part_dialogue", "top_focused", 0.0); \
-            else if (!strcmp(st, "center") || !strcmp(st, "center_selected")) \
+            else if (!strcmp(st, "center") || !strcmp(st, "center_selected") || !strcmp(st, "2depth_center")) \
                set_state(PART:"focus_part_dialogue", "center_focused", 0.0); \
-            else if (!strcmp(st, "bottom") || !strcmp(st, "bottom_selected")) \
+            else if (!strcmp(st, "bottom") || !strcmp(st, "bottom_selected") || !strcmp(st, "2depth_bottom")) \
                set_state(PART:"focus_part_dialogue", "bottom_focused", 0.0); \
-            else if (!strcmp(st, "default") || !strcmp(st, "selected")) \
+            else if (!strcmp(st, "default") || !strcmp(st, "selected") || !strcmp(st, "2depth")) \
                set_state(PART:"focus_part_dialogue", "focused", 0.0); \
          } \
       } \
@@ -1867,26 +1903,54 @@
          program { name: "bg_default"; \
             signal: "elm,state,default"; \
             source: "*"; \
-            action: STATE_SET "default" 0.0; \
-            target: "bg_dialogue"; \
+            script { \
+               new st[31]; \
+               new Float:vl; \
+               get_state(PART:"2depth", st, 30, vl); \
+               if (!strcmp(st, "2depth")) \
+                  set_state(PART:"bg_dialogue", "2depth", 0.0); \
+               else \
+                  set_state(PART:"bg_dialogue", "default", 0.0); \
+            } \
          } \
          program { name: "bg_top"; \
             signal: "elm,state,top"; \
             source: "*"; \
-            action: STATE_SET "top" 0.0; \
-            target: "bg_dialogue"; \
+            script { \
+               new st[31]; \
+               new Float:vl; \
+               get_state(PART:"2depth", st, 30, vl); \
+               if (!strcmp(st, "2depth")) \
+                  set_state(PART:"bg_dialogue", "2depth_top", 0.0); \
+               else \
+                  set_state(PART:"bg_dialogue", "top", 0.0); \
+            } \
          } \
          program { name: "bg_center"; \
             signal: "elm,state,center"; \
             source: "*"; \
-            action: STATE_SET "center" 0.0; \
-            target: "bg_dialogue"; \
+            script { \
+               new st[31]; \
+               new Float:vl; \
+               get_state(PART:"2depth", st, 30, vl); \
+               if (!strcmp(st, "2depth")) \
+                  set_state(PART:"bg_dialogue", "2depth_center", 0.0); \
+               else \
+                  set_state(PART:"bg_dialogue", "center", 0.0); \
+            } \
          } \
          program { name: "bg_bottom"; \
             signal: "elm,state,bottom"; \
             source: "*"; \
-            action: STATE_SET "bottom" 0.0; \
-            target: "bg_dialogue"; \
+            script { \
+               new st[31]; \
+               new Float:vl; \
+               get_state(PART:"2depth", st, 30, vl); \
+               if (!strcmp(st, "2depth")) \
+                  set_state(PART:"bg_dialogue", "2depth_bottom", 0.0); \
+               else \
+                  set_state(PART:"bg_dialogue", "bottom", 0.0); \
+            } \
          }
 
 #define GENLIST_PROGRAM_SELECT_DIALOGUE( TARGET ) \
@@ -1897,13 +1961,13 @@
                new st[31]; \
                new Float:vl; \
                get_state(PART:"bg_dialogue", st, 30, vl); \
-               if (!strcmp(st, "top")) \
+               if (!strcmp(st, "top") || !strcmp(st, "2depth_top")) \
                   set_state(PART:"bg_dialogue", "top_selected", 0.0); \
-               else if (!strcmp(st, "center")) \
+               else if (!strcmp(st, "center") || !strcmp(st, "2depth_center")) \
                   set_state(PART:"bg_dialogue", "center_selected", 0.0); \
-               else if (!strcmp(st, "bottom")) \
+               else if (!strcmp(st, "bottom") || !strcmp(st, "2depth_bottom")) \
                   set_state(PART:"bg_dialogue", "bottom_selected", 0.0); \
-               else if (!strcmp(st, "default")) \
+               else if (!strcmp(st, "default") || !strcmp(st, "2depth")) \
                   set_state(PART:"bg_dialogue", "selected", 0.0); \
                run_program(PROGRAM:"target_selected"); \
             } \
@@ -1914,15 +1978,28 @@
             script { \
                new st[31]; \
                new Float:vl; \
-               get_state(PART:"bg_dialogue", st, 30, vl); \
-               if (!strcmp(st, "top_selected")) \
+               get_state(PART:"2depth", st, 30, vl); \
+               if (!strcmp(st, "2depth")) { \
+                  get_state(PART:"bg_dialogue", st, 30, vl); \
+                  if (!strcmp(st, "top_selected")) \
+                     set_state(PART:"bg_dialogue", "2depth_top", 0.0); \
+                  else if (!strcmp(st, "center_selected"))  \
+                     set_state(PART:"bg_dialogue", "2depth_center", 0.0); \
+                  else if (!strcmp(st, "bottom_selected"))  \
+                     set_state(PART:"bg_dialogue", "2depth_bottom", 0.0); \
+                  else if (!strcmp(st, "selected")) \
+                     set_state(PART:"bg_dialogue", "2depth", 0.0); \
+               } else { \
+                  get_state(PART:"bg_dialogue", st, 30, vl); \
+                  if (!strcmp(st, "top_selected")) \
                   set_state(PART:"bg_dialogue", "top", 0.0); \
-               else if (!strcmp(st, "center_selected"))  \
-                  set_state(PART:"bg_dialogue", "center", 0.0); \
-               else if (!strcmp(st, "bottom_selected"))  \
-                  set_state(PART:"bg_dialogue", "bottom", 0.0); \
-               else if (!strcmp(st, "selected")) \
-                  set_state(PART:"bg_dialogue", "default", 0.0); \
+                  else if (!strcmp(st, "center_selected"))  \
+                     set_state(PART:"bg_dialogue", "center", 0.0); \
+                  else if (!strcmp(st, "bottom_selected"))  \
+                     set_state(PART:"bg_dialogue", "bottom", 0.0); \
+                  else if (!strcmp(st, "selected")) \
+                     set_state(PART:"bg_dialogue", "default", 0.0); \
+               } \
                run_program(PROGRAM:"target_unselected"); \
             } \
          } \
@@ -2251,7 +2328,6 @@
    programs { \
       GENLIST_PROGRAM_DEFAULT( TARGET \
          target: "bg_dialogue"; \
-         target: "bg_dialogue_clip"; \
          target: "elm.padding.left"; \
          target: "elm.padding.right"; \
       ) \
@@ -2262,7 +2338,7 @@
          signal: "bg_color_change"; \
          source: "elm"; \
          action: STATE_SET "2depth" 0.0; \
-         target: "bg_dialogue_clip"; \
+         target: "2depth"; \
       } \
       GENLIST_PROGRAM_SOUND("bg_dialogue") \
       GENLIST_PROGRAM_DECORATE_REORDER( "normal", TARGET \
@@ -2325,7 +2401,6 @@
 #define GENLIST_PROGRAMS_DIALOGUE_ENTRY( TARGET ) \
    GENLIST_PROGRAM_DEFAULT( TARGET \
       target: "bg_dialogue"; \
-      target: "bg_dialogue_clip"; \
       target: "elm.padding.left"; \
       target: "elm.padding.right"; \
    ) \
@@ -2335,7 +2410,7 @@
       signal: "bg_color_change"; \
       source: "elm"; \
       action: STATE_SET "2depth" 0.0; \
-      target: "bg_dialogue_clip"; \
+      target: "2depth"; \
    } \
    GENLIST_PROGRAM_BG_DIALOGUE \
    GENLIST_PROGRAM_DECORATE_REORDER( "normal", TARGET \
