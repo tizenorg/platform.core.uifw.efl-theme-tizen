@@ -179,7 +179,7 @@
                   }
 
                   len = get_int(title_text_w) + NAVIFRAME_TITLE_SLIDE_TEXT_GAP;
-                  set_float(title_duration, len NAVIFRAME_TITLE_SLIDE_SPEED_WEIGHT);
+                  set_float(title_duration, len * NAVIFRAME_TITLE_SLIDE_SPEED_WEIGHT);
 
                   set_int(title_slide_stop, 0);
 
@@ -1618,7 +1618,6 @@
                   set_state(PART:"elm.text.subtitle", "landscape", 0.0);
                   set_state(PART:"title_left_btn", "landscape", 0.0);
                   set_state(PART:"title_right_btn", "landscape", 0.0);
-                  set_state(PART:"title_more_btn", "landscape", 0.0);
                   set_state(PART:"toolbar_more_btn", "landscape", 0.0);
                   set_state(PART:"elm.swallow.prev_btn", "landscape", 0.0);
 
@@ -1658,7 +1657,6 @@
                   set_state(PART:"elm.text.subtitle", "default", 0.0);
                   set_state(PART:"title_left_btn", "default", 0.0);
                   set_state(PART:"title_right_btn", "default", 0.0);
-                  set_state(PART:"title_more_btn", "default", 0.0);
                   set_state(PART:"toolbar_more_btn", "default", 0.0);
                   set_state(PART:"elm.swallow.prev_btn", "default", 0.0);
 
@@ -1797,9 +1795,9 @@
                len = get_int(title_text_w) + NAVIFRAME_TITLE_SLIDE_TEXT_GAP;
 
                if (get_int(landscape))
-                 set_float(title_duration, len / NAVIFRAME_TITLE_SLIDE_SPEED_WEIGHT);
+                 set_float(title_duration, len * NAVIFRAME_TITLE_SLIDE_SPEED_WEIGHT);
                else
-                 set_float(title_duration, len / NAVIFRAME_TITLE_SLIDE_SPEED_WEIGHT);
+                 set_float(title_duration, len * NAVIFRAME_TITLE_SLIDE_SPEED_WEIGHT);
 
                set_int(title_slide_stop, 0);
 
@@ -3170,6 +3168,7 @@
             source: "elm";
             action: STATE_SET "left" 0.0;
             target: "base";
+            target: "clipper";
             transition: DECELERATE NAVIFRAME_VIEW_TRANS_TIME;
             after: "pushed_finished";
          }
@@ -3483,3 +3482,4 @@
          }
       }
    }
+
