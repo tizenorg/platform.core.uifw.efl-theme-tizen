@@ -97,6 +97,11 @@
             name: "slide_right";
             signal: "elm,state,slide,active";
             source: "elm";
+            action: PLAY_SAMPLE "sweep_sound" 1.0;
+            after: "animate_slide_right";
+         }
+         program {
+            name: "animate_slide_right";
             action: STATE_SET "slide" 0.0;
             target: "elm.swallow.origin";
             target: "overlay";
@@ -106,6 +111,11 @@
             name: "slide_left";
             signal: "elm,state,slide,passive";
             source: "elm";
+            action: PLAY_SAMPLE "sweep_sound" 1.0;
+            after: "animate_slide_left";
+         }
+         program {
+            name: "animate_slide_left";
             action: STATE_SET "default" 0.0;
             target: "elm.swallow.origin";
             target: "overlay";
