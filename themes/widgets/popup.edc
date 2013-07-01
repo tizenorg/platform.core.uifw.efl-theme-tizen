@@ -1777,6 +1777,7 @@ group { name: "elm/popup/content/min_menustyle";
          scale: 1;
          description { state: "default" 0.0;
             min: POPUP_CONTENT_MINSTYLE_CONTENT_DEFAULT_MIN_INC;
+            max: POPUP_CONTENT_MINSTYLE_CONTENT_DEFAULT_MIN_INC;
             align: 0.5 0.5;
             fixed: 1 0;
             rel1 {
@@ -1874,6 +1875,7 @@ group { name: "elm/popup/content/min_liststyle";
          scale: 1;
          description { state: "default" 0.0;
             min: POPUP_CONTENT_MINSTYLE_CONTENT_DEFAULT_MIN_INC;
+            max: POPUP_CONTENT_MINSTYLE_CONTENT_DEFAULT_MIN_INC;
             align: 0.5 0.5;
             fixed: 1 0;
             rel1 {
