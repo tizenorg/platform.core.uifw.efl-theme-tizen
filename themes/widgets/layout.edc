@@ -1153,6 +1153,7 @@ group { name: "elm/layout/searchbar/default";
          type: SPACER;
          scale: 1;
          description { state: "default" 0.0;
+            min: 0 SEARCHBAR_BASE_HEIGHT_INC;
             align: 0.0 0.0;
          }
       }
@@ -1199,7 +1200,7 @@ group { name: "elm/layout/searchbar/default";
          scale: 1;
          ignore_flags: ON_HOLD;
          description { state: "default" 0.0;
-            min: 0 40;
+            min: SEARCHBAR_WIDTH_INC SEARCHBAR_HEIGHT_INC;
             rel1 {
                relative : 0.0 0.0;
                to: "inputfield_rect";
@@ -1230,6 +1231,14 @@ group { name: "elm/layout/searchbar/default";
 
 group { name: "elm/layout/searchbar/cancel_button";
    parts {
+      part { name: "inputfield_base";
+         type: SPACER;
+         scale: 1;
+         description { state: "default" 0.0;
+            min: 0 SEARCHBAR_BASE_HEIGHT_INC;
+            align: 0.0 0.0;
+         }
+      }
      part { name: "top_padding_rect";
          type: SPACER;
          scale: 1;
@@ -1237,6 +1246,8 @@ group { name: "elm/layout/searchbar/cancel_button";
             min: 0 SEARCHBAR_TOP_PADDING_INC;
             fixed: 0 1;
             align: 0 0;
+            rel1.to: "inputfield_base";
+            rel2.to: "inputfield_base";
             rel2.relative: 1.0 0.0;
          }
       }
@@ -1247,7 +1258,9 @@ group { name: "elm/layout/searchbar/cancel_button";
             min: 0 SEARCHBAR_BOTTOM_PADDING_INC;
             fixed: 0 1;
             align: 0 1;
+            rel1.to: "inputfield_base";
             rel1.relative: 0.0 1.0;
+            rel2.to: "inputfield_base";
          }
       }
       part { name: "base_bg";
@@ -1274,6 +1287,8 @@ group { name: "elm/layout/searchbar/cancel_button";
             min: SEARCHBAR_LEFT_PADDING_INC 0;
             fixed: 1 0;
             align: 0 0;
+            rel1.to: "inputfield_base";
+            rel2.to: "inputfield_base";
             rel2.relative: 0.0 1.0;
          }
       }
@@ -1284,11 +1299,9 @@ group { name: "elm/layout/searchbar/cancel_button";
             min: SEARCHBAR_RIGHT_PADDING_INC 0;
             fixed: 1 0;
             align: 1.0 0.0;
+            rel1.to: "inputfield_base";
             rel1.relative: 1.0 0.0;
-         }
-         description { state: "in" 0.0;
-            inherit: "default" 0.0;
-            min: SEARCHBAR_CANCEL_BUTTON_WITH_DOUBLE_PADDING_W_INC 0;
+            rel2.to: "inputfield_base";
          }
       }
       part { name: "inputfield_rect";
@@ -1304,7 +1317,7 @@ group { name: "elm/layout/searchbar/cancel_button";
             }
             rel2 {
                relative: 0.0 1.0;
-               to_x: "right_padding_rect";
+               to_x: "right_btn_padding_rect";
                to_y: "base_bg";
             }
             color: 0 0 0 0;
@@ -1314,17 +1327,19 @@ group { name: "elm/layout/searchbar/cancel_button";
          type: SPACER;
          scale: 1;
          description { state: "default" 0.0;
-            min: SEARCHBAR_RIGHT_PADDING_INC 0;
+            min: 0 0;
             fixed: 1 0;
-            align: 0.0 0.0;
-            rel1.relative: 1.0 0.0;
-            rel1.to: "inputfield_rect";
-            rel2.relative: 1.0 1.0;
-            rel2.to: "inputfield_rect";
+            align: 1.0 0.0;
+            rel1.relative: 0.0 0.0;
+            rel1.to: "right_padding_rect";
+            rel2.relative: 0.0 1.0;
+            rel2.to: "right_padding_rect";
          }
          description { state: "in" 0.0;
             inherit: "default" 0.0;
             min: SEARCHBAR_CANCEL_BUTTON_LEFT_PADDING_INC 0;
+            rel1.to: "button_cancel";
+            rel2.to: "button_cancel";
          }
       }
       part { name: "button_cancel";
@@ -1334,16 +1349,16 @@ group { name: "elm/layout/searchbar/cancel_button";
          description { state: "default" 0.0;
             fixed: 1 1;
             min: SEARCHBAR_CANCEL_BUTTON_W_INC 0;
-            align: 0.0 0.5;
+            align: 1.0 0.5;
             state: "default" 0.0;
             rel1 {
-               relative: 1.0 1.0;
-               to_x: "right_btn_padding_rect";
+               relative: 0.0 1.0;
+               to_x: "right_padding_rect";
                to_y: "top_padding_rect";
             }
             rel2 {
-               relative: 1.0 0.0;
-               to_x: "right_btn_padding_rect";
+               relative: 0.0 0.0;
+               to_x: "right_padding_rect";
                to_y: "bottom_padding_rect";
             }
          }
@@ -1354,7 +1369,7 @@ group { name: "elm/layout/searchbar/cancel_button";
          scale: 1;
          ignore_flags: ON_HOLD;
          description { state: "default" 0.0;
-            min: 0 40;
+            min: SEARCHBAR_WIDTH_INC SEARCHBAR_HEIGHT_INC;
             rel1 {
                relative : 0.0 0.0;
                to: "inputfield_rect";
@@ -1384,7 +1399,6 @@ group { name: "elm/layout/searchbar/cancel_button";
          signal: "cancel,in";
          source: "";
          action: STATE_SET "in" 0.0;
-         target: "right_padding_rect";
          target: "right_btn_padding_rect";
          transition: LINEAR 0.3;
       }
@@ -1392,7 +1406,6 @@ group { name: "elm/layout/searchbar/cancel_button";
          signal: "cancel,out";
          source: "";
          action: STATE_SET "default" 0.0;
-         target: "right_padding_rect";
          target: "right_btn_padding_rect";
          transition: LINEAR 0.3;
       }
@@ -1400,14 +1413,12 @@ group { name: "elm/layout/searchbar/cancel_button";
          signal: "cancel,show";
          source: "";
          action: STATE_SET "in" 0.0;
-         target: "right_padding_rect";
          target: "right_btn_padding_rect";
       }
       program { name: "cancel_hide";
          signal: "cancel,hide";
          source: "";
          action: STATE_SET "default" 0.0;
-         target: "right_padding_rect";
          target: "right_btn_padding_rect";
       }
    }
