@@ -2,10 +2,10 @@ Name:          efl-theme-tizen-hd
 Summary:       Tizen theme files
 Version:       1.0.157r04
 Release:       1
-Group:         TO_BE/FILLED_IN
+Group:         System/Libraries
 License:       APLv2
 Source0:       %{name}-%{version}.tar.gz
-BuildRequires: edje, edje-bin, embryo, embryo-bin
+BuildRequires: efl
 
 
 %description
