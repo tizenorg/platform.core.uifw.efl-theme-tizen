@@ -108,9 +108,9 @@ group { name: "elm/entry/base/default";
          //source6: "X"; // anchor over
          source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
          source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-         source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+         /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
          source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
          description { state: "default" 0.0;
             fixed: 1 0;
             text {
@@ -249,9 +249,9 @@ group { name: "elm/entry/base-charwrap/default";
          //source6: "X"; // anchor over
          source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
          source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-         source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+         /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
          source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
          description { state: "default" 0.0;
             fixed: 1 0;
             text {
@@ -344,9 +344,9 @@ group { name: "elm/entry/base-nowrap/default";
          source5: "elm/entry/anchor/default"; // anchor under
          source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
          source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-         source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+         /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
          source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
          description { state: "default" 0.0;
             text {
                style: "entry_textblock_style";
@@ -490,9 +490,9 @@ group { name: "elm/entry/base/editfield";
          //source6: "X"; // anchor over
          source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
          source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-         source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+         /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
          source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
          description { state: "default" 0.0;
             fixed: 1 0;
             text {
@@ -636,9 +636,9 @@ group { name: "elm/entry/base-charwrap/editfield";
          //source6: "X"; // anchor over
          source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
          source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-         source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+         /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
          source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
          description { state: "default" 0.0;
             fixed: 1 0;
             text {
@@ -780,9 +780,9 @@ group { name: "elm/entry/base-single/editfield";
          source5: "elm/entry/anchor/default"; // anchor under
          source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
          source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-         source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+         /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
          source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
          description { state: "default" 0.0;
             text {
                style: "editfield_single_textblock_style";
@@ -873,9 +873,9 @@ group { name: "elm/entry/base-single/editfield/searchbar/default";
          source5: "elm/entry/anchor/default"; // anchor under
          source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
          source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-         source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+         /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
          source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
          description { state: "default" 0.0;
             text {
                style: "editfield_single_textblock_style";
@@ -1011,9 +1011,9 @@ group { name: "elm/entry/base-single/default";
          source5: "elm/entry/anchor/default"; // anchor under
          source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
          source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-         source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+         /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
          source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
          description { state: "default" 0.0;
             text {
                style: "entry_single_textblock_style";
@@ -1104,9 +1104,9 @@ group { name: "elm/entry/base-single-noedit/default";
          source5: "elm/entry/anchor/default"; // anchor under
          source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
          source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-         source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+         /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
          source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
          description { state: "default" 0.0;
             text {
                style: "entry_single_textblock_style";
@@ -1196,9 +1196,9 @@ group { name: "elm/entry/base-noedit/default";
          source5: "elm/entry/anchor/default"; // anchor under
          source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
          source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-         source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+         /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
          source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
          description { state: "default" 0.0;
             fixed: 1 0;
             text {
@@ -1289,9 +1289,9 @@ group { name: "elm/entry/base-noedit/default";
 	    source5: "elm/entry/anchor/default"; // anchor under
 	    source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
 	    source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-	    source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+	    /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
 	    source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-	    source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+	    source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
 	    description { state: "default" 0.0;
                fixed: 1 0;
 	       text {
@@ -1382,9 +1382,9 @@ group { name: "elm/entry/base-noedit/default";
 	    source5: "elm/entry/anchor/default"; // anchor under
 	    source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
 	    source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-	    source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+	    /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
 	    source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-	    source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+	    source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
 	    description { state: "default" 0.0;
 	       text {
 		  style: "entry_textblock_style";
@@ -1475,9 +1475,9 @@ group { name: "elm/entry/base-noedit/default";
 	    source5: "elm/entry/anchor/default"; // anchor under
 	    source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
 	    source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-	    source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+	    /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
 	    source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-	    source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+	    source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
 	    description { state: "default" 0.0;
 	       text {
 		  style: "entry_single_textblock_style";
@@ -1614,9 +1614,9 @@ group { name: "elm/entry/base-password/popup";
          source5: "elm/entry/anchor/default"; // anchor under
          source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
          source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-         source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+         /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
          source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
          description { state: "default" 0.0;
             text {
                style: "entry_single_textblock_popup_style";
@@ -2769,9 +2769,9 @@ styles {
 	    source5: "elm/entry/anchor/default"; // anchor under
 	    source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
 	    source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-	    source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+	    /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
 	    source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-	    source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+	    source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
 //	    source6: "X"; // anchor over
 	    description { state: "default" 0.0;
                fixed: 1 0;
@@ -3065,9 +3065,9 @@ styles {
 	    source5: "elm/entry/anchor/default"; // anchor under
 	    source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
 	    source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-	    source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+	    /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
 	    source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-	    source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+	    source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
 	    description {
 	       state: "default" 0.0;
 	       fixed: 1 0;
@@ -3443,9 +3443,9 @@ styles {
 	    source5: "elm/entry/anchor/default"; // anchor under
 	    source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
 	    source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-	    source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+	    /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
 	    source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-	    source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+	    source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
 	    description { state: "default" 0.0;
                fixed: 1 0;
                align: 0.0 0.0;
@@ -3578,9 +3578,9 @@ styles {
 //	    source6: "X"; // anchor over
 	    source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
 	    source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-	    source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+	    /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
 	    source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-	    source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+	    source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
 	    description { state: "default" 0.0;
 	       fixed: 1 0;
                align: 1.0 0.0;
@@ -3871,9 +3871,9 @@ styles {
 	    source5: "elm/entry/anchor/default"; // anchor under
 	    source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
 	    source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-	    source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+	    /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
 	    source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-	    source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+	    source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
 	    description {
            state: "default" 0.0;
            fixed: 1 0;
@@ -4266,9 +4266,9 @@ styles {
 	    source5: "elm/entry/anchor/default"; // anchor under
 	    source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
 	    source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-	    source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+	    /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
 	    source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-	    source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+	    source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
 	    description { state: "default" 0.0;
                fixed: 1 0;
                align: 1.0 0.0;
@@ -4405,9 +4405,9 @@ group { name: "elm/entry/base/font_color_black";
          //source6: "X"; // anchor over
          source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
          source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-         source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+         /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
          source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
          description { state: "default" 0.0;
             fixed: 1 0;
             text {
@@ -4500,9 +4500,9 @@ group { name: "elm/entry/base-noedit/font_color_black";
          //source6: "X"; // anchor over
          source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
          source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-         source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+         /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
          source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
          description { state: "default" 0.0;
             fixed: 1 0;
             text {
@@ -4648,9 +4648,9 @@ group { name: "elm/entry/base-charwrap/font_color_black";
          //source6: "X"; // anchor over
          source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
          source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-         source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+         /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
          source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
          description { state: "default" 0.0;
             fixed: 1 0;
             text {
@@ -4795,9 +4795,9 @@ group { name: "elm/entry/base-single/font_color_black";
          source5: "elm/entry/anchor/default"; // anchor under
          source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
          source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-         source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+         /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
          source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
          description { state: "default" 0.0;
             text {
                style: "font_color_black_single_textblock_style";
@@ -4888,9 +4888,9 @@ group { name: "elm/entry/base-single-noedit/font_color_black";
          source5: "elm/entry/anchor/default"; // anchor under
          source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
          source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-         source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+         /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
          source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
          description { state: "default" 0.0;
             text {
                style: "font_color_black_single_textblock_style";
@@ -5060,9 +5060,9 @@ group { name: "elm/entry/base-password/font_color_black";
          source5: "elm/entry/anchor/default"; // anchor under
          source7: ENTRY_BLOCK_HANDLE_SOURCE7; // start selection handler
          source8: ENTRY_BLOCK_HANDLE_SOURCE8; // end selection handler
-         source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
+         /*source9: ENTRY_CURSOR_HANDLE_SOURCE9; // cursor handler
          source10: ENTRY_BLOCK_HANDLE_SOURCE10; // start edge selection
-         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection
+         source11: ENTRY_BLOCK_HANDLE_SOURCE11; // end edge selection*/
          description { state: "default" 0.0;
             text {
                style: "font_color_black_single_textblock_style";
