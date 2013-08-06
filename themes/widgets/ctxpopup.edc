@@ -2022,12 +2022,11 @@
 					align: 0.5 0;
 					min: 0 CTXPOPUP_SEPARATOR_PXLINE_SIZE_INC;
 					max: 999999 CTXPOPUP_SEPARATOR_PXLINE_SIZE_INC;
-					visible: 0;
 				}
 				description {
-					state: "visible" 0.0;
+					state: "invisible" 0.0;
 					inherit: "default" 0.0;
-					visible: 1;
+					visible: 0;
 				}
 			}
 			part {
@@ -2044,12 +2043,11 @@
 					fixed: 0 1;
 					min: 0 CTXPOPUP_SEPARATOR_PXLINE_SIZE_INC;
 					max: 999999 CTXPOPUP_SEPARATOR_PXLINE_SIZE_INC;
-					visible: 0;
 				}
 				description {
-					state: "visible" 0.0;
+					state: "invisible" 0.0;
 					inherit: "default" 0.0;
-					visible: 1;
+					visible: 0;
 				}
 			}
 			part {
@@ -2227,8 +2225,8 @@
 				signal: "elm,state,default";
 				source: "elm";
 				script {
-					set_state(PART:"separator1", "default", 0.0);
-					set_state(PART:"separator2", "default", 0.0);
+					set_state(PART:"separator1", "invisible", 0.0);
+					set_state(PART:"separator2", "invisible", 0.0);
 				}
 			}
 			program {
@@ -2250,8 +2248,8 @@
 				signal: "elm,state,separator";
 				source: "elm";
 				script {
-					set_state(PART:"separator1", "visible", 0.0);
-					set_state(PART:"separator2", "visible", 0.0);
+					set_state(PART:"separator1", "default", 0.0);
+					set_state(PART:"separator2", "default", 0.0);
 				}
 			}
 			program {
@@ -2622,6 +2620,8 @@
 ///////////////////////////////////////////////////////////////////////////////
 	group {
 		name: "elm/ctxpopup/icon_style_item/default";
+		alias: "elm/list/item/ctxpopup_icon";
+		alias: "elm/list/item_odd/ctxpopup_icon";
 
 		images {
 			image: "00_more_popup_press.png" COMP;
@@ -2690,12 +2690,11 @@
 					align: 0 0.5;
 					min: CTXPOPUP_HORIZONTAL_SEPARATOR_MIN_SIZE_INC;
 					max: CTXPOPUP_HORIZONTAL_SEPARATOR_MAX_SIZE_INC;
-					visible: 0;
 				}
 				description {
-					state: "visible" 0.0;
+					state: "invisible" 0.0;
 					inherit: "default" 0.0;
-					visible: 1;
+					visible: 0;
 				}
 			}
 			part {
@@ -2710,12 +2709,11 @@
 					align: 0 0.5;
 					min: CTXPOPUP_HORIZONTAL_SEPARATOR_MIN_SIZE_INC;
 					max: CTXPOPUP_HORIZONTAL_SEPARATOR_MAX_SIZE_INC;
-					visible: 0;
 				}
 				description {
-					state: "visible" 0.0;
+					state: "invisible" 0.0;
 					inherit: "default" 0.0;
-					visible: 1;
+					visible: 0;
 				}
 			}
 			part {
@@ -2789,8 +2787,8 @@
 				signal: "elm,state,default";
 				source: "elm";
 				script {
-					set_state(PART:"separator1", "default", 0.0);
-					set_state(PART:"separator2", "default", 0.0);
+					set_state(PART:"separator1", "invisible", 0.0);
+					set_state(PART:"separator2", "invisible", 0.0);
 				}
 			}
 			program {
@@ -2798,8 +2796,8 @@
 				signal: "elm,state,separator";
 				source: "elm";
 				script {
-					set_state(PART:"separator1", "visible", 0.0);
-					set_state(PART:"separator2", "visible", 0.0);
+					set_state(PART:"separator1", "default", 0.0);
+					set_state(PART:"separator2", "default", 0.0);
 				}
 			}
 			program {
@@ -2870,6 +2868,8 @@
 ///////////////////////////////////////////////////////////////////////////////
 	group {
 		name: "elm/ctxpopup/icon_text_style_item/default";
+		alias: "elm/list/item/ctxpopup_icon_text";
+		alias: "elm/list/item_odd/ctxpopup_icon_text";
 
 		images {
 			image: "00_more_popup_press.png" COMP;
@@ -2967,12 +2967,11 @@
 					align: 0.5 0;
 					min: 0 CTXPOPUP_SEPARATOR_PXLINE_SIZE_INC;
 					max: 999999 CTXPOPUP_SEPARATOR_PXLINE_SIZE_INC;
-					visible: 0;
 				}
 				description {
-					state: "visible" 0.0;
+					state: "invisible" 0.0;
 					inherit: "default" 0.0;
-					visible: 1;
+					visible: 0;
 				}
 			}
 			part {
@@ -2989,12 +2988,10 @@
 					fixed: 0 1;
 					min: 0 CTXPOPUP_SEPARATOR_PXLINE_SIZE_INC;
 					max: 999999 CTXPOPUP_SEPARATOR_PXLINE_SIZE_INC;
-					visible: 0;
 				}
 				description {
-					state: "visible" 0.0;
+					state: "invisible" 0.0;
 					inherit: "default" 0.0;
-					visible: 1;
 				}
 			}
 			part {
@@ -3185,8 +3182,8 @@
 				signal: "elm,state,default";
 				source: "elm";
 				script {
-					set_state(PART:"separator1", "default", 0.0);
-					set_state(PART:"separator2", "default", 0.0);
+					set_state(PART:"separator1", "invisible", 0.0);
+					set_state(PART:"separator2", "invisible", 0.0);
 				}
 			}
 			program {
@@ -3208,8 +3205,8 @@
 				signal: "elm,state,separator";
 				source: "elm";
 				script {
-					set_state(PART:"separator1", "visible", 0.0);
-					set_state(PART:"separator2", "visible", 0.0);
+					set_state(PART:"separator1", "default", 0.0);
+					set_state(PART:"separator2", "default", 0.0);
 				}
 			}
 			program {
@@ -5561,3 +5558,235 @@ group {
 			}
 		}
 	}
+	
+////
+group {
+    name: "elm/list/item/ctxpopup_text";
+    alias: "elm/list/item_odd/ctxpopup_text";
+    parts {
+        part {
+            name: "base";
+            type: RECT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                color: 0 0 0 0;
+                align: 0 0;
+                fixed: 1 0;
+                min: CTXPOPUP_WIDTH_MIN_INC CTXPOPUP_ICON_HEIGHT_INC;
+                max: CTXPOPUP_WIDTH_MIN_INC CTXPOPUP_ICON_HEIGHT_INC;
+            }
+        }
+        part {
+            name: "bg";
+            type: IMAGE;
+            description {
+                state: "default" 0.0;
+                //color: CTXPOPUP_BG_COLOR_INC;
+                align: 0 0;
+            }
+            description {
+                state: "clicked" 0.0;
+                inherit: "default" 0.0;
+                image {
+                    normal: "00_more_popup_press.png";
+                    border: CTXPOPUP_BUBBLE_BG_PRESSED_IMAGE_BORDER;
+                    border_scale: 1;
+                }
+            }
+        }
+        part {
+            name: "padding_left";
+            type: RECT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                min: (CTXPOPUP_ITEM_TEXT_PADDING_INC-CTXPOPUP_CONTENT_PADDING) 1;
+                max: (CTXPOPUP_ITEM_TEXT_PADDING_INC-CTXPOPUP_CONTENT_PADDING) 1;
+                align: 0 0;
+                fixed: 1 1;
+                color: 0 0 0 0;
+            }
+        }
+        part {
+            name: "padding_right";
+            type: RECT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                min: (CTXPOPUP_ITEM_TEXT_PADDING_INC-CTXPOPUP_CONTENT_PADDING) 1;
+                max: (CTXPOPUP_ITEM_TEXT_PADDING_INC-CTXPOPUP_CONTENT_PADDING) 1;
+                align: 1 0;
+                fixed: 1 1;
+                color: 0 0 0 0;
+            }
+        }
+        part {
+            name: "separator1";
+            mouse_events: 0;
+            type: RECT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                color: CTXPOPUP_SEPARATOR_COLOR_INC;
+                rel1 {
+                    to_x: "padding_left";
+                    relative: 1.0 0.0;
+                }
+                rel2 {
+                    to_x: "padding_right";
+                    relative: 0.0 1.0;
+                }
+                align: 0.5 0.0;
+                min: 0 CTXPOPUP_SEPARATOR_PXLINE_SIZE_INC;
+                max: 99999 CTXPOPUP_SEPARATOR_PXLINE_SIZE_INC;
+            }
+            description {
+                state: "invisible";
+                inherit: "default" 0.0;
+                visible: 0;
+            }
+        }
+        part {
+            name: "separator2";
+            mouse_events: 0;
+            type: RECT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                color: CTXPOPUP_SEPARATOR2_COLOR_INC;
+                rel1 {
+                    to: "separator1";
+                    relative: 0.0 1.0;
+                }
+                rel2 {
+                    to: "separator1";
+                    relative: 1.0 1.0;
+                }
+                align: 0.5 0;
+                fixed: 0 1;
+                min: 0 CTXPOPUP_SEPARATOR_PXLINE_SIZE_INC;
+                max: 99999 CTXPOPUP_SEPARATOR_PXLINE_SIZE_INC;
+            }
+            description {
+                state: "invisible";
+                inherit: "default" 0.0;
+                visible: 0;
+            }
+        }
+        part {
+            name: "elm.text";
+            type: TEXT;
+            mouse_events: 0;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                min: 1 CTXPOPUP_ITEM_HEIGHT_MIN_INC;
+                align: 0.0 0.5;
+                rel1 {
+                    to_x: "padding_left";
+                    relative: 1.0 0.0;
+                }
+                rel2 {
+                    to_x: "padding_right";
+                    relative: 0.0 1.0;
+                }
+                color: CTXPOPUP_LIST_MAIN_TEXT_COLOR_INC;
+                text {
+                    font: "Tizen:style=Roman";
+                    size: CTXPOPUP_LIST_MAIN_TEXT_SIZE_INC;
+                    align: 0 0.5;
+                    min: 1 1;
+                    text_class: "list_item";
+                }
+            }
+            description {
+                state: "clicked" 0.0;
+                inherit: "default" 0.0;
+                color: CTXPOPUP_LIST_MAIN_TEXT_PRESS_COLOR_INC;
+            }
+            description {
+                state: "disabled" 0.0;
+                inherit: "default" 0.0;
+                color: CTXPOPUP_LIST_MAIN_TEXT_DIM_COLOR_INC;
+            }
+        }
+        part {
+            name: "disclip";//and event area
+            type: RECT;
+            mouse_events: 1;
+            description {
+                state: "default" 0.0;
+                color: 0 0 0 0;
+                align: 0 0;
+            }
+            description {
+                state: "disabled" 0.0;
+                inherit: "default" 0.0;
+                color: CTXPOPUP_ITEM_DISABLED_COLOR;
+            }
+        }
+    }
+    programs {
+        program {
+            name: "item_click";
+            signal: "mouse,clicked,1";
+            source: "disclip";
+            action: SIGNAL_EMIT "elm,action,click" "";
+        }
+        program {
+            name: "mouse_down";
+            signal: "mouse,down,1";
+            source: "disclip";
+            script {
+                set_state(PART:"elm.text", "clicked", 0.0);
+                set_state(PART:"bg", "clicked", 0.0);
+            }
+        }
+        program {
+            name: "mouse_up";
+            signal: "mouse,up,1";
+            source: "disclip";
+            script {
+                set_state(PART:"elm.text", "default", 0.0);
+                set_state(PART:"bg", "default", 0.0);
+            }
+        }
+        program {
+            name: "disable";
+            signal: "elm,state,disabled";
+            source: "elm";
+            script {
+                set_state(PART:"elm.text", "disabled", 0.0);
+                set_state(PART:"disclip", "disabled", 0.0);
+            }
+        }
+        program {
+            name: "enable";
+            signal: "elm,state,enabled";
+            source: "elm";
+            script {
+                set_state(PART:"elm.text", "default", 0.0);
+                set_state(PART:"disclip", "default", 0.0);
+            }
+        }
+        program {
+            name: "hide_separator";
+            signal: "elm,state,default";//TODO rename
+            source: "elm";
+            script {
+                set_state(PART:"separator1", "invisible", 0.0);
+                set_state(PART:"separator2", "invisible", 0.0);
+            }
+        }
+        program {
+            name: "show_separator";
+            signal: "elm,state,separator";
+            source: "elm";
+            script {
+                set_state(PART:"separator1", "default", 0.0);
+                set_state(PART:"separator2", "default", 0.0);
+            }
+        }
+    }
+}
