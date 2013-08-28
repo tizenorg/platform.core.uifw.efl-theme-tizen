@@ -1,6 +1,6 @@
 Name:          efl-theme-tizen-hd
 Summary:       Tizen theme files
-Version:       1.0.204r06
+Version:       1.0.204r07
 Release:       1
 Group:         TO_BE/FILLED_IN
 License:       APLv2
