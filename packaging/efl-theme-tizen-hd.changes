@@ -1,0 +1,5 @@
+* Tue Oct 29 2013 Rusty Lynch <rusty.lynch@intel.com> 0eb89ab
+- Remove the mobile specific indicator
+- PTREL-148: Fix build against Tizen 3.0 EFL packages
+- Import the Tizen 3.0 theme 
+
