@@ -946,7 +946,6 @@
                clip_to: "elm.swallow.content.shadow.clipper";
                description { state: "default" 0.0;
                   source: "elm.swallow.icon";
-                  proxy.source_clip: 0;
                   rel1 {
                      to: "elm.swallow.icon";
                      offset: 0 1;
@@ -963,7 +962,6 @@
                clip_to: "icon_clipper";
                description { state: "default" 0.0;
                   source: "elm.swallow.icon";
-                  proxy.source_clip: 0;
                   rel1.to: "elm.swallow.icon";
                   rel2.to: "elm.swallow.icon";
                }
@@ -1036,7 +1034,6 @@
                clip_to: "elm.swallow.content.shadow.clipper.end";
                description { state: "default" 0.0;
                   source: "elm.swallow.end";
-                  proxy.source_clip: 0;
                   rel1 {
                      to: "elm.swallow.end";
                      offset: 0 1;
@@ -1053,7 +1050,6 @@
                clip_to: "icon_clipper_end";
                description { state: "default" 0.0;
                   source: "elm.swallow.end";
-                  proxy.source_clip: 0;
                   rel1.to: "elm.swallow.end";
                   rel2.to: "elm.swallow.end";
                }

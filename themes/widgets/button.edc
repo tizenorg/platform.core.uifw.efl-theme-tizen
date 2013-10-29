@@ -269,7 +269,6 @@
             clip_to: "elm.swallow.content.shadow.clipper";
             description { state: "default" 0.0;
                source: "elm.swallow.content";
-               proxy.source_clip: 0;
                rel1 {
                   to: "elm.swallow.content";
                   offset: BUTTON_STYLE1_NORMAL_TOP_OFFSET_INC;
@@ -300,7 +299,6 @@
             clip_to: "icon_clipper";
             description { state: "default" 0.0;
                source: "elm.swallow.content";
-               proxy.source_clip: 0;
                rel1.to: "elm.swallow.content";
                rel2.to: "elm.swallow.content";
             }
@@ -1546,7 +1544,6 @@
             clip_to: "elm.swallow.content.shadow.clipper";
             description { state: "default" 0.0;
                source: "elm.swallow.content";
-               proxy.source_clip: 0;
                rel1 {
                   to: "elm.swallow.content";
                   offset: BUTTON_POPUP_NORMAL_TOP_OFFSET_INC;
@@ -1577,7 +1574,6 @@
             clip_to: "icon_clipper";
             description { state: "default" 0.0;
                source: "elm.swallow.content";
-               proxy.source_clip: 0;
                rel1.to: "elm.swallow.content";
                rel2.to: "elm.swallow.content";
             }
@@ -1950,7 +1946,6 @@
             scale: 1; \
             description { state: "default" 0.0; \
                 source: "button_center_part"; \
-                proxy.source_clip: 0; \
                 rel1 { \
                    to: "button_center_part"; \
                    offset: BUTTON_CIRCLE_STYLE_NORMAL_TOP_OFFSET_INC; \
@@ -1981,7 +1976,6 @@
             clip_to: "icon_clipper"; \
             description { state: "default" 0.0; \
                 source: "button_center_part"; \
-                proxy.source_clip: 0; \
                 rel1.to: "button_center_part"; \
                 rel2.to: "button_center_part"; \
             } \
@@ -2247,7 +2241,6 @@
             scale: 1; \
             description { state: "default" 0.0; \
                 source: "button_center_part"; \
-                proxy.source_clip: 0; \
                 rel1 { \
                    to: "button_center_part"; \
                    offset: BUTTON_WARNING_STYLE_NORMAL_TOP_OFFSET_INC; \
@@ -2393,7 +2386,6 @@
             scale: 1;
             description { state: "default" 0.0;
                 source: "elm.swallow.content";
-                proxy.source_clip: 0;
                 rel1 {
                    to: "elm.swallow.content";
                    offset: BUTTON_CIRCLE_STYLE_NORMAL_TOP_OFFSET_INC;
@@ -2424,7 +2416,6 @@
             clip_to: "icon_clipper";
             description { state: "default" 0.0;
                 source: "elm.swallow.content";
-                proxy.source_clip: 0;
                 rel1.to: "elm.swallow.content";
                 rel2.to: "elm.swallow.content";
             }
@@ -2622,7 +2613,6 @@
             scale: 1; \
             description { state: "default" 0.0; \
                 source: "button_center_part"; \
-                proxy.source_clip: 0; \
                 rel1 { \
                    to: "button_center_part"; \
                    offset: BUTTON_EDIT_STYLE_NORMAL_TOP_OFFSET_INC; \
@@ -2653,7 +2643,6 @@
             clip_to: "icon_clipper"; \
             description { state: "default" 0.0; \
                 source: "button_center_part"; \
-                proxy.source_clip: 0; \
                 rel1.to: "button_center_part"; \
                 rel2.to: "button_center_part"; \
             } \
@@ -2866,7 +2855,6 @@
             scale: 1; \
             description { state: "default" 0.0; \
                 source: "button_center_part"; \
-                proxy.source_clip: 0; \
                 rel1 { \
                    to: "button_center_part"; \
                    offset: BUTTON_CIRCLE_STYLE_MINUS_NORMAL_TOP_OFFSET_INC; \
@@ -3031,7 +3019,6 @@
             clip_to: "elm.swallow.icon.shadow.proxy"; \
             description { state: "default" 0.0; \
                source: "jump_image"; \
-               proxy.source_clip: 0; \
                rel1 { \
                   to: "jump_image"; \
                   offset: BUTTON_JUMP_TO_NORMAL_TOP_OFFSET_INC; \
@@ -3062,7 +3049,6 @@
             clip_to: "elm.swallow.icon.proxy"; \
             description { state: "default" 0.0; \
                source: "jump_image"; \
-               proxy.source_clip: 0; \
                rel1.to: "jump_image"; \
                rel2.to: "jump_image"; \
             } \
@@ -3696,7 +3682,6 @@ BUTTON_SCROLL_JUMPTO("jumpto_left", "00_icon_jump_left.png")
             scale: 1; \
             description { state: "default" 0.0; \
                 source: "button_center_part"; \
-                proxy.source_clip: 0; \
                 rel1 { \
                    to: "button_center_part"; \
                    offset: BUTTON_COLORSELECTOR_NORMAL_TOP_OFFSET_INC; \
@@ -3727,7 +3712,6 @@ BUTTON_SCROLL_JUMPTO("jumpto_left", "00_icon_jump_left.png")
             clip_to: "icon_clipper"; \
             description { state: "default" 0.0; \
                 source: "button_center_part"; \
-                proxy.source_clip: 0; \
                 rel1.to: "button_center_part"; \
                 rel2.to: "button_center_part"; \
             } \
@@ -5306,7 +5290,6 @@ BUTTON_SCROLL_JUMPTO("jumpto_left", "00_icon_jump_left.png")
             clip_to: "arrow_expand.shadow.clipper";
             description { state: "default" 0.0;
                source: "arrow_expand";
-               proxy.source_clip: 0;
                rel1 {
                   to: "arrow_expand";
                   offset: BUTTON_EXPANDABLE_NORMAL_TOP_OFFSET_INC;
@@ -5337,7 +5320,6 @@ BUTTON_SCROLL_JUMPTO("jumpto_left", "00_icon_jump_left.png")
             clip_to: "icon_clipper";
             description { state: "default" 0.0;
                source: "arrow_expand";
-               proxy.source_clip: 0;
                rel1.to: "arrow_expand";
                rel2.to: "arrow_expand";
             }

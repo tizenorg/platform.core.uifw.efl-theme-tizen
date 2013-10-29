@@ -1314,7 +1314,6 @@ group { name: "elm/spinner/base/default";
          clip_to: "up.image.arrow.shadow.clipper";
          description { state: "default" 0.0;
             source: "up.image.arrow";
-            proxy.source_clip: 0;
             rel1 {
                to: "up.image.arrow";
                offset: SPINNER_UP_DOWN_ARROW_DEFAULT_TOP_OFFSET_INC;
@@ -1342,7 +1341,6 @@ group { name: "elm/spinner/base/default";
          clip_to: "up.image.arrow.clipper";
          description { state: "default" 0.0;
             source: "up.image.arrow";
-            proxy.source_clip: 0;
             rel1.to: "up.image.arrow";
             rel2.to: "up.image.arrow";
          }
@@ -1406,7 +1404,6 @@ group { name: "elm/spinner/base/default";
          clip_to: "down.image.arrow.shadow.clipper";
          description { state: "default" 0.0;
             source: "down.image.arrow";
-            proxy.source_clip: 0;
             rel1 {
                to: "down.image.arrow";
                offset: SPINNER_UP_DOWN_ARROW_DEFAULT_TOP_OFFSET_INC;
@@ -1434,7 +1431,6 @@ group { name: "elm/spinner/base/default";
          clip_to: "down.image.arrow.clipper";
          description { state: "default" 0.0;
             source: "down.image.arrow";
-            proxy.source_clip: 0;
             rel1.to: "down.image.arrow";
             rel2.to: "down.image.arrow";
          }
