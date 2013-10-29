@@ -176,28 +176,6 @@
      }
      programs {
         program {
-            name: "show_indicator"; //show indicator using effect
-            signal: "elm,state,indicator,show";
-            source: "elm";
-            script {
-               set_int(indicator_visible, 1);
-               set_state(PART:"indicator_base", "default", 0.0);
-               //it is possible app call show after opacity call
-               /////Portrait
-               if (get_int(landscape) == 0) {
-                 if (get_int(indicator_opacity) == 0)
-                   run_program(PROGRAM:"opaque_state");
-                 if (get_int(indicator_opacity) == 1)
-                   run_program(PROGRAM:"translucent_state");
-                 if (get_int(indicator_opacity) == 2) 
-                   run_program(PROGRAM:"transparent_state");
-               }
-               /////Landscape
-               else 
-                 run_program(PROGRAM:"transparent_state");
-            }
-        }
-        program {
             name: "hide_indicator";
             signal: "elm,state,indicator,hide";
             source: "elm";
@@ -540,21 +518,6 @@
      }
      programs {
         program {
-            name: "show_indicator";
-            signal: "elm,state,indicator,show";
-            source: "elm";
-            script {
-               set_int(indicator_visible, 1);
-               set_state(PART:"elm.swallow.indicator", "default", 0.0);
-               if (get_int(indicator_opacity) == 0)
-                  set_state(PART:"indicator_bg", "opaque", 0.0);
-               if (get_int(indicator_opacity) == 1)
-                  set_state(PART:"indicator_bg", "translucent", 0.0);
-               if (get_int(indicator_opacity) == 2)
-                  set_state(PART:"indicator_bg", "transparent", 0.0);
-            }
-        }
-        program {
             name: "hide_indicator";
             signal: "elm,state,indicator,hide";
             source: "elm";
@@ -693,21 +656,6 @@
      }
      programs {
         program {
-            name: "show_indicator";
-            signal: "elm,state,indicator,show";
-            source: "elm";
-            script {
-               set_int(indicator_visible, 1);
-               set_state(PART:"elm.swallow.indicator", "default", 0.0);
-               if (get_int(indicator_opacity) == 0)
-                  set_state(PART:"indicator_bg", "opaque", 0.0);
-               if (get_int(indicator_opacity) == 1)
-                  set_state(PART:"indicator_bg", "translucent", 0.0);
-               if (get_int(indicator_opacity) == 2)
-                  set_state(PART:"indicator_bg", "transparent", 0.0);
-            }
-        }
-        program {
             name: "hide_indicator";
             signal: "elm,state,indicator,hide";
             source: "elm";
@@ -832,21 +780,6 @@
         }
      }
      programs {
-        program {
-            name: "show_indicator";
-            signal: "elm,state,indicator,show";
-            source: "elm";
-            script {
-               set_int(indicator_visible, 1);
-               set_state(PART:"elm.swallow.indicator", "default", 0.0);
-               if (get_int(indicator_opacity) == 0)
-                  set_state(PART:"indicator_bg", "opaque", 0.0);
-               if (get_int(indicator_opacity) == 1)
-                  set_state(PART:"indicator_bg", "translucent", 0.0);
-               if (get_int(indicator_opacity) == 2)
-                  set_state(PART:"indicator_bg", "transparent", 0.0);
-            }
-        }
         program {
             name: "hide_indicator";
             signal: "elm,state,indicator,hide";
