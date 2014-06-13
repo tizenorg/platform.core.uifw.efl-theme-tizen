@@ -1,5 +1,8 @@
-* Tue Oct 29 2013 Rusty Lynch <rusty.lynch@intel.com> 0eb89ab
-- Remove the mobile specific indicator
-- PTREL-148: Fix build against Tizen 3.0 EFL packages
-- Import the Tizen 3.0 theme 
+* Fri Jun 13 2014 Stephane Desneux <stephane.desneux@open.eurogiciel.org> submit/tizen_common/20140613.151806-0-g3fa1ccd
+- Cherry-picked extra commits from profile/ivi/efl-theme-tizen:
+  - PTREL-148: Fix build against Tizen 3.0 EFL packages
+  - Remove the mobile specific indicator
+  - update changelog
+  - fix: update edje's select_mode to DEFAULT from deprecated BLOCK_HANDLE
+
 
