@@ -1962,7 +1962,7 @@
          }
 
 #define GENLIST_PROGRAM_SELECT_DIALOGUE( TARGET ) \
-         program { name: "selected"; \
+         program { name: "selected_dialog"; \
             signal: "elm,state,selected"; \
             source: "elm"; \
             script { \
@@ -1980,7 +1980,7 @@
                run_program(PROGRAM:"target_selected"); \
             } \
          } \
-         program { name: "unselected"; \
+         program { name: "unselected_dialog"; \
             signal: "elm,state,unselected"; \
             source: "elm"; \
             script { \
