@@ -26,17 +26,16 @@ Development package
 
 
 %build
-export CFLAGS+=" --fPIC"
-export LDFLAGS+=" -Wl,--hash-style=both -Wl,--as-needed -Wl,--rpath=/usr/lib"
+export CFLAGS="${CFLAGS} --fPIC"
+export LDFLAGS="${LDFLAGS} -Wl,--hash-style=both -Wl,--as-needed -Wl,--rpath=%{_prefix}/lib"
 
-%__make -j1 #%%{?_smp_mflags}
+%__make %{?_smp_mflags}
 
 
 %install
 rm -rf %{buildroot}
 %make_install
-cp %{buildroot}/usr/share/elementary/themes/tizen-HD-dark.edj %{buildroot}/usr/share/elementary/themes/tizen-hd.edj
-
+cp %{buildroot}%{_datadir}/elementary/themes/tizen-HD-dark.edj %{buildroot}%{_datadir}/elementary/themes/tizen-hd.edj
 
 %files
 %defattr(-,root,root,-)
