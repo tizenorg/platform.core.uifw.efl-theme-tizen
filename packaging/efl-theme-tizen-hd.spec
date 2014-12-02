@@ -23,8 +23,8 @@ Development package
 
 
 %build
-export CFLAGS+=" --fPIC"
-export LDFLAGS+=" -Wl,--hash-style=both -Wl,--as-needed -Wl,--rpath=/usr/lib"
+export CFLAGS="${CFLAGS} --fPIC"
+export LDFLAGS="${LDFLAGS} -Wl,--hash-style=both -Wl,--as-needed -Wl,--rpath=%{_prefix}/lib"
 
 make %{?jobs:-j%jobs}
 
@@ -32,9 +32,9 @@ make %{?jobs:-j%jobs}
 %install
 rm -rf %{buildroot}
 %make_install
-mkdir -p %{buildroot}/usr/share/license
-cp %{_builddir}/%{buildsubdir}/LICENSE %{buildroot}/usr/share/license/%{name}
-cp %{buildroot}/usr/share/elementary/themes/tizen-HD-dark.edj %{buildroot}/usr/share/elementary/themes/tizen-hd.edj
+mkdir -p %{buildroot}%{_datadir}/license
+cp %{_builddir}/%{buildsubdir}/LICENSE %{buildroot}%{_datadir}/license/%{name}
+cp %{buildroot}%{_datadir}/elementary/themes/tizen-HD-dark.edj %{buildroot}%{_datadir}/elementary/themes/tizen-hd.edj
 
 %files
 %defattr(-,root,root,-)
@@ -42,7 +42,7 @@ cp %{buildroot}/usr/share/elementary/themes/tizen-HD-dark.edj %{buildroot}/usr/s
 %{_datadir}/elementary/themes/tizen-HD-light.edj
 %{_datadir}/elementary/themes/tizen-hd.edj
 %manifest %{name}.manifest
-/usr/share/license/%{name}
+%{_datadir}/license/%{name}
 
 %files -n efl-theme-tizen-devel
 %defattr(-,root,root,-)
