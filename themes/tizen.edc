@@ -48,6 +48,8 @@ externals {
    external: "elm";
 }
 
+data.item: "version" "110";
+
 collections {
    sounds {
       sample {
