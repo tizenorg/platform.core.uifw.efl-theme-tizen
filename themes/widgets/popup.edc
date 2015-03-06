@@ -1237,7 +1237,7 @@ group { name: "elm/popup/item/default";
          mouse_events: 0;
          type: RECT;
          scale: 1;
-         description { state: "dafault" 0.0;
+         description { state: "default" 0.0;
             color: GENLIST_LIST_LINE1_COLOR;
             align: 0.5 1.0;
             min: 0 1;
